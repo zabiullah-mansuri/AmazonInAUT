@@ -3,3 +3,8 @@
 2021-08-29 15:09:52,203 [main] INFO Amazon.in - AUT - Entered Password : udejugy
 2021-08-29 15:09:53,798 [main] INFO Amazon.in - AUT - Clicked Login button.
 2021-08-29 15:09:53,806 [main] INFO Amazon.in - AUT - Login successful.
+2021-08-29 15:40:56,823 [main] INFO Amazon.in - AUT - URL is opened.
+2021-08-29 15:40:57,013 [main] INFO Amazon.in - AUT - Entered UserId : mngr350124
+2021-08-29 15:40:57,194 [main] INFO Amazon.in - AUT - Entered Password : udejugy
+2021-08-29 15:40:58,345 [main] INFO Amazon.in - AUT - Clicked Login button.
+2021-08-29 15:40:58,354 [main] INFO Amazon.in - AUT - Login successful.

@@ -7,7 +7,7 @@ import pages.LoginPage;
 
 public class TC_001_LoginTest extends BaseTestClass {
 	@Test
-	public void f() {
+	public void loginTest() {
 		LoginPage loginPage = new LoginPage(driver);
 		log4jlogger.info("URL is opened.");
 		loginPage.setUserID(userId);

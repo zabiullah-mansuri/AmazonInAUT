@@ -1,6 +1,9 @@
 package testcases;
 
 import org.testng.annotations.BeforeClass;
+
+import utilities.ReadConfig;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -10,14 +13,20 @@ import org.testng.annotations.AfterClass;
 public class BaseTestClass {
 
 	WebDriver driver;
-	String appUrl = "http://demo.guru99.com/V1/index.php";
-	String userId = "mngr350124";
-	String password = "udejugy";
+	String appUrl;
+	String userId;
+	String password;
+	ReadConfig readConfig;
 	Logger log4jlogger;
 
 	@BeforeClass
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		readConfig = new ReadConfig();
+		appUrl = readConfig.getAppUrl();
+		userId = readConfig.getUserId();
+		password = readConfig.getPassword();
+
+		System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 		driver = new ChromeDriver();
 		driver.get(appUrl);
 
