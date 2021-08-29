@@ -2,24 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-29T10:10:50Z" name="Default suite" finished-at="2021-08-29T10:10:59Z" duration-ms="8495">
+  <suite started-at="2021-08-29T11:12:31Z" name="Suite" finished-at="2021-08-29T11:12:44Z" duration-ms="13477">
     <groups>
     </groups>
-    <test started-at="2021-08-29T10:10:50Z" name="Default test" finished-at="2021-08-29T10:10:59Z" duration-ms="8495">
+    <test started-at="2021-08-29T11:12:31Z" name="Amazon-IN-AUT" finished-at="2021-08-29T11:12:44Z" duration-ms="13477">
       <class name="testcases.TC_001_LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_001_LoginTest@490caf5f]" started-at="2021-08-29T10:10:50Z" name="setup" finished-at="2021-08-29T10:10:56Z" duration-ms="5921" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_001_LoginTest@1205bd62]" started-at="2021-08-29T11:12:31Z" name="setup" finished-at="2021-08-29T11:12:40Z" duration-ms="9483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:testcases.TC_001_LoginTest@490caf5f]" started-at="2021-08-29T10:10:56Z" name="loginTest" finished-at="2021-08-29T10:10:58Z" duration-ms="1601" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:testcases.TC_001_LoginTest@1205bd62]" started-at="2021-08-29T11:12:40Z" name="loginTest" finished-at="2021-08-29T11:12:42Z" duration-ms="2407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_001_LoginTest@490caf5f]" started-at="2021-08-29T10:10:58Z" name="tearDown" finished-at="2021-08-29T10:10:59Z" duration-ms="925" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_001_LoginTest@1205bd62]" started-at="2021-08-29T11:12:43Z" name="tearDown" finished-at="2021-08-29T11:12:44Z" duration-ms="1559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC_001_LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Amazon-IN-AUT -->
+  </suite> <!-- Suite -->
 </testng-results>

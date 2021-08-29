@@ -34,4 +34,14 @@ public class ReadConfig {
 		return pro.getProperty("chromedriver");
 
 	}
+	public String getIEDriverPath() {
+		return pro.getProperty("iedriver");
+
+	}
+	public String getEdgeeDriverPath() {
+		return pro.getProperty("edgedriver");
+
+	}
+	
+		
 }
