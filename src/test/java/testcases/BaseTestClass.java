@@ -43,9 +43,7 @@ public class BaseTestClass {
 			System.setProperty("webdriver.edge.driver", readConfig.getEdgeeDriverPath());
 			driver = new EdgeDriver();
 		}
-
 		driver.get(appUrl);
-
 	}
 
 	@AfterClass
