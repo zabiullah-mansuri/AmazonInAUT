@@ -1,10 +1,10 @@
-2021-08-30 22:16:59,686 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-08-30 22:16:59,841 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-08-30 22:17:01,116 - Amazon.in - AUT -INFO - Entered password : QA@automation
-2021-08-30 22:17:01,276 - Amazon.in - AUT -INFO - Clicked : Sign in button
-2021-08-30 22:17:04,409 - Amazon.in - AUT -INFO - Login successfull.
-2021-08-30 22:17:16,144 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-08-30 22:17:16,383 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-08-30 22:17:20,677 - Amazon.in - AUT -INFO - Entered password : invalid 
-2021-08-30 22:17:20,840 - Amazon.in - AUT -INFO - Clicked : Sign in button
-2021-08-30 22:17:22,070 - Amazon.in - AUT -INFO - Error msg present on invalid login.
+2021-08-30 23:23:18,726 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-08-30 23:23:18,898 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-08-30 23:23:19,929 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-08-30 23:23:20,044 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-08-30 23:23:23,485 - Amazon.in - AUT -INFO - Login successfull.
+2021-08-30 23:23:31,474 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-08-30 23:23:31,676 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-08-30 23:23:32,824 - Amazon.in - AUT -INFO - Entered password : invalid 
+2021-08-30 23:23:32,920 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-08-30 23:23:34,154 - Amazon.in - AUT -INFO - Error msg present on invalid login.

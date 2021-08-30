@@ -1,6 +1,5 @@
 package testcases;
 
-import org.apache.commons.logging.impl.Log4JLogger;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -31,8 +30,6 @@ public class TC_01_Login extends BaseTestClass {
 			captureScreenshot(driver, "loginValid");
 			log4jlogger.error("Login failed.");
 			Assert.assertTrue(false);
-		} finally {
-			driver.quit();
 		}
 	}
 
@@ -58,8 +55,6 @@ public class TC_01_Login extends BaseTestClass {
 			log4jlogger.info("Error msg not present on invalid login.");
 			Assert.assertTrue(false);
 		}
-		driver.quit();
-
 	}
 
 }

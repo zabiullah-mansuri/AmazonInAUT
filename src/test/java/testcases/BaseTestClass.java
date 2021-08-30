@@ -19,10 +19,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 
 public class BaseTestClass {
 
 	WebDriver driver;
+	String browser;
 	String appUrl;
 	String name;
 	String userId;
@@ -32,8 +34,10 @@ public class BaseTestClass {
 	ReadConfig readConfig;
 	Logger log4jlogger;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void setup() {
+	public void setup(String browser) {
+		this.browser = browser;
 		readConfig = new ReadConfig();
 		appUrl = readConfig.getAppUrl();
 		name = readConfig.getName();
@@ -47,9 +51,8 @@ public class BaseTestClass {
 
 	}
 
-	@Parameters("browser")
 	@BeforeMethod
-	public void beforeMethod(String browser) {
+	public void beforeEachTest() {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 			driver = new ChromeDriver();
@@ -63,9 +66,14 @@ public class BaseTestClass {
 		driver.get(appUrl);
 	}
 
+	@AfterMethod
+	public void afterEachTest() {
+		driver.quit();
+	}
+
 	@AfterClass
 	public void tearDown() {
-		driver.quit();
+		
 	}
 
 	public void captureScreenshot(WebDriver driver, String testName) {
