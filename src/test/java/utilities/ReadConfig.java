@@ -22,6 +22,11 @@ public class ReadConfig {
 		return pro.getProperty("appUrl");
 	}
 
+	public String getName() {
+		return pro.getProperty("name");
+
+	}
+
 	public String getUserId() {
 		return pro.getProperty("userId");
 	}
@@ -29,19 +34,30 @@ public class ReadConfig {
 	public String getPassword() {
 		return pro.getProperty("password");
 	}
+	
+	public String getWrongUserId() {
+		return pro.getProperty("wrongUserId");
+	}
+
+	public String getWrongPassword() {
+		return pro.getProperty("wrongPassword");
+	}
+	
+	
 
 	public String getChromeDriverPath() {
 		return pro.getProperty("chromedriver");
 
 	}
+
 	public String getIEDriverPath() {
 		return pro.getProperty("iedriver");
 
 	}
+
 	public String getEdgeeDriverPath() {
 		return pro.getProperty("edgedriver");
 
 	}
-	
-		
+
 }

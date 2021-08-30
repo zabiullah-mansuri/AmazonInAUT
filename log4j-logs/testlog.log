@@ -1,5 +1,10 @@
-2021-08-29 17:30:08,302 - Amazon.in - AUT -INFO - URL is opened.
-2021-08-29 17:30:08,480 - Amazon.in - AUT -INFO - Entered UserId : mngr350124
-2021-08-29 17:30:08,614 - Amazon.in - AUT -INFO - Entered Password : udejugy
-2021-08-29 17:30:09,986 - Amazon.in - AUT -INFO - Clicked Login button.
-2021-08-29 17:30:09,996 - Amazon.in - AUT -INFO - Login successful.
+2021-08-30 22:16:59,686 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-08-30 22:16:59,841 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-08-30 22:17:01,116 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-08-30 22:17:01,276 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-08-30 22:17:04,409 - Amazon.in - AUT -INFO - Login successfull.
+2021-08-30 22:17:16,144 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-08-30 22:17:16,383 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-08-30 22:17:20,677 - Amazon.in - AUT -INFO - Entered password : invalid 
+2021-08-30 22:17:20,840 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-08-30 22:17:22,070 - Amazon.in - AUT -INFO - Error msg present on invalid login.

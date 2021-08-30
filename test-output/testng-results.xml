@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-29T12:00:02Z" name="Suite" finished-at="2021-08-29T12:00:10Z" duration-ms="8303">
+  <suite started-at="2021-08-30T16:46:49Z" name="Suite" finished-at="2021-08-30T16:47:23Z" duration-ms="33671">
     <groups>
     </groups>
-    <test started-at="2021-08-29T12:00:02Z" name="Amazon-IN-AUT" finished-at="2021-08-29T12:00:10Z" duration-ms="8303">
-      <class name="testcases.TC_001_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_001_LoginTest@490caf5f]" started-at="2021-08-29T12:00:02Z" name="setup" finished-at="2021-08-29T12:00:08Z" duration-ms="5381" status="PASS">
+    <test started-at="2021-08-30T16:46:49Z" name="Amazon-IN-AUT" finished-at="2021-08-30T16:47:23Z" duration-ms="33671">
+      <class name="testcases.TC_01_Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_01_Login@563e4951]" started-at="2021-08-30T16:46:49Z" name="setup" finished-at="2021-08-30T16:46:50Z" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testcases.TC_01_Login@563e4951]" started-at="2021-08-30T16:46:50Z" name="beforeMethod" finished-at="2021-08-30T16:46:57Z" duration-ms="7471" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -17,16 +21,31 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:testcases.TC_001_LoginTest@490caf5f]" started-at="2021-08-29T12:00:08Z" name="loginTest" finished-at="2021-08-29T12:00:09Z" duration-ms="1739" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginValid()[pri:1, instance:testcases.TC_01_Login@563e4951]" started-at="2021-08-30T16:46:57Z" name="loginValid" finished-at="2021-08-30T16:47:05Z" duration-ms="8018" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_001_LoginTest@490caf5f]" started-at="2021-08-29T12:00:10Z" name="tearDown" finished-at="2021-08-29T12:00:10Z" duration-ms="848" status="PASS">
+        </test-method> <!-- loginValid -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testcases.TC_01_Login@563e4951]" started-at="2021-08-30T16:47:05Z" name="beforeMethod" finished-at="2021-08-30T16:47:14Z" duration-ms="8525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginInvalid()[pri:2, instance:testcases.TC_01_Login@563e4951]" started-at="2021-08-30T16:47:14Z" name="loginInvalid" finished-at="2021-08-30T16:47:23Z" duration-ms="9126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInvalid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_Login@563e4951]" started-at="2021-08-30T16:47:23Z" name="tearDown" finished-at="2021-08-30T16:47:23Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC_001_LoginTest -->
+      </class> <!-- testcases.TC_01_Login -->
     </test> <!-- Amazon-IN-AUT -->
   </suite> <!-- Suite -->
 </testng-results>

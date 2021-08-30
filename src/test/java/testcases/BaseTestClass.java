@@ -1,12 +1,19 @@
 package testcases;
 
+import org.apache.commons.io.FileUtils;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import utilities.ReadConfig;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,22 +24,32 @@ public class BaseTestClass {
 
 	WebDriver driver;
 	String appUrl;
+	String name;
 	String userId;
 	String password;
+	String wrongUserId;
+	String wrongPassword;
 	ReadConfig readConfig;
 	Logger log4jlogger;
 
-	@Parameters("browser")
 	@BeforeClass
-	public void setup(String browser) {
+	public void setup() {
 		readConfig = new ReadConfig();
 		appUrl = readConfig.getAppUrl();
+		name = readConfig.getName();
 		userId = readConfig.getUserId();
 		password = readConfig.getPassword();
+		wrongUserId = readConfig.getWrongUserId();
+		wrongPassword = readConfig.getWrongPassword();
 
 		log4jlogger = Logger.getLogger("Amazon.in - AUT");
 		PropertyConfigurator.configure("log4j.properties");
 
+	}
+
+	@Parameters("browser")
+	@BeforeMethod
+	public void beforeMethod(String browser) {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 			driver = new ChromeDriver();
@@ -51,4 +68,15 @@ public class BaseTestClass {
 		driver.quit();
 	}
 
+	public void captureScreenshot(WebDriver driver, String testName) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File target = new File("./screenshots/" + testName + ".png");
+		try {
+			FileUtils.copyFile(source, target);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Screenshot taken.");
+	}
 }

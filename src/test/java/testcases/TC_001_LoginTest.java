@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 
 public class TC_001_LoginTest extends BaseTestClass {
-	
+
 	@Test
 	public void loginTest() {
 		LoginPage loginPage = new LoginPage(driver);
@@ -17,11 +17,12 @@ public class TC_001_LoginTest extends BaseTestClass {
 		log4jlogger.info("Entered Password : " + password);
 		loginPage.clickLogin();
 		log4jlogger.info("Clicked Login button.");
-		if (driver.getTitle().equals("GTPL Bank Manager HomePage")) {
+		if (driver.getTitle().equals("GTPL Bank Manager HomePage222")) {
 			log4jlogger.info("Login successful.");
 			Assert.assertTrue(true);
 		} else {
 			log4jlogger.info("Login failed.");
+			captureScreenshot(driver, "loginTest");
 			Assert.assertTrue(false);
 		}
 	}
