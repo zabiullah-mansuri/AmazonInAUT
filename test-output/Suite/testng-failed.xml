@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="utilities.Reporter"/>
   </listeners>
-  <test thread-count="5" name="Amazon-IN-AUT(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_02_SearchSuggestions">
+      <class name="testcases.TC_09_SearchSuggestions">
         <methods>
           <include name="setup"/>
+          <include name="verifySearchSuggestionsCharByChar"/>
           <include name="beforeEachTest"/>
           <include name="tearDown"/>
-          <include name="verifySearchSuggestions"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_02_SearchSuggestions -->
+      </class> <!-- testcases.TC_09_SearchSuggestions -->
     </classes>
-  </test> <!-- Amazon-IN-AUT(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

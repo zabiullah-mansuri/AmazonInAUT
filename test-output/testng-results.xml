@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="10" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-31T08:19:35Z" name="Suite" finished-at="2021-08-31T08:19:48Z" duration-ms="13075">
+  <suite started-at="2021-08-31T14:22:52Z" name="Suite" finished-at="2021-08-31T14:24:08Z" duration-ms="75931">
     <groups>
     </groups>
-    <test started-at="2021-08-31T08:19:35Z" name="Amazon-IN-AUT" finished-at="2021-08-31T08:19:48Z" duration-ms="13075">
-      <class name="testcases.TC_02_SearchSuggestions">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:35Z" name="setup" finished-at="2021-08-31T08:19:36Z" duration-ms="94" status="PASS">
+    <test started-at="2021-08-31T14:22:52Z" name="Test" finished-at="2021-08-31T14:24:08Z" duration-ms="75931">
+      <class name="testcases.TC_09_SearchSuggestions">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_09_SearchSuggestions@5e403b4a]" started-at="2021-08-31T14:22:52Z" name="setup" finished-at="2021-08-31T14:22:52Z" duration-ms="100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,52 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:36Z" name="beforeEachTest" finished-at="2021-08-31T08:19:43Z" duration-ms="7204" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_09_SearchSuggestions@5e403b4a]" started-at="2021-08-31T14:22:52Z" name="beforeEachTest" finished-at="2021-08-31T14:23:02Z" duration-ms="9041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifySearchSuggestions()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:43Z" name="verifySearchSuggestions" finished-at="2021-08-31T08:19:47Z" duration-ms="4257" status="PASS">
+        <test-method signature="verifySearchSuggestionsCharByChar()[pri:0, instance:testcases.TC_09_SearchSuggestions@5e403b4a]" started-at="2021-08-31T14:23:02Z" name="verifySearchSuggestionsCharByChar" finished-at="2021-08-31T14:23:22Z" duration-ms="20357" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchSuggestions -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:47Z" name="afterEachTest" finished-at="2021-08-31T08:19:48Z" duration-ms="1141" status="PASS">
+        </test-method> <!-- verifySearchSuggestionsCharByChar -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_09_SearchSuggestions@5e403b4a]" started-at="2021-08-31T14:23:22Z" name="afterEachTest" finished-at="2021-08-31T14:23:23Z" duration-ms="1041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:48Z" name="tearDown" finished-at="2021-08-31T08:19:48Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_09_SearchSuggestions@5e403b4a]" started-at="2021-08-31T14:23:23Z" name="tearDown" finished-at="2021-08-31T14:23:23Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC_02_SearchSuggestions -->
-    </test> <!-- Amazon-IN-AUT -->
+      </class> <!-- testcases.TC_09_SearchSuggestions -->
+      <class name="testcases.TC_10_SearchResults">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_10_SearchResults@5117dd67]" started-at="2021-08-31T14:23:23Z" name="setup" finished-at="2021-08-31T14:23:23Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_10_SearchResults@5117dd67]" started-at="2021-08-31T14:23:23Z" name="beforeEachTest" finished-at="2021-08-31T14:24:00Z" duration-ms="37079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifySearchResults()[pri:0, instance:testcases.TC_10_SearchResults@5117dd67]" started-at="2021-08-31T14:24:00Z" name="verifySearchResults" finished-at="2021-08-31T14:24:07Z" duration-ms="6657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchResults -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_10_SearchResults@5117dd67]" started-at="2021-08-31T14:24:07Z" name="afterEachTest" finished-at="2021-08-31T14:24:08Z" duration-ms="1212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_10_SearchResults@5117dd67]" started-at="2021-08-31T14:24:08Z" name="tearDown" finished-at="2021-08-31T14:24:08Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_10_SearchResults -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

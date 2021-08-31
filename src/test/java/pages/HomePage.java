@@ -15,7 +15,7 @@ public class HomePage {
 	WebDriver driver;
 	WebDriverWait wait;
 
-	ArrayList<String> suggestions;
+	List<String> suggestions;
 
 	@FindBy(id = "nav-link-accountList")
 	WebElement accountAndLists;
@@ -60,18 +60,31 @@ public class HomePage {
 		return txtSearch.getAttribute("value");
 	}
 
-	public ArrayList<String> searchForThisKeyword(char input) {
+	public String getPlaceholderOfSearchBox() {
+		return txtSearch.getAttribute("placeholder");
+	}
+
+	public List<String> searchForThisKeyword(char input) {
 
 		txtSearch.sendKeys(Character.toString(input));
-		System.out.println("getTextOfSearchBox()" + getTextOfSearchBox());
-
 		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(suggestionsBox));
-
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		suggestions = new ArrayList<String>();
 		for (WebElement suggestion : suggestionItems) {
 			suggestions.add(suggestion.getText());
 		}
 		return suggestions;
+	}
+
+	public void searchForThisProduct(String input) {
+
+		txtSearch.sendKeys(input);
+		txtSearch.submit();
+
 	}
 }

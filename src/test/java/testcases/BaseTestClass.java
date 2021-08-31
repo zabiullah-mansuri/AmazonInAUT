@@ -1,12 +1,14 @@
 package testcases;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import utilities.ReadConfig;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -62,7 +64,7 @@ public class BaseTestClass {
 			System.setProperty("webdriver.edge.driver", readConfig.getEdgeeDriverPath());
 			driver = new EdgeDriver();
 		}
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get(appUrl);
 	}
 
@@ -74,6 +76,20 @@ public class BaseTestClass {
 	@AfterClass
 	public void tearDown() {
 
+	}
+
+	boolean areMostOfOutputsMatchingInput(String input, List<String> items) {
+		int matchedCount = 0, unmatchedCount = 0;
+		for (String item : items) {
+			if (StringUtils.containsIgnoreCase(item, input)) {
+				matchedCount++;
+			} else {
+				unmatchedCount++;
+			}
+		}
+		log4jlogger.info("No. of matched items : " + matchedCount);
+		log4jlogger.info("No. of unmatched items : " + unmatchedCount);
+		return matchedCount > unmatchedCount;
 	}
 
 	public void captureScreenshot(WebDriver driver, String testName) {
