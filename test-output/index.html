@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC_01_Login" class="method navigator-link" hash-for-method="loginInvalid">loginInvalid</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC_01_Login" class="method navigator-link" hash-for-method="loginValid">loginValid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_02_SearchSuggestions" class="method navigator-link" hash-for-method="verifySearchSuggestions">verifySearchSuggestions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,21 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC_01_Login</span>
+              <span class="class-name">testcases.TC_02_SearchSuggestions</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginInvalid">
-                  </a> <!-- loginInvalid -->
-                  <span class="method-name">loginInvalid</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginValid">
-                  </a> <!-- loginValid -->
-                  <span class="method-name">loginValid</span>
+                  <a name="verifySearchSuggestions">
+                  </a> <!-- verifySearchSuggestions -->
+                  <span class="method-name">verifySearchSuggestions</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,6 +149,7 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.TC_01_Login&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_02_SearchSuggestions&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Amazon-IN-AUT --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -174,7 +163,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Amazon-IN-AUT (1 class)</span>
+                <span class="test-name">Amazon-IN-AUT (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,20 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginValid')
-data.setCell(0, 2, 'testcases.TC_01_Login')
-data.setCell(0, 3, 6614);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginInvalid')
-data.setCell(1, 2, 'testcases.TC_01_Login')
-data.setCell(1, 3, 4248);
+data.setCell(0, 1, 'verifySearchSuggestions')
+data.setCell(0, 2, 'testcases.TC_02_SearchSuggestions')
+data.setCell(0, 3, 4257);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -228,9 +213,28 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TC_01_Login</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginInvalidId</span>
+                <br/>
+                <span class="ignored-method-name">verifyKeepMeSignedIn</span>
+                <br/>
+                <span class="ignored-method-name">loginInvalidPassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyForgotPassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyAfterSignOutAccess</span>
+                <br/>
+                <span class="ignored-method-name">loginValid</span>
+                <br/>
+                <span class="ignored-method-name">loginBlankId</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -239,38 +243,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC_01_Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC_02_SearchSuggestions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest</span>
-                <span class="method-start">90 ms</span>
+                <span class="method-start">101 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginValid</span>
-                <span class="method-start">7286 ms</span>
+                <span class="method-name">verifySearchSuggestions</span>
+                <span class="method-start">7305 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest</span>
-                <span class="method-start">13933 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">14888 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginInvalid</span>
-                <span class="method-start">20352 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterEachTest</span>
-                <span class="method-start">24601 ms</span>
+                <span class="method-start">11580 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25521 ms</span>
+                <span class="method-start">12722 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

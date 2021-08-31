@@ -22,7 +22,19 @@ public class SignInPage {
 	WebElement btnSignIn;
 
 	@FindBy(xpath = "//*[@id=\'auth-error-message-box\']/div/div/ul/li/span")
-	WebElement msgPasswordWrong;
+	WebElement msgAuthError;
+
+	@FindBy(xpath = "//*[@id=\'auth-email-missing-alert\']/div/div")
+	WebElement msgEmailMissing;
+	
+	@FindBy(id="auth-fpp-link-bottom")
+	WebElement lnkForgotPassword;
+	
+	@FindBy(xpath = "//*[@id=\'verification-code-form\']/div[4]/div[2]/span[2]")
+	WebElement msgOtpSent;
+	
+	@FindBy(xpath = "//*[@id='authportal-main-section']//input[@name='rememberMe']")
+	WebElement chkRememberMe;
 
 	public SignInPage(WebDriver driver) {
 		this.driver = driver;
@@ -45,13 +57,32 @@ public class SignInPage {
 		btnSignIn.click();
 	}
 
-	public boolean isWrongPasswordMsgPresent() {
+	public String getAuthErrorMsg() {
 		try {
-			System.out.println(msgPasswordWrong.getText());
-			return true;
+			return msgAuthError.getText();
 		} catch (NoSuchElementException e) {
-			return false;
+			return "No Auth Error Message";
 		}
+	}
 
+	public String getEmailMissingMsg() {
+		try {
+			return msgEmailMissing.getText();
+		} catch (NoSuchElementException e) {
+			return "No Email Missing Error Message";
+		}
+	}
+	public void clickForgotPasswordLink() {
+		lnkForgotPassword.click();
+	}
+	public String getOtpSentMsg() {
+		try {
+			return msgOtpSent.getText();
+		} catch (NoSuchElementException e) {
+			return "No Otp Sent Message";
+		}
+	}
+	public void clickKeepMeSignedIn() {
+		chkRememberMe.click();
 	}
 }

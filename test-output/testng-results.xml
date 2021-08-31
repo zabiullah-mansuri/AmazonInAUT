@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-30T17:53:09Z" name="Suite" finished-at="2021-08-30T17:53:35Z" duration-ms="25826">
+  <suite started-at="2021-08-31T08:19:35Z" name="Suite" finished-at="2021-08-31T08:19:48Z" duration-ms="13075">
     <groups>
     </groups>
-    <test started-at="2021-08-30T17:53:09Z" name="Amazon-IN-AUT" finished-at="2021-08-30T17:53:35Z" duration-ms="25826">
-      <class name="testcases.TC_01_Login">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:09Z" name="setup" finished-at="2021-08-30T17:53:09Z" duration-ms="82" status="PASS">
+    <test started-at="2021-08-31T08:19:35Z" name="Amazon-IN-AUT" finished-at="2021-08-31T08:19:48Z" duration-ms="13075">
+      <class name="testcases.TC_02_SearchSuggestions">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:35Z" name="setup" finished-at="2021-08-31T08:19:36Z" duration-ms="94" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,35 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:09Z" name="beforeEachTest" finished-at="2021-08-30T17:53:16Z" duration-ms="7196" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:36Z" name="beforeEachTest" finished-at="2021-08-31T08:19:43Z" duration-ms="7204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginValid()[pri:1, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:16Z" name="loginValid" finished-at="2021-08-30T17:53:23Z" duration-ms="6614" status="PASS">
+        <test-method signature="verifySearchSuggestions()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:43Z" name="verifySearchSuggestions" finished-at="2021-08-31T08:19:47Z" duration-ms="4257" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginValid -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:23Z" name="afterEachTest" finished-at="2021-08-30T17:53:24Z" duration-ms="948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:24Z" name="beforeEachTest" finished-at="2021-08-30T17:53:29Z" duration-ms="5464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginInvalid()[pri:2, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:29Z" name="loginInvalid" finished-at="2021-08-30T17:53:34Z" duration-ms="4248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginInvalid -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:34Z" name="afterEachTest" finished-at="2021-08-30T17:53:35Z" duration-ms="920" status="PASS">
+        </test-method> <!-- verifySearchSuggestions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:47Z" name="afterEachTest" finished-at="2021-08-31T08:19:48Z" duration-ms="1141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_Login@3eb81efb]" started-at="2021-08-30T17:53:35Z" name="tearDown" finished-at="2021-08-30T17:53:35Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_02_SearchSuggestions@35399441]" started-at="2021-08-31T08:19:48Z" name="tearDown" finished-at="2021-08-31T08:19:48Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC_01_Login -->
+      </class> <!-- testcases.TC_02_SearchSuggestions -->
     </test> <!-- Amazon-IN-AUT -->
   </suite> <!-- Suite -->
 </testng-results>

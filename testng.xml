@@ -8,6 +8,7 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testcases.TC_01_Login" />
+			<class name="testcases.TC_02_SearchSuggestions" />
 		</classes>
 	</test>
 </suite>

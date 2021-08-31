@@ -4,11 +4,10 @@ import org.apache.commons.io.FileUtils;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 import utilities.ReadConfig;
-
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -63,6 +62,7 @@ public class BaseTestClass {
 			System.setProperty("webdriver.edge.driver", readConfig.getEdgeeDriverPath());
 			driver = new EdgeDriver();
 		}
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(appUrl);
 	}
 
@@ -73,7 +73,7 @@ public class BaseTestClass {
 
 	@AfterClass
 	public void tearDown() {
-		
+
 	}
 
 	public void captureScreenshot(WebDriver driver, String testName) {

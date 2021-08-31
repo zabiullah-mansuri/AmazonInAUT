@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.Reporter"/>
+  </listeners>
+  <test thread-count="5" name="Amazon-IN-AUT(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_01_Login">
+      <class name="testcases.TC_02_SearchSuggestions">
         <methods>
           <include name="setup"/>
+          <include name="beforeEachTest"/>
           <include name="tearDown"/>
-          <include name="beforeMethod"/>
-          <include name="loginInvalid"/>
+          <include name="verifySearchSuggestions"/>
+          <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_01_Login -->
+      </class> <!-- testcases.TC_02_SearchSuggestions -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Amazon-IN-AUT(failed) -->
+</suite> <!-- Failed suite [Suite] -->
