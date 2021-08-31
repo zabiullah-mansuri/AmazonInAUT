@@ -9,7 +9,7 @@ import pages.HomePage;
 
 public class TC_09_SearchSuggestions extends BaseTestClass {
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void verifySearchSuggestionsCharByChar() {
 		HomePage homePage = new HomePage(driver);
 		String searchkey = "samsung";

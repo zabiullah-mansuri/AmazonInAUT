@@ -7,7 +7,7 @@ import pages.HomePage;
 import pages.SearchResultsPage;
 
 public class TC_10_SearchResults extends BaseTestClass {
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void verifySearchResults() {
 		HomePage homePage = new HomePage(driver);
 		SearchResultsPage searchResultsPage = new SearchResultsPage(driver);

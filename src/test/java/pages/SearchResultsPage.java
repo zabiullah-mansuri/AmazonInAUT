@@ -2,6 +2,8 @@ package pages;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,4 +34,9 @@ public class SearchResultsPage {
 		return results;
 	}
 
+	public void clickOnOneResultRandomly() {
+		wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfAllElements(resultItems));
+		resultItems.get(new Random().nextInt(resultItems.size())).click();
+	}
 }

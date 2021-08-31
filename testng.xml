@@ -17,6 +17,7 @@
 			<class name="testcases.TC_08_WaterTextOfSearchBox" />
 			<class name="testcases.TC_09_SearchSuggestions" />
 			<class name="testcases.TC_10_SearchResults" />
+			<class name="testcases.TC_11_ResultsClickOpensInNewTab" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
