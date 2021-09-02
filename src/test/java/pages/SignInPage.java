@@ -26,13 +26,13 @@ public class SignInPage {
 
 	@FindBy(xpath = "//*[@id=\'auth-email-missing-alert\']/div/div")
 	WebElement msgEmailMissing;
-	
-	@FindBy(id="auth-fpp-link-bottom")
+
+	@FindBy(id = "auth-fpp-link-bottom")
 	WebElement lnkForgotPassword;
-	
+
 	@FindBy(xpath = "//*[@id=\'verification-code-form\']/div[4]/div[2]/span[2]")
 	WebElement msgOtpSent;
-	
+
 	@FindBy(xpath = "//*[@id='authportal-main-section']//input[@name='rememberMe']")
 	WebElement chkRememberMe;
 
@@ -72,9 +72,11 @@ public class SignInPage {
 			return "No Email Missing Error Message";
 		}
 	}
+
 	public void clickForgotPasswordLink() {
 		lnkForgotPassword.click();
 	}
+
 	public String getOtpSentMsg() {
 		try {
 			return msgOtpSent.getText();
@@ -82,6 +84,7 @@ public class SignInPage {
 			return "No Otp Sent Message";
 		}
 	}
+
 	public void clickKeepMeSignedIn() {
 		chkRememberMe.click();
 	}

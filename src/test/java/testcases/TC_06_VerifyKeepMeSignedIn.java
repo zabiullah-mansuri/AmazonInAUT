@@ -13,15 +13,19 @@ public class TC_06_VerifyKeepMeSignedIn extends BaseTestClass {
 
 	@Test(enabled = false)
 	public void verifyKeepMeSignedIn() {
+		
 		HomePage homePage = new HomePage(driver);
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
 		log4jlogger.info("Clicked : Account & Lists");
+		
 		signInPage.enterUserId(userId);
 		log4jlogger.info("Entered user id : " + userId);
+		
 		signInPage.clickContinue();
 		log4jlogger.info("Clicked : Continue button");
+		
 		signInPage.enterPassword(password);
 		log4jlogger.info("Entered password : " + password);
 
@@ -43,7 +47,5 @@ public class TC_06_VerifyKeepMeSignedIn extends BaseTestClass {
 			log4jlogger.error("Login lost.");
 			AssertJUnit.assertTrue(false);
 		}
-
 	}
-
 }

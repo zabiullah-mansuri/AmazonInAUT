@@ -14,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HomePage {
 	WebDriver driver;
 	WebDriverWait wait;
-
 	List<String> suggestions;
 
 	@FindBy(id = "nav-link-accountList")
@@ -67,13 +66,16 @@ public class HomePage {
 	public List<String> searchForThisKeyword(char input) {
 
 		txtSearch.sendKeys(Character.toString(input));
+		
 		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(suggestionsBox));
+		
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
 		suggestions = new ArrayList<String>();
 		for (WebElement suggestion : suggestionItems) {
 			suggestions.add(suggestion.getText());
@@ -82,9 +84,7 @@ public class HomePage {
 	}
 
 	public void searchForThisProduct(String input) {
-
 		txtSearch.sendKeys(input);
 		txtSearch.submit();
-
 	}
 }

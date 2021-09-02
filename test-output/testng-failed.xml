@@ -7,15 +7,15 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_09_SearchSuggestions">
+      <class name="testcases.TC_12_VerifyAddToCart">
         <methods>
           <include name="setup"/>
-          <include name="verifySearchSuggestionsCharByChar"/>
           <include name="beforeEachTest"/>
           <include name="tearDown"/>
           <include name="afterEachTest"/>
+          <include name="verifyAddToCart"/>
         </methods>
-      </class> <!-- testcases.TC_09_SearchSuggestions -->
+      </class> <!-- testcases.TC_12_VerifyAddToCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
