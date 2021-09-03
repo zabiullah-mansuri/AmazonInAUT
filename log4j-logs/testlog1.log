@@ -1,5 +1,7 @@
-2021-09-02 21:55:46,855 [main] INFO Amazon.in - AUT - Searched : samsung
-2021-09-02 21:55:48,074 [main] INFO Amazon.in - AUT - Clicked one result randomly
-2021-09-02 21:55:48,092 [main] INFO Amazon.in - AUT - Switched to Product's tab
-2021-09-02 21:55:54,167 [main] INFO Amazon.in - AUT - Clicked : Add to cart
-2021-09-02 21:55:56,786 [main] INFO Amazon.in - AUT - Msg present : Added to Cart
+2021-09-03 07:20:53,967 [main] INFO Amazon.in - AUT - Searched : samsung
+2021-09-03 07:20:55,295 [main] INFO Amazon.in - AUT - Clicked one result randomly
+2021-09-03 07:20:55,312 [main] INFO Amazon.in - AUT - Switched to Product's tab
+2021-09-03 07:21:00,866 [main] INFO Amazon.in - AUT - Count of Cart items : Before Adding : 0
+2021-09-03 07:21:01,355 [main] INFO Amazon.in - AUT - Clicked : Add to cart
+2021-09-03 07:21:04,457 [main] INFO Amazon.in - AUT - Msg present : Added to Cart
+2021-09-03 07:21:08,269 [main] INFO Amazon.in - AUT - Count of Cart items : After Adding : 1

@@ -26,6 +26,9 @@ public class TC_12_VerifyAddToCart extends BaseTestClass {
 		driver.switchTo().window(tabs[1]);
 		log4jlogger.info("Switched to Product's tab");
 
+		int beforeAdding = homePage.getItemsInCartCount();
+		log4jlogger.info("Count of Cart items : Before Adding : " + beforeAdding);
+
 		productPage.clickAddToCart();
 		log4jlogger.info("Clicked : Add to cart");
 
@@ -36,5 +39,10 @@ public class TC_12_VerifyAddToCart extends BaseTestClass {
 			log4jlogger.warn("Msg absent : Added to Cart");
 			Assert.assertTrue(false);
 		}
+
+		driver.navigate().refresh();
+
+		int afterAdding = homePage.getItemsInCartCount();
+		log4jlogger.info("Count of Cart items : After Adding : " + afterAdding);
 	}
 }

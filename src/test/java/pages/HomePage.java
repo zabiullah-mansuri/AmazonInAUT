@@ -37,6 +37,9 @@ public class HomePage {
 	@FindBy(xpath = "//div[@id='suggestions']/div[@class='s-suggestion']")
 	List<WebElement> suggestionItems;
 
+	@FindBy(id = "nav-cart-count")
+	WebElement cartCount;
+
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -66,16 +69,16 @@ public class HomePage {
 	public List<String> searchForThisKeyword(char input) {
 
 		txtSearch.sendKeys(Character.toString(input));
-		
+
 		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(suggestionsBox));
-		
+
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
+
 		suggestions = new ArrayList<String>();
 		for (WebElement suggestion : suggestionItems) {
 			suggestions.add(suggestion.getText());
@@ -86,5 +89,9 @@ public class HomePage {
 	public void searchForThisProduct(String input) {
 		txtSearch.sendKeys(input);
 		txtSearch.submit();
+	}
+
+	public int getItemsInCartCount() {
+		return Integer.parseInt(cartCount.getText());
 	}
 }

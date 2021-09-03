@@ -2,12 +2,12 @@
 <testng-results ignored="11" total="12" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-02T16:25:33Z" name="Suite" finished-at="2021-09-02T16:25:57Z" duration-ms="24812">
+  <suite started-at="2021-09-03T01:50:42Z" name="Suite" finished-at="2021-09-03T01:51:09Z" duration-ms="27054">
     <groups>
     </groups>
-    <test started-at="2021-09-02T16:25:33Z" name="Test" finished-at="2021-09-02T16:25:57Z" duration-ms="24812">
+    <test started-at="2021-09-03T01:50:42Z" name="Test" finished-at="2021-09-03T01:51:09Z" duration-ms="27054">
       <class name="testcases.TC_12_VerifyAddToCart">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-02T16:25:33Z" name="setup" finished-at="2021-09-02T16:25:33Z" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-03T01:50:42Z" name="setup" finished-at="2021-09-03T01:50:42Z" duration-ms="76" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-02T16:25:33Z" name="beforeEachTest" finished-at="2021-09-02T16:25:41Z" duration-ms="8205" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-03T01:50:42Z" name="beforeEachTest" finished-at="2021-09-03T01:50:49Z" duration-ms="6704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-02T16:25:41Z" name="verifyAddToCart" finished-at="2021-09-02T16:25:56Z" duration-ms="14964" status="PASS">
+        <test-method signature="verifyAddToCart()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-03T01:50:49Z" name="verifyAddToCart" finished-at="2021-09-03T01:51:08Z" duration-ms="18706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-02T16:25:56Z" name="afterEachTest" finished-at="2021-09-02T16:25:57Z" duration-ms="1167" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-03T01:51:08Z" name="afterEachTest" finished-at="2021-09-03T01:51:09Z" duration-ms="1197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-02T16:25:57Z" name="tearDown" finished-at="2021-09-02T16:25:57Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_12_VerifyAddToCart@7674b62c]" started-at="2021-09-03T01:51:09Z" name="tearDown" finished-at="2021-09-03T01:51:09Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
