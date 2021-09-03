@@ -19,6 +19,7 @@
 			<class name="testcases.TC_10_SearchResults" />
 			<class name="testcases.TC_11_ResultsClickOpensInNewTab" />
 			<class name="testcases.TC_12_VerifyAddToCart" />
+			<class name="testcases.TC_13_VerifyDeleteFromCart" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

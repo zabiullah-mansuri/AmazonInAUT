@@ -6,9 +6,10 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.ProductPage;
 import pages.SearchResultsPage;
+import pages.ShoppingCartPage;
 
 public class TC_12_VerifyAddToCart extends BaseTestClass {
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void verifyAddToCart() {
 
 		HomePage homePage = new HomePage(driver);

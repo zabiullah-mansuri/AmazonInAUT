@@ -1,7 +1,9 @@
-2021-09-03 07:20:53,967 [main] INFO Amazon.in - AUT - Searched : samsung
-2021-09-03 07:20:55,295 [main] INFO Amazon.in - AUT - Clicked one result randomly
-2021-09-03 07:20:55,312 [main] INFO Amazon.in - AUT - Switched to Product's tab
-2021-09-03 07:21:00,866 [main] INFO Amazon.in - AUT - Count of Cart items : Before Adding : 0
-2021-09-03 07:21:01,355 [main] INFO Amazon.in - AUT - Clicked : Add to cart
-2021-09-03 07:21:04,457 [main] INFO Amazon.in - AUT - Msg present : Added to Cart
-2021-09-03 07:21:08,269 [main] INFO Amazon.in - AUT - Count of Cart items : After Adding : 1
+2021-09-03 21:25:26,259 [main] INFO Amazon.in - AUT - Searched : iPhone
+2021-09-03 21:25:27,188 [main] INFO Amazon.in - AUT - Clicked one result randomly
+2021-09-03 21:25:27,204 [main] INFO Amazon.in - AUT - Switched to Product's tab
+2021-09-03 21:25:31,058 [main] INFO Amazon.in - AUT - Count of Cart items : Before Add : 0
+2021-09-03 21:25:31,545 [main] INFO Amazon.in - AUT - Clicked : Add to cart
+2021-09-03 21:25:36,769 [main] INFO Amazon.in - AUT - Count of Cart items : After Add : 1
+2021-09-03 21:25:39,153 [main] INFO Amazon.in - AUT - Opened : Shopping Cart
+2021-09-03 21:25:39,411 [main] INFO Amazon.in - AUT - Item has been deleted from cart
+2021-09-03 21:25:39,470 [main] INFO Amazon.in - AUT - Count of Cart items : After Delete : 0

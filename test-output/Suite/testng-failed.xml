@@ -13,7 +13,7 @@
           <include name="beforeEachTest"/>
           <include name="tearDown"/>
           <include name="afterEachTest"/>
-          <include name="verifyAddToCart"/>
+          <include name="verifyDeleteFromCart"/>
         </methods>
       </class> <!-- testcases.TC_12_VerifyAddToCart -->
     </classes>

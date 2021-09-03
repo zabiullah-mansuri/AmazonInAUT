@@ -37,6 +37,9 @@ public class HomePage {
 	@FindBy(xpath = "//div[@id='suggestions']/div[@class='s-suggestion']")
 	List<WebElement> suggestionItems;
 
+	@FindBy(id = "nav-cart")
+	WebElement shoppingCart;
+
 	@FindBy(id = "nav-cart-count")
 	WebElement cartCount;
 
@@ -89,6 +92,10 @@ public class HomePage {
 	public void searchForThisProduct(String input) {
 		txtSearch.sendKeys(input);
 		txtSearch.submit();
+	}
+
+	public void goToShoppingCart() {
+		shoppingCart.click();
 	}
 
 	public int getItemsInCartCount() {
