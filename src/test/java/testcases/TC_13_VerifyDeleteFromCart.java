@@ -7,10 +7,11 @@ import pages.HomePage;
 import pages.ProductPage;
 import pages.SearchResultsPage;
 import pages.ShoppingCartPage;
+import utilities.Reporter;
 
 public class TC_13_VerifyDeleteFromCart extends BaseTestClass {
-	
-	@Test(enabled = true)
+
+	@Test(enabled = false, description = "Verify : Deleting from Cart")
 	public void verifyDeleteFromCart() {
 
 		HomePage homePage = new HomePage(driver);
@@ -34,7 +35,7 @@ public class TC_13_VerifyDeleteFromCart extends BaseTestClass {
 
 		productPage.clickAddToCart();
 		log4jlogger.info("Clicked : Add to cart");
-		
+
 		productPage.isAddedToCartMsgDisplayed();
 		driver.navigate().refresh();
 

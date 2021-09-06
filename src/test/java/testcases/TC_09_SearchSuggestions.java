@@ -6,10 +6,11 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
+import utilities.Reporter;
 
 public class TC_09_SearchSuggestions extends BaseTestClass {
 
-	@Test(enabled = false)
+	@Test(enabled = false, description = "Verify : Seach suggestions characters by characters")
 	public void verifySearchSuggestionsCharByChar() {
 
 		HomePage homePage = new HomePage(driver);

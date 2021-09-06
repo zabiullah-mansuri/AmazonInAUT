@@ -21,9 +21,10 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class Reporter extends TestListenerAdapter {
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extent;
-	public ExtentTest logger;
+	public ExtentTest test;
 
 	public void onStart(ITestContext testContext) {
+
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd").format(new Date());// time stamp
 		String reportName = "Extent-Report-" + timeStamp + ".html";
 
@@ -31,8 +32,8 @@ public class Reporter extends TestListenerAdapter {
 		htmlReporter.loadXMLConfig("./extent-config.xml");
 
 		extent = new ExtentReports();
-
 		extent.attachReporter(htmlReporter);
+
 		extent.setSystemInfo("Hostname", "localhost");
 		extent.setSystemInfo("Environemnt", "Live - Production");
 		extent.setSystemInfo("QA Engineer", "Zabiullah");
@@ -43,22 +44,22 @@ public class Reporter extends TestListenerAdapter {
 		htmlReporter.config().setTheme(Theme.DARK);
 	}
 
+	public void onTestStart(ITestResult tr) {
+		test = extent.createTest(tr.getMethod().getDescription());
+	}
+
 	public void onTestSuccess(ITestResult tr) {
-		logger = extent.createTest(tr.getName());
-		logger.log(Status.PASS, MarkupHelper.createLabel(tr.getName(), ExtentColor.GREEN));
+		test.log(Status.PASS, MarkupHelper.createLabel(tr.getName(), ExtentColor.GREEN));
 	}
 
 	public void onTestFailure(ITestResult tr) {
-		logger = extent.createTest(tr.getName());
-		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
+		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 
 		String screenshotPath = System.getProperty("user.dir") + "/screenshots/" + tr.getName() + ".png";
-		
 		File f = new File(screenshotPath);
-		
 		if (f.exists()) {
 			try {
-				logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
+				test.fail("Screenshot is below:" + test.addScreenCaptureFromPath(screenshotPath));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -66,8 +67,7 @@ public class Reporter extends TestListenerAdapter {
 	}
 
 	public void onTestSkipped(ITestResult tr) {
-		logger = extent.createTest(tr.getName());
-		logger.log(Status.SKIP, MarkupHelper.createLabel(tr.getName(), ExtentColor.ORANGE));
+		test.log(Status.SKIP, MarkupHelper.createLabel(tr.getName(), ExtentColor.ORANGE));
 	}
 
 	public void onFinish(ITestContext testContext) {

@@ -7,7 +7,7 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_12_VerifyAddToCart">
+      <class name="testcases.TC_13_VerifyDeleteFromCart">
         <methods>
           <include name="setup"/>
           <include name="beforeEachTest"/>
@@ -15,7 +15,7 @@
           <include name="afterEachTest"/>
           <include name="verifyDeleteFromCart"/>
         </methods>
-      </class> <!-- testcases.TC_12_VerifyAddToCart -->
+      </class> <!-- testcases.TC_13_VerifyDeleteFromCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
