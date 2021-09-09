@@ -11,7 +11,7 @@ import pages.SignInPage;
 
 public class TC_01_LoginValid extends BaseTestClass {
 
-	@Test(enabled = false)
+	@Test(enabled = false, description = "Verify Login with Valid ID")
 	public void loginValid() {
 		
 		HomePage homePage = new HomePage(driver);

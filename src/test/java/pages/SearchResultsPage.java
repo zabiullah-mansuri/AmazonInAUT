@@ -11,23 +11,21 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SearchResultsPage {
-	WebDriver driver;
-	WebDriverWait wait;
-	List<String> results;
+public class SearchResultsPage extends BasePage {
 
 	@FindBy(xpath = "//*[@id='search']//div[contains(@class,'s-result-item')]//a[@class='a-link-normal a-text-normal']")
 	List<WebElement> resultItems;
 
 	public SearchResultsPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 
 	public List<String> getAllResults() {
-		wait = new WebDriverWait(driver, 10);
+
 		wait.until(ExpectedConditions.visibilityOfAllElements(resultItems));
-		results = new ArrayList<String>();
+
+		List<String> results = new ArrayList<String>();
 		for (WebElement item : resultItems) {
 			results.add(item.getText());
 		}
@@ -35,7 +33,7 @@ public class SearchResultsPage {
 	}
 
 	public void clickOnOneResultRandomly() {
-		wait = new WebDriverWait(driver, 10);
+
 		wait.until(ExpectedConditions.visibilityOfAllElements(resultItems));
 		resultItems.get(new Random().nextInt(resultItems.size())).click();
 	}

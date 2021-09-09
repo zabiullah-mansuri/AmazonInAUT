@@ -20,6 +20,8 @@
 			<class name="testcases.TC_11_ResultsClickOpensInNewTab" />
 			<class name="testcases.TC_12_VerifyAddToCart" />
 			<class name="testcases.TC_13_VerifyDeleteFromCart" />
+			<class name="testcases.TC_14_VerifyAddToWishList" />
+			<class name="testcases.TC_15_VerifyDailyDealsCardDisplay" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

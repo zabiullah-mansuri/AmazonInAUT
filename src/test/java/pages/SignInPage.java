@@ -6,8 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SignInPage {
-	WebDriver driver;
+public class SignInPage extends BasePage {
 
 	@FindBy(id = "ap_email")
 	WebElement txtUserId;
@@ -37,7 +36,7 @@ public class SignInPage {
 	WebElement chkRememberMe;
 
 	public SignInPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 

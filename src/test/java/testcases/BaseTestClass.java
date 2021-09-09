@@ -49,7 +49,6 @@ public class BaseTestClass {
 
 		log4jlogger = Logger.getLogger("Amazon.in - AUT");
 		PropertyConfigurator.configure("log4j.properties");
-
 	}
 
 	@BeforeMethod
@@ -65,8 +64,8 @@ public class BaseTestClass {
 			driver = new EdgeDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get(appUrl);
 		driver.manage().window().maximize();
+		driver.get(appUrl);
 	}
 
 	@AfterMethod

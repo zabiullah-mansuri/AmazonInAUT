@@ -9,23 +9,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ShoppingCartPage extends BasePage {
+public class WishListPage extends BasePage {
 
-	@FindBy(xpath = "//*[contains(@id,'sc-item-')]//span[@class='a-truncate-cut']")
+	@FindBy(xpath = "//a[contains(@id,'itemName_')]")
 	List<WebElement> itemNames;
 
-	@FindBy(xpath = "//*[contains(@id,'sc-item-')]//input[@value='Delete']")
+	@FindBy(xpath = "//span[contains(@id,'delete-button-']//input")
 	List<WebElement> deleteLinks;
 
-	public ShoppingCartPage(WebDriver driver) {
+	public WishListPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
-
-	public List<String> getCartItemNames() {
-		
-		System.out.println("No. of items in cart : " + itemNames.size());
-		
+	
+	public List<String> getWishListItemNames() {
+		System.out.println("No. of items in Wish List : " + itemNames.size());
 		List<String> names = new ArrayList<String>();
 		itemNames.forEach(item -> names.add(item.getText()));
 		return names;

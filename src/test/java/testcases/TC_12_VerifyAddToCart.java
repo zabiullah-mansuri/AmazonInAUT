@@ -9,7 +9,7 @@ import pages.SearchResultsPage;
 import pages.ShoppingCartPage;
 
 public class TC_12_VerifyAddToCart extends BaseTestClass {
-	@Test(enabled = false)
+	@Test(enabled = false, description = "Verify Add to Cart")
 	public void verifyAddToCart() {
 
 		HomePage homePage = new HomePage(driver);

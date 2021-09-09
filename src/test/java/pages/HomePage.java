@@ -1,7 +1,9 @@
 package pages;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,10 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage {
-	WebDriver driver;
-	WebDriverWait wait;
-	List<String> suggestions;
+public class HomePage extends BasePage {
 
 	@FindBy(id = "nav-link-accountList")
 	WebElement accountAndLists;
@@ -43,8 +42,14 @@ public class HomePage {
 	@FindBy(id = "nav-cart-count")
 	WebElement cartCount;
 
+	@FindBy(id = "WLHUC_viewlist")
+	WebElement btnViewWL;
+
+	@FindBy(xpath = "//div[@id='anonCarousel1']//img")
+	List<WebElement> carouselItemImages;
+
 	public HomePage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 
@@ -73,7 +78,6 @@ public class HomePage {
 
 		txtSearch.sendKeys(Character.toString(input));
 
-		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(suggestionsBox));
 
 		try {
@@ -82,7 +86,7 @@ public class HomePage {
 			e.printStackTrace();
 		}
 
-		suggestions = new ArrayList<String>();
+		List<String> suggestions = new ArrayList<String>();
 		for (WebElement suggestion : suggestionItems) {
 			suggestions.add(suggestion.getText());
 		}
@@ -100,5 +104,19 @@ public class HomePage {
 
 	public int getItemsInCartCount() {
 		return Integer.parseInt(cartCount.getText());
+	}
+
+	public void goToWishList() {
+		btnViewWL.click();
+	}
+
+	public Map<String, String> getCarouselItemNamesAndVisibility() {
+
+		Map<String, String> carouselItemNamesAndVisibility = new HashMap<String, String>();
+
+		carouselItemImages.forEach(item -> {
+			carouselItemNamesAndVisibility.put(item.getAttribute("alt"), item.getCssValue("visibility"));
+		});
+		return carouselItemNamesAndVisibility;
 	}
 }
