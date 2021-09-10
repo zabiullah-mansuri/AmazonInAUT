@@ -29,3 +29,30 @@
 2021-09-10 15:02:30,767 [main] INFO Amazon.in - AUT - Now visible : Recharge or Pay bills
 2021-09-10 15:02:30,867 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
 2021-09-10 15:02:32,428 [main] INFO Amazon.in - AUT - Now visible : Spring summer
+2021-09-10 21:35:16,154 [main] INFO Amazon.in - AUT - Previous button on Carousel : Visible
+2021-09-10 21:35:16,254 [main] INFO Amazon.in - AUT - Next button on Carousel : Visible
+2021-09-10 21:35:16,596 [main] INFO Amazon.in - AUT - Names of items in Carousel :[Spring summer, Electronics, SmartShoppingDays, Fitness fest, One Plus Pre Pre Tease, Smart TVs]
+2021-09-10 21:35:16,967 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-10 21:35:18,581 [main] INFO Amazon.in - AUT - Now visible : One Plus Pre Pre Tease
+2021-09-10 21:35:18,853 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-10 21:35:20,421 [main] INFO Amazon.in - AUT - Now visible : SmartShoppingDays
+2021-09-10 21:35:20,550 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-10 21:35:22,138 [main] INFO Amazon.in - AUT - Now visible : Spring summer
+2021-09-10 21:35:22,257 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-10 21:35:23,823 [main] INFO Amazon.in - AUT - Now visible : Fitness fest
+2021-09-10 21:35:23,990 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-10 21:35:25,556 [main] INFO Amazon.in - AUT - Now visible : Electronics
+2021-09-10 21:35:25,656 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-10 21:35:27,218 [main] INFO Amazon.in - AUT - Now visible : One Plus Pre Pre Tease
+2021-09-10 21:35:27,370 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-10 21:35:28,960 [main] INFO Amazon.in - AUT - Now visible : Electronics
+2021-09-10 21:35:29,269 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-10 21:35:30,848 [main] INFO Amazon.in - AUT - Now visible : Fitness fest
+2021-09-10 21:35:30,975 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-10 21:35:32,530 [main] INFO Amazon.in - AUT - Now visible : Spring summer
+2021-09-10 21:35:32,714 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-10 21:35:34,284 [main] INFO Amazon.in - AUT - Now visible : SmartShoppingDays
+2021-09-10 21:35:34,405 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-10 21:35:35,965 [main] INFO Amazon.in - AUT - Now visible : One Plus Pre Pre Tease
+2021-09-10 21:35:36,071 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-10 21:35:37,631 [main] INFO Amazon.in - AUT - Now visible : Spring summer
