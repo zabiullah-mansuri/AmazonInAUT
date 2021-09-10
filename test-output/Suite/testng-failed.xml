@@ -5,17 +5,17 @@
     <listener class-name="utilities.Reporter"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_14_VerifyAddToWishList">
+      <class name="testcases.TC_16_DealsPrevNextButtons">
         <methods>
+          <include name="dealsPrevNextButtonsWorking"/>
           <include name="setup"/>
           <include name="beforeEachTest"/>
           <include name="tearDown"/>
-          <include name="verifyAddToWishList"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_14_VerifyAddToWishList -->
+      </class> <!-- testcases.TC_16_DealsPrevNextButtons -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

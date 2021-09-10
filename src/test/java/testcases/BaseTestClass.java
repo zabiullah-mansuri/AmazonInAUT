@@ -63,8 +63,8 @@ public class BaseTestClass {
 			System.setProperty("webdriver.edge.driver", readConfig.getEdgeeDriverPath());
 			driver = new EdgeDriver();
 		}
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(appUrl);
 	}
 
@@ -78,9 +78,9 @@ public class BaseTestClass {
 
 	}
 
-	boolean areMostOfOutputsMatchingInput(String input, List<String> items) {
+	boolean areMostOfOutputsMatchingInput(String input, List<String> outputs) {
 		int matchedCount = 0, unmatchedCount = 0;
-		for (String item : items) {
+		for (String item : outputs) {
 			if (StringUtils.containsIgnoreCase(item, input)) {
 				matchedCount++;
 			} else {

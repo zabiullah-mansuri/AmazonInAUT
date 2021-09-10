@@ -1,6 +1,5 @@
 package testcases;
 
-import org.apache.commons.logging.impl.Log4JLogger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +10,7 @@ public class TC_15_VerifyDailyDealsCardDisplay extends BaseTestClass {
 	String string;
 	boolean flag;
 
-	@Test(enabled = true, description = "Verifying : Daily deals cards are displaying on Home page")
+	@Test(enabled = false, description = "Verifying : Daily deals cards are displaying on Home page")
 	public void VerifyDailyDealsCardDisplay() {
 
 		HomePage homePage = new HomePage(driver);

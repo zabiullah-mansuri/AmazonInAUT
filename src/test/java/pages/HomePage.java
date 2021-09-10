@@ -48,6 +48,12 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//div[@id='anonCarousel1']//img")
 	List<WebElement> carouselItemImages;
 
+	@FindBy(xpath = "//a[@class='a-carousel-goto-prevpage']")
+	WebElement btnPrevCarousel;
+
+	@FindBy(xpath = "//a[@class='a-carousel-goto-nextpage']")
+	WebElement btnNextCarousel;
+
 	public HomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
@@ -118,5 +124,31 @@ public class HomePage extends BasePage {
 			carouselItemNamesAndVisibility.put(item.getAttribute("alt"), item.getCssValue("visibility"));
 		});
 		return carouselItemNamesAndVisibility;
+	}
+
+	public String getVisibleCarouselItemName() {
+
+		for (WebElement item : carouselItemImages) {
+			if (item.getCssValue("visibility").equals("visible")) {
+				return item.getAttribute("alt");
+			}
+		}
+		return null;
+	}
+
+	public boolean isCarouselPrevButtonDisplayed() {
+		return btnPrevCarousel.isDisplayed();
+	}
+
+	public boolean isCarouselNextButtonDisplayed() {
+		return btnNextCarousel.isDisplayed();
+	}
+
+	public void clickPreviousCarousel() {
+		btnPrevCarousel.click();
+	}
+
+	public void clickNextCarousel() {
+		btnNextCarousel.click();
 	}
 }

@@ -22,6 +22,7 @@
 			<class name="testcases.TC_13_VerifyDeleteFromCart" />
 			<class name="testcases.TC_14_VerifyAddToWishList" />
 			<class name="testcases.TC_15_VerifyDailyDealsCardDisplay" />
+			<class name="testcases.TC_16_DealsPrevNextButtons" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

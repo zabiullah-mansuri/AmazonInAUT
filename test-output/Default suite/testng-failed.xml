@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC_01_Login">
+      <class name="testcases.TC_16_DealsPrevNextButtons">
         <methods>
+          <include name="dealsPrevNextButtonsWorking"/>
           <include name="setup"/>
+          <include name="beforeEachTest"/>
           <include name="tearDown"/>
-          <include name="beforeMethod"/>
-          <include name="loginInvalid"/>
+          <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_01_Login -->
+      </class> <!-- testcases.TC_16_DealsPrevNextButtons -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
