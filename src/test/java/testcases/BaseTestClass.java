@@ -18,6 +18,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -56,12 +57,19 @@ public class BaseTestClass {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 			driver = new ChromeDriver();
+			log4jlogger.info("Browser : Google Chrome");
+		} else if (browser.equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver", readConfig.getFireFoxDriverPath());
+			driver = new FirefoxDriver();
+			log4jlogger.info("Browser : Mozilla Firefox");
 		} else if (browser.equals("ie")) {
 			System.setProperty("webdriver.ie.driver", readConfig.getIEDriverPath());
 			driver = new InternetExplorerDriver();
+			log4jlogger.info("Browser : Internet Explorer");
 		} else if (browser.equals("edge")) {
-			System.setProperty("webdriver.edge.driver", readConfig.getEdgeeDriverPath());
+			System.setProperty("webdriver.edge.driver", readConfig.getEdgeDriverPath());
 			driver = new EdgeDriver();
+			log4jlogger.info("Browser : Microsoft Edge");
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

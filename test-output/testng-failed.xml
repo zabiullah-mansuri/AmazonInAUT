@@ -5,7 +5,7 @@
     <listener class-name="utilities.Reporter"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="testcases.TC_16_DealsPrevNextButtons">
         <methods>

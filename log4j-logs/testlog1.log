@@ -1,58 +1,36 @@
-2021-09-10 15:02:07,954 [main] INFO Amazon.in - AUT - Previous button on Carousel : Visible
-2021-09-10 15:02:08,047 [main] INFO Amazon.in - AUT - Next button on Carousel : Visible
-2021-09-10 15:02:08,343 [main] INFO Amazon.in - AUT - Names of items in Carousel :[Spring summer, Electronics, Fitness fest, miniTV-Desktop-Hero-EK_Jhalak, Smart TVs, Super Sale, Recharge or Pay bills]
-2021-09-10 15:02:08,746 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 15:02:10,349 [main] INFO Amazon.in - AUT - Now visible : Recharge or Pay bills
-2021-09-10 15:02:10,504 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 15:02:12,081 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-10 15:02:12,224 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 15:02:13,908 [main] INFO Amazon.in - AUT - Now visible : miniTV-Desktop-Hero-EK_Jhalak
-2021-09-10 15:02:14,072 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 15:02:15,634 [main] INFO Amazon.in - AUT - Now visible : Fitness fest
-2021-09-10 15:02:15,737 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 15:02:17,302 [main] INFO Amazon.in - AUT - Now visible : Electronics
-2021-09-10 15:02:17,410 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 15:02:18,966 [main] INFO Amazon.in - AUT - Now visible : Super Sale
-2021-09-10 15:02:19,078 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 15:02:20,639 [main] INFO Amazon.in - AUT - Now visible : Smart TVs
-2021-09-10 15:02:20,780 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 15:02:22,345 [main] INFO Amazon.in - AUT - Now visible : Super Sale
-2021-09-10 15:02:22,490 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 15:02:24,055 [main] INFO Amazon.in - AUT - Now visible : Electronics
-2021-09-10 15:02:24,166 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 15:02:25,732 [main] INFO Amazon.in - AUT - Now visible : Fitness fest
-2021-09-10 15:02:25,827 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 15:02:27,412 [main] INFO Amazon.in - AUT - Now visible : miniTV-Desktop-Hero-EK_Jhalak
-2021-09-10 15:02:27,501 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 15:02:29,069 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-10 15:02:29,207 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 15:02:30,767 [main] INFO Amazon.in - AUT - Now visible : Recharge or Pay bills
-2021-09-10 15:02:30,867 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 15:02:32,428 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-10 21:35:16,154 [main] INFO Amazon.in - AUT - Previous button on Carousel : Visible
-2021-09-10 21:35:16,254 [main] INFO Amazon.in - AUT - Next button on Carousel : Visible
-2021-09-10 21:35:16,596 [main] INFO Amazon.in - AUT - Names of items in Carousel :[Spring summer, Electronics, SmartShoppingDays, Fitness fest, One Plus Pre Pre Tease, Smart TVs]
-2021-09-10 21:35:16,967 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 21:35:18,581 [main] INFO Amazon.in - AUT - Now visible : One Plus Pre Pre Tease
-2021-09-10 21:35:18,853 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 21:35:20,421 [main] INFO Amazon.in - AUT - Now visible : SmartShoppingDays
-2021-09-10 21:35:20,550 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 21:35:22,138 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-10 21:35:22,257 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 21:35:23,823 [main] INFO Amazon.in - AUT - Now visible : Fitness fest
-2021-09-10 21:35:23,990 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 21:35:25,556 [main] INFO Amazon.in - AUT - Now visible : Electronics
-2021-09-10 21:35:25,656 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-10 21:35:27,218 [main] INFO Amazon.in - AUT - Now visible : One Plus Pre Pre Tease
-2021-09-10 21:35:27,370 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 21:35:28,960 [main] INFO Amazon.in - AUT - Now visible : Electronics
-2021-09-10 21:35:29,269 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 21:35:30,848 [main] INFO Amazon.in - AUT - Now visible : Fitness fest
-2021-09-10 21:35:30,975 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 21:35:32,530 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-10 21:35:32,714 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 21:35:34,284 [main] INFO Amazon.in - AUT - Now visible : SmartShoppingDays
-2021-09-10 21:35:34,405 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 21:35:35,965 [main] INFO Amazon.in - AUT - Now visible : One Plus Pre Pre Tease
-2021-09-10 21:35:36,071 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-10 21:35:37,631 [main] INFO Amazon.in - AUT - Now visible : Spring summer
+2021-09-11 09:02:49,489 [main] INFO Amazon.in - AUT - Browser : Google Chrome
+2021-09-11 09:02:53,991 [main] INFO Amazon.in - AUT - Previous button on Carousel : Visible
+2021-09-11 09:02:54,061 [main] INFO Amazon.in - AUT - Next button on Carousel : Visible
+2021-09-11 09:02:54,307 [main] INFO Amazon.in - AUT - Names of items in Carousel :[Mobiles, Spring summer, Acc Fest, Rennovate your bathroom, Pest control,  Alexa Smart home, Recharge or Pay bills, Join prime now]
+2021-09-11 09:02:54,659 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:02:56,236 [main] INFO Amazon.in - AUT - Now visible : Recharge or Pay bills
+2021-09-11 09:02:56,442 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:02:58,027 [main] INFO Amazon.in - AUT - Now visible : Spring summer
+2021-09-11 09:02:58,167 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:02:59,747 [main] INFO Amazon.in - AUT - Now visible : Join prime now
+2021-09-11 09:02:59,839 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:03:01,449 [main] INFO Amazon.in - AUT - Now visible : Pest control
+2021-09-11 09:03:01,645 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:03:03,206 [main] INFO Amazon.in - AUT - Now visible : Acc Fest
+2021-09-11 09:03:03,302 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:03:04,864 [main] INFO Amazon.in - AUT - Now visible : Mobiles
+2021-09-11 09:03:04,956 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:03:06,518 [main] INFO Amazon.in - AUT - Now visible : Rennovate your bathroom
+2021-09-11 09:03:06,685 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
+2021-09-11 09:03:08,247 [main] INFO Amazon.in - AUT - Now visible :  Alexa Smart home
+2021-09-11 09:03:08,377 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:09,935 [main] INFO Amazon.in - AUT - Now visible : Rennovate your bathroom
+2021-09-11 09:03:10,023 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:11,581 [main] INFO Amazon.in - AUT - Now visible : Mobiles
+2021-09-11 09:03:11,675 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:13,235 [main] INFO Amazon.in - AUT - Now visible : Acc Fest
+2021-09-11 09:03:13,340 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:14,905 [main] INFO Amazon.in - AUT - Now visible : Pest control
+2021-09-11 09:03:15,005 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:16,573 [main] INFO Amazon.in - AUT - Now visible : Join prime now
+2021-09-11 09:03:16,685 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:18,246 [main] INFO Amazon.in - AUT - Now visible : Spring summer
+2021-09-11 09:03:18,331 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:19,891 [main] INFO Amazon.in - AUT - Now visible : Recharge or Pay bills
+2021-09-11 09:03:19,987 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
+2021-09-11 09:03:21,546 [main] INFO Amazon.in - AUT - Now visible :  Alexa Smart home
