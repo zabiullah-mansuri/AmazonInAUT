@@ -55,6 +55,12 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//a[@class='a-carousel-goto-nextpage']")
 	WebElement btnNextCarousel;
 
+	@FindBy(id = "nav-hamburger-menu")
+	WebElement hMenu;
+
+	@FindBy(xpath = "//div[@id='hmenu-content']//a[text()='Customer Service']")
+	WebElement hMenuCustomerService;
+
 	public HomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
@@ -151,5 +157,14 @@ public class HomePage extends BasePage {
 
 	public void clickNextCarousel() {
 		btnNextCarousel.click();
+	}
+
+	public void clickHMenu() {
+		hMenu.click();
+	}
+
+	public void clickHMenuCustomerService() {
+		clickHMenu();
+		hMenuCustomerService.click();
 	}
 }

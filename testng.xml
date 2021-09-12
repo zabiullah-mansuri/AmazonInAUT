@@ -23,6 +23,7 @@
 			<class name="testcases.TC_14_VerifyAddToWishList" />
 			<class name="testcases.TC_15_VerifyDailyDealsCardDisplay" />
 			<class name="testcases.TC_16_DealsPrevNextButtons" />
+			<class name="testcases.TC_CustomerServicePageDesiredOptions" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

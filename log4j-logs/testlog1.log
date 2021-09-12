@@ -1,36 +1,27 @@
-2021-09-12 19:08:57,464 [main] INFO Amazon.in - AUT - Browser : Google Chrome
-2021-09-12 19:09:02,894 [main] INFO Amazon.in - AUT - Previous button on Carousel : Visible
-2021-09-12 19:09:03,059 [main] INFO Amazon.in - AUT - Next button on Carousel : Visible
-2021-09-12 19:09:03,310 [main] INFO Amazon.in - AUT - Names of items in Carousel :[Acc Fest, Super Sale, Make your home smart, Spring summer, Recharge or Pay bills, Spring summer, Join prime now, IPL]
-2021-09-12 19:09:04,134 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:05,781 [main] INFO Amazon.in - AUT - Now visible : Recharge or Pay bills
-2021-09-12 19:09:05,986 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:07,620 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-12 19:09:07,875 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:09,472 [main] INFO Amazon.in - AUT - Now visible : Join prime now
-2021-09-12 19:09:09,578 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:11,187 [main] INFO Amazon.in - AUT - Now visible : IPL
-2021-09-12 19:09:11,318 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:12,913 [main] INFO Amazon.in - AUT - Now visible : Acc Fest
-2021-09-12 19:09:13,036 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:14,650 [main] INFO Amazon.in - AUT - Now visible : Super Sale
-2021-09-12 19:09:14,775 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:16,376 [main] INFO Amazon.in - AUT - Now visible : Make your home smart
-2021-09-12 19:09:16,465 [main] INFO Amazon.in - AUT - Clicked : Next button on Carousel
-2021-09-12 19:09:18,061 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-12 19:09:18,162 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:19,755 [main] INFO Amazon.in - AUT - Now visible : Make your home smart
-2021-09-12 19:09:19,844 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:21,467 [main] INFO Amazon.in - AUT - Now visible : Super Sale
-2021-09-12 19:09:21,575 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:23,172 [main] INFO Amazon.in - AUT - Now visible : Acc Fest
-2021-09-12 19:09:23,260 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:24,852 [main] INFO Amazon.in - AUT - Now visible : IPL
-2021-09-12 19:09:24,945 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:26,539 [main] INFO Amazon.in - AUT - Now visible : Join prime now
-2021-09-12 19:09:26,625 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:28,252 [main] INFO Amazon.in - AUT - Now visible : Spring summer
-2021-09-12 19:09:28,438 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:30,031 [main] INFO Amazon.in - AUT - Now visible : Recharge or Pay bills
-2021-09-12 19:09:30,144 [main] INFO Amazon.in - AUT - Clicked : Previous button on Carousel
-2021-09-12 19:09:31,798 [main] INFO Amazon.in - AUT - Now visible : Spring summer
+2021-09-12 22:25:57,996 [main] INFO Amazon.in - AUT - Browser : Google Chrome
+2021-09-12 22:26:05,093 [main] INFO Amazon.in - AUT - Navigated to : Help page
+2021-09-12 22:26:06,037 [main] INFO Amazon.in - AUT - Self Service cards are visible.
+2021-09-12 22:26:06,038 [main] INFO Amazon.in - AUT - Options available on Help page are :
+2021-09-12 22:26:07,232 [main] INFO Amazon.in - AUT - Your Orders
+2021-09-12 22:26:07,233 [main] INFO Amazon.in - AUT -         Track packages
+2021-09-12 22:26:07,234 [main] INFO Amazon.in - AUT -         Edit or cancel orders
+2021-09-12 22:26:07,234 [main] INFO Amazon.in - AUT - Returns & Refunds
+2021-09-12 22:26:07,235 [main] INFO Amazon.in - AUT -         Return or replace items
+2021-09-12 22:26:07,236 [main] INFO Amazon.in - AUT -         Print return mailing labels
+2021-09-12 22:26:07,237 [main] INFO Amazon.in - AUT - Manage Addresses
+2021-09-12 22:26:07,238 [main] INFO Amazon.in - AUT -         Update your addresses
+2021-09-12 22:26:07,238 [main] INFO Amazon.in - AUT -         Add or edit address details
+2021-09-12 22:26:07,238 [main] INFO Amazon.in - AUT - Manage Prime
+2021-09-12 22:26:07,239 [main] INFO Amazon.in - AUT -         View your benefits
+2021-09-12 22:26:07,239 [main] INFO Amazon.in - AUT -         Membership details
+2021-09-12 22:26:07,241 [main] INFO Amazon.in - AUT - Payment Settings
+2021-09-12 22:26:07,241 [main] INFO Amazon.in - AUT -         Add or edit payment methods
+2021-09-12 22:26:07,242 [main] INFO Amazon.in - AUT -         Edit expired debit, credit card
+2021-09-12 22:26:07,242 [main] INFO Amazon.in - AUT - Account Settings
+2021-09-12 22:26:07,242 [main] INFO Amazon.in - AUT -         Change your email, password
+2021-09-12 22:26:07,243 [main] INFO Amazon.in - AUT -         Update login information
+2021-09-12 22:26:07,243 [main] INFO Amazon.in - AUT - COVID-19 and Amazon
+2021-09-12 22:26:07,244 [main] INFO Amazon.in - AUT -         FAQs about the impact on ordering
+2021-09-12 22:26:07,244 [main] INFO Amazon.in - AUT - Digital and Device Support
+2021-09-12 22:26:07,245 [main] INFO Amazon.in - AUT -         Find device help & support
+2021-09-12 22:26:07,245 [main] INFO Amazon.in - AUT -         Troubleshoot device issues

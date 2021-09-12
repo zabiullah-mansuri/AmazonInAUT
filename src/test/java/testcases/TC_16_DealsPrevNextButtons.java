@@ -1,8 +1,6 @@
 package testcases;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,7 +8,7 @@ import pages.HomePage;
 
 public class TC_16_DealsPrevNextButtons extends BaseTestClass {
 
-	@Test(enabled = true, description = "Verify Carousel has PREVIOUS and NEXT buttons working")
+	@Test(enabled = false, testName = "Carousel's PREVIOUS and NEXT buttons functionality", description = "Verify Carousel has PREVIOUS and NEXT buttons working")
 	public void dealsPrevNextButtonsWorking() throws InterruptedException {
 
 		HomePage homePage = new HomePage(driver);

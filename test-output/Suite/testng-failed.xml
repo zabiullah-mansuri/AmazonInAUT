@@ -7,15 +7,15 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_16_DealsPrevNextButtons">
+      <class name="testcases.TC_CustomerServicePageDesiredOptions">
         <methods>
-          <include name="dealsPrevNextButtonsWorking"/>
           <include name="setup"/>
+          <include name="customerServicePageDesiredOptions"/>
           <include name="beforeEachTest"/>
           <include name="tearDown"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_16_DealsPrevNextButtons -->
+      </class> <!-- testcases.TC_CustomerServicePageDesiredOptions -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
