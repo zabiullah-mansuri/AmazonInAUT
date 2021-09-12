@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -126,14 +127,14 @@ public class HomePage extends BasePage {
 		return carouselItemNamesAndVisibility;
 	}
 
+	public List<String> getCarouselItemNames() {
+		return carouselItemImages.stream().map(image -> image.getAttribute("alt")).collect(Collectors.toList());
+	}
+
 	public String getVisibleCarouselItemName() {
 
-		for (WebElement item : carouselItemImages) {
-			if (item.getCssValue("visibility").equals("visible")) {
-				return item.getAttribute("alt");
-			}
-		}
-		return null;
+		return carouselItemImages.stream().filter(image -> image.getCssValue("visibility").equals("visible"))
+				.collect(Collectors.toList()).get(0).getAttribute("alt");
 	}
 
 	public boolean isCarouselPrevButtonDisplayed() {

@@ -2,12 +2,12 @@
 <testng-results ignored="15" total="16" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-11T03:32:45Z" name="Suite" finished-at="2021-09-11T03:33:23Z" duration-ms="37222">
+  <suite started-at="2021-09-12T13:38:53Z" name="Suite" finished-at="2021-09-12T13:39:33Z" duration-ms="39887">
     <groups>
     </groups>
-    <test started-at="2021-09-11T03:32:45Z" name="Test" finished-at="2021-09-11T03:33:23Z" duration-ms="37222">
+    <test started-at="2021-09-12T13:38:53Z" name="Test" finished-at="2021-09-12T13:39:33Z" duration-ms="39887">
       <class name="testcases.TC_16_DealsPrevNextButtons">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-11T03:32:46Z" name="setup" finished-at="2021-09-11T03:32:46Z" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-12T13:38:54Z" name="setup" finished-at="2021-09-12T13:38:54Z" duration-ms="106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-11T03:32:46Z" name="beforeEachTest" finished-at="2021-09-11T03:32:53Z" duration-ms="7139" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-12T13:38:54Z" name="beforeEachTest" finished-at="2021-09-12T13:39:01Z" duration-ms="7628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="dealsPrevNextButtonsWorking()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-11T03:32:53Z" name="dealsPrevNextButtonsWorking" description="Verify Carousel has PREVIOUS and NEXT buttons working" finished-at="2021-09-11T03:33:21Z" duration-ms="28091" status="PASS">
+        <test-method signature="dealsPrevNextButtonsWorking()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-12T13:39:01Z" name="dealsPrevNextButtonsWorking" description="Verify Carousel has PREVIOUS and NEXT buttons working" finished-at="2021-09-12T13:39:31Z" duration-ms="29904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dealsPrevNextButtonsWorking -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-11T03:33:21Z" name="afterEachTest" finished-at="2021-09-11T03:33:23Z" duration-ms="1545" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-12T13:39:31Z" name="afterEachTest" finished-at="2021-09-12T13:39:33Z" duration-ms="1750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-11T03:33:23Z" name="tearDown" finished-at="2021-09-11T03:33:23Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@f99f5e0]" started-at="2021-09-12T13:39:33Z" name="tearDown" finished-at="2021-09-12T13:39:33Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

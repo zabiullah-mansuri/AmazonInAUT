@@ -21,8 +21,7 @@ public class TC_16_DealsPrevNextButtons extends BaseTestClass {
 		Assert.assertTrue(homePage.isCarouselNextButtonDisplayed(), "Next button on Carousel : Visible");
 		log4jlogger.info("Next button on Carousel : Visible");
 
-		Map<String, String> carousels = homePage.getCarouselItemNamesAndVisibility();
-		List<String> carouselItemNames = new ArrayList<String>(carousels.keySet());
+		List<String> carouselItemNames = homePage.getCarouselItemNames();
 		log4jlogger.info("Names of items in Carousel :" + carouselItemNames.toString());
 
 		for (int i = 0; i < carouselItemNames.size(); i++) {
@@ -35,7 +34,7 @@ public class TC_16_DealsPrevNextButtons extends BaseTestClass {
 			Assert.assertNotNull(visibleCarouselName, "No visible carousel found");
 			log4jlogger.info("Now visible : " + visibleCarouselName);
 		}
-		
+
 		for (int i = 0; i < carouselItemNames.size(); i++) {
 
 			homePage.clickPreviousCarousel();
