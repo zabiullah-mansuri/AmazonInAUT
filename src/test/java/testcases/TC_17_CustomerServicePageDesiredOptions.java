@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 import pages.HelpPage;
 import pages.HomePage;
 
-public class TC_CustomerServicePageDesiredOptions extends BaseTestClass {
-	@Test(enabled = true, testName = "Customer Service page has desired options", description = "Verify all desired options present on Customer Service page.")
+public class TC_17_CustomerServicePageDesiredOptions extends BaseTestClass {
+	@Test(enabled = false, testName = "Customer Service page has desired options", description = "Verify all desired options present on Customer Service page.")
 	public void customerServicePageDesiredOptions() {
 
 		HomePage homePage = new HomePage(driver);

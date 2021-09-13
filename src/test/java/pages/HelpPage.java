@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -19,6 +20,18 @@ public class HelpPage extends BasePage {
 
 	@FindBy(xpath = "//div[@class='a-box self-service-rich-card']//ul")
 	List<WebElement> selfServicesCardsLines;
+
+	@FindBy(xpath = "//ul[@id='category-section']/li[12]/a")
+	WebElement topicCustomerService;
+
+	@FindBy(xpath = "(//button[@id='a-autoid-0-announce'])[1]")
+	WebElement btnContactUs;
+
+	@FindBy(id = "a-autoid-0")
+	WebElement btnChat;
+
+	@FindBy(id = "a-autoid-1")
+	WebElement btnCallMe;
 
 	public HelpPage(WebDriver driver) {
 		super(driver);
@@ -39,5 +52,16 @@ public class HelpPage extends BasePage {
 			cardsAll.add(cardsOne);
 		}
 		return cardsAll;
+	}
+
+	public void cliclContactUs() {
+		Actions action = new Actions(driver);
+		action.moveToElement(topicCustomerService);
+		action.moveToElement(btnContactUs);
+		action.click().build().perform();
+	}
+
+	public boolean areCharAndCallDisplayed() {
+		return btnChat.isDisplayed() && btnCallMe.isDisplayed();
 	}
 }

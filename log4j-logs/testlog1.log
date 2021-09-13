@@ -1,27 +1,6 @@
-2021-09-12 22:25:57,996 [main] INFO Amazon.in - AUT - Browser : Google Chrome
-2021-09-12 22:26:05,093 [main] INFO Amazon.in - AUT - Navigated to : Help page
-2021-09-12 22:26:06,037 [main] INFO Amazon.in - AUT - Self Service cards are visible.
-2021-09-12 22:26:06,038 [main] INFO Amazon.in - AUT - Options available on Help page are :
-2021-09-12 22:26:07,232 [main] INFO Amazon.in - AUT - Your Orders
-2021-09-12 22:26:07,233 [main] INFO Amazon.in - AUT -         Track packages
-2021-09-12 22:26:07,234 [main] INFO Amazon.in - AUT -         Edit or cancel orders
-2021-09-12 22:26:07,234 [main] INFO Amazon.in - AUT - Returns & Refunds
-2021-09-12 22:26:07,235 [main] INFO Amazon.in - AUT -         Return or replace items
-2021-09-12 22:26:07,236 [main] INFO Amazon.in - AUT -         Print return mailing labels
-2021-09-12 22:26:07,237 [main] INFO Amazon.in - AUT - Manage Addresses
-2021-09-12 22:26:07,238 [main] INFO Amazon.in - AUT -         Update your addresses
-2021-09-12 22:26:07,238 [main] INFO Amazon.in - AUT -         Add or edit address details
-2021-09-12 22:26:07,238 [main] INFO Amazon.in - AUT - Manage Prime
-2021-09-12 22:26:07,239 [main] INFO Amazon.in - AUT -         View your benefits
-2021-09-12 22:26:07,239 [main] INFO Amazon.in - AUT -         Membership details
-2021-09-12 22:26:07,241 [main] INFO Amazon.in - AUT - Payment Settings
-2021-09-12 22:26:07,241 [main] INFO Amazon.in - AUT -         Add or edit payment methods
-2021-09-12 22:26:07,242 [main] INFO Amazon.in - AUT -         Edit expired debit, credit card
-2021-09-12 22:26:07,242 [main] INFO Amazon.in - AUT - Account Settings
-2021-09-12 22:26:07,242 [main] INFO Amazon.in - AUT -         Change your email, password
-2021-09-12 22:26:07,243 [main] INFO Amazon.in - AUT -         Update login information
-2021-09-12 22:26:07,243 [main] INFO Amazon.in - AUT - COVID-19 and Amazon
-2021-09-12 22:26:07,244 [main] INFO Amazon.in - AUT -         FAQs about the impact on ordering
-2021-09-12 22:26:07,244 [main] INFO Amazon.in - AUT - Digital and Device Support
-2021-09-12 22:26:07,245 [main] INFO Amazon.in - AUT -         Find device help & support
-2021-09-12 22:26:07,245 [main] INFO Amazon.in - AUT -         Troubleshoot device issues
+2021-09-13 21:19:35,956 [main] INFO Amazon.in - AUT - Browser : Google Chrome
+2021-09-13 21:19:42,292 [main] INFO Amazon.in - AUT - Signing in...
+2021-09-13 21:19:52,763 [main] INFO Amazon.in - AUT - Navigated to : Help page
+2021-09-13 21:19:55,968 [main] INFO Amazon.in - AUT - Clicked button : Contact Us
+2021-09-13 21:19:56,006 [main] INFO Amazon.in - AUT - Switched to Contact Us tab
+2021-09-13 21:19:58,927 [main] INFO Amazon.in - AUT - Chat and Call Me options are displayed
