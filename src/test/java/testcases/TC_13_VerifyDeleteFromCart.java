@@ -11,7 +11,7 @@ import utilities.Reporter;
 
 public class TC_13_VerifyDeleteFromCart extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : Deleting from Cart")
+	@Test(enabled = false, description = "Verify : Delete from cart functionality")
 	public void verifyDeleteFromCart() {
 
 		HomePage homePage = new HomePage(driver);

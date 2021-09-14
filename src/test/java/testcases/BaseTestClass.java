@@ -2,6 +2,7 @@ package testcases;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.logging.impl.Log4JLogger;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -20,12 +21,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
 public class BaseTestClass {
 
-	WebDriver driver;
+	static WebDriver driver;
 	String browser;
 	String appUrl;
 	String name;
@@ -72,12 +74,12 @@ public class BaseTestClass {
 			log4jlogger.info("Browser : Microsoft Edge");
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 		driver.get(appUrl);
 	}
 
 	@AfterMethod
-	public void afterEachTest() {
+	public void afterEachTest(ITestResult tr) {
 		driver.quit();
 	}
 
@@ -100,15 +102,14 @@ public class BaseTestClass {
 		return matchedCount > unmatchedCount;
 	}
 
-	public void captureScreenshot(WebDriver driver, String testName) {
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
+	public static void captureScreenshot(String testName) {
+
+		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		File target = new File("./screenshots/" + testName + ".png");
 		try {
 			FileUtils.copyFile(source, target);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("Screenshot taken.");
 	}
 }

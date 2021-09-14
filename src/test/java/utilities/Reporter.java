@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
@@ -17,6 +20,8 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import testcases.BaseTestClass;
 
 public class Reporter extends TestListenerAdapter {
 	public ExtentHtmlReporter htmlReporter;
@@ -53,13 +58,18 @@ public class Reporter extends TestListenerAdapter {
 	}
 
 	public void onTestFailure(ITestResult tr) {
+		System.out.println("reporter : onTestFailure");
+
 		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 
+		BaseTestClass.captureScreenshot(tr.getName());
+
 		String screenshotPath = System.getProperty("user.dir") + "/screenshots/" + tr.getName() + ".png";
-		File f = new File(screenshotPath);
-		if (f.exists()) {
+		File file = new File(screenshotPath);
+		if (file.exists()) {
 			try {
-				test.fail("Screenshot is below:" + test.addScreenCaptureFromPath(screenshotPath));
+				test.info("Please find below screenshot...");
+				test.addScreenCaptureFromPath(screenshotPath);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

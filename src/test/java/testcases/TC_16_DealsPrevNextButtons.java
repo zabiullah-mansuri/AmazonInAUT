@@ -8,7 +8,7 @@ import pages.HomePage;
 
 public class TC_16_DealsPrevNextButtons extends BaseTestClass {
 
-	@Test(enabled = false, testName = "Carousel's PREVIOUS and NEXT buttons functionality", description = "Verify Carousel has PREVIOUS and NEXT buttons working")
+	@Test(enabled = false, description = "Verify : Carousel's PREVIOUS and NEXT buttons functionality")
 	public void dealsPrevNextButtonsWorking() throws InterruptedException {
 
 		HomePage homePage = new HomePage(driver);

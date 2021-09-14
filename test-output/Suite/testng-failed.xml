@@ -7,15 +7,15 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_CustomerServicePageDesiredOptions">
+      <class name="testcases.TC_04_LoginBlankId">
         <methods>
           <include name="setup"/>
-          <include name="customerServicePageDesiredOptions"/>
           <include name="beforeEachTest"/>
           <include name="tearDown"/>
+          <include name="loginBlankId"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_CustomerServicePageDesiredOptions -->
+      </class> <!-- testcases.TC_04_LoginBlankId -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

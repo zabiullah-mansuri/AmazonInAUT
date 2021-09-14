@@ -1,17 +1,14 @@
 package testcases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;
-import utilities.Reporter;
 
 public class TC_03_LoginInvalidPassword extends BaseTestClass {
 
-	@Test(enabled = false, description = "Login with Invalid Password")
+	@Test(enabled = false, description = "Verify : Login with invalid password")
 	public void loginInvalidPassword() {
 
 		HomePage homePage = new HomePage(driver);
@@ -32,11 +29,10 @@ public class TC_03_LoginInvalidPassword extends BaseTestClass {
 
 		if (signInPage.getAuthErrorMsg().contains("Your password is incorrect")) {
 			log4jlogger.info("Error msg present on invalid login.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
-			captureScreenshot(driver, "loginInvalidPassword");
 			log4jlogger.info("Error msg not present on invalid login.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }

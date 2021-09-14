@@ -9,7 +9,7 @@ import pages.HomePage;
 import pages.SearchResultsPage;
 
 public class TC_11_ResultsClickOpensInNewTab extends BaseTestClass {
-	@Test(enabled = false)
+	@Test(enabled = false, description = "Verify : clicking on result opens in new tab")
 	public void resultsClickOpensInNewTab() {
 		
 		HomePage homePage = new HomePage(driver);

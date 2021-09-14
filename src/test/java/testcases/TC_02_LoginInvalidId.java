@@ -1,16 +1,13 @@
 package testcases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;
-import utilities.Reporter;
 
 public class TC_02_LoginInvalidId extends BaseTestClass {
-	@Test(enabled = false, description = "Login with Invalid ID")
+	@Test(enabled = false, description  = "Verify : Login with invalid ID")
 	public void loginInvalidId() {
 
 		HomePage homePage = new HomePage(driver);
@@ -27,11 +24,10 @@ public class TC_02_LoginInvalidId extends BaseTestClass {
 
 		if (signInPage.getAuthErrorMsg().contains("We cannot find an account with that email address")) {
 			log4jlogger.info("Error msg present on invalid login.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
-			captureScreenshot(driver, "loginInvalidId");
 			log4jlogger.info("Error msg not present on invalid login.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }
