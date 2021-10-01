@@ -2,10 +2,10 @@ package testcases;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.logging.impl.Log4JLogger;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
 import utilities.ReadConfig;
 import java.io.File;
 import java.io.IOException;
@@ -18,11 +18,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
 public class BaseTestClass {
@@ -36,7 +36,7 @@ public class BaseTestClass {
 	String wrongUserId;
 	String wrongPassword;
 	ReadConfig readConfig;
-	Logger log4jlogger;
+	static Logger log4jlogger;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -60,6 +60,12 @@ public class BaseTestClass {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 			driver = new ChromeDriver();
 			log4jlogger.info("Browser : Google Chrome");
+		} else if (browser.equals("chrome-headless")) {
+			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			driver = new ChromeDriver(options);
+			log4jlogger.info("Browser : Google Chrome in headless mode");
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", readConfig.getFireFoxDriverPath());
 			driver = new FirefoxDriver();
@@ -74,18 +80,13 @@ public class BaseTestClass {
 			log4jlogger.info("Browser : Microsoft Edge");
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(appUrl);
 	}
 
 	@AfterMethod
 	public void afterEachTest(ITestResult tr) {
 		driver.quit();
-	}
-
-	@AfterClass
-	public void tearDown() {
-
 	}
 
 	boolean areMostOfOutputsMatchingInput(String input, List<String> outputs) {
@@ -103,11 +104,12 @@ public class BaseTestClass {
 	}
 
 	public static void captureScreenshot(String testName) {
-
-		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File target = new File("./screenshots/" + testName + ".png");
 		try {
+			File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			File target = new File("./screenshots/" + testName + ".png");
 			FileUtils.copyFile(source, target);
+		} catch (ClassCastException e) {
+			log4jlogger.info("Couldn't take screenshot in HTML Unit Browser.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

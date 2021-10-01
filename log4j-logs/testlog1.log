@@ -1,34 +1,33 @@
-2021-09-14 22:19:15,100 [main] INFO Amazon.in - AUT - Browser : Google Chrome
-2021-09-14 22:19:22,829 [main] INFO Amazon.in - AUT - Clicked : Account & Lists
-2021-09-14 22:19:23,008 [main] INFO Amazon.in - AUT - Entered user id : 8733806144
-2021-09-14 22:19:24,573 [main] INFO Amazon.in - AUT - Entered password : QA@automation
-2021-09-14 22:19:24,686 [main] INFO Amazon.in - AUT - Clicked : Sign in button
-2021-09-14 22:19:27,668 [main] INFO Amazon.in - AUT - Login successfull.
-2021-09-14 22:19:31,604 [main] INFO Amazon.in - AUT - Browser : Google Chrome
-2021-09-14 22:19:38,712 [main] INFO Amazon.in - AUT - Clicked : Account & Lists
-2021-09-14 22:19:38,830 [main] INFO Amazon.in - AUT - Entered user id : <blank>
-2021-09-14 22:19:39,751 [main] INFO Amazon.in - AUT - Clicked : Continue button
-2021-09-14 22:19:39,834 [main] INFO Amazon.in - AUT - Email missing msg absent on blank login.
-2021-09-14 22:19:44,090 [main] INFO Amazon.in - AUT - Browser : Google Chrome
-2021-09-14 22:19:48,696 [main] INFO Amazon.in - AUT - Signing in...
-2021-09-14 22:19:58,743 [main] INFO Amazon.in - AUT - Searched : motorola
-2021-09-14 22:19:59,785 [main] INFO Amazon.in - AUT - Clicked one result randomly
-2021-09-14 22:19:59,834 [main] INFO Amazon.in - AUT - Switched to Product's tab
-2021-09-14 22:20:05,736 [main] INFO Amazon.in - AUT - Click : Add to Wish List
-2021-09-14 22:20:07,161 [main] INFO Amazon.in - AUT - Msg present : Added to Wish List
-2021-09-14 22:20:09,076 [main] INFO Amazon.in - AUT - Opened : Wish List Page
-2021-09-14 22:20:12,945 [main] INFO Amazon.in - AUT - Browser : Google Chrome
-2021-09-14 22:20:17,127 [main] INFO Amazon.in - AUT - Signing in...
-2021-09-14 22:20:30,407 [main] INFO Amazon.in - AUT - Navigated to : Help page
-2021-09-14 22:20:31,107 [main] INFO Amazon.in - AUT - Clicked button : Contact Us
-2021-09-14 22:20:31,146 [main] INFO Amazon.in - AUT - Switched to Contact Us tab
-2021-09-14 22:20:33,042 [main] INFO Amazon.in - AUT - Chat and Call Me options are displayed
-2021-09-14 22:20:40,132 [main] INFO Amazon.in - AUT - Browser : Google Chrome
-2021-09-14 22:20:45,829 [main] INFO Amazon.in - AUT - hidden	:Smart home days
-2021-09-14 22:20:45,830 [main] INFO Amazon.in - AUT - hidden	:Electronics
-2021-09-14 22:20:45,830 [main] INFO Amazon.in - AUT - hidden	:Luggage
-2021-09-14 22:20:45,831 [main] INFO Amazon.in - AUT - visible	:One Plus Pre Pre Tease
-2021-09-14 22:20:45,831 [main] INFO Amazon.in - AUT - hidden	:Super Sale
-2021-09-14 22:20:45,831 [main] INFO Amazon.in - AUT - hidden	:Upgrade your home
-2021-09-14 22:20:45,831 [main] INFO Amazon.in - AUT - hidden	:Recharge or Pay bills
-2021-09-14 22:20:45,831 [main] INFO Amazon.in - AUT - hidden	:Join prime now
+2021-10-01 20:38:23,982 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
+2021-10-01 20:38:31,589 [main] INFO Amazon.in - AUT - Clicked : Account & Lists
+2021-10-01 20:38:31,749 [main] INFO Amazon.in - AUT - Entered user id : 8733806144
+2021-10-01 20:38:32,830 [main] INFO Amazon.in - AUT - Entered password : QA@automation
+2021-10-01 20:38:32,959 [main] INFO Amazon.in - AUT - Clicked : Sign in button
+2021-10-01 20:38:36,921 [main] INFO Amazon.in - AUT - Login successfull.
+2021-10-01 20:38:38,405 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
+2021-10-01 20:38:45,476 [main] INFO Amazon.in - AUT - Clicked : Account & Lists
+2021-10-01 20:38:45,613 [main] INFO Amazon.in - AUT - Entered user id : <blank>
+2021-10-01 20:38:45,740 [main] INFO Amazon.in - AUT - Clicked : Continue button
+2021-10-01 20:38:45,801 [main] INFO Amazon.in - AUT - Email missing msg present on blank login.
+2021-10-01 20:38:47,193 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
+2021-10-01 20:38:52,161 [main] INFO Amazon.in - AUT - Signing in...
+2021-10-01 20:39:00,659 [main] INFO Amazon.in - AUT - Searched : motorola
+2021-10-01 20:39:01,469 [main] INFO Amazon.in - AUT - Clicked one result randomly
+2021-10-01 20:39:01,852 [main] INFO Amazon.in - AUT - Switched to Product's tab
+2021-10-01 20:39:06,761 [main] INFO Amazon.in - AUT - Click : Add to Wish List
+2021-10-01 20:39:07,864 [main] INFO Amazon.in - AUT - Msg present : Added to Wish List
+2021-10-01 20:39:09,434 [main] INFO Amazon.in - AUT - Opened : Wish List Page
+2021-10-01 20:39:11,242 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
+2021-10-01 20:39:14,547 [main] INFO Amazon.in - AUT - Signing in...
+2021-10-01 20:39:24,306 [main] INFO Amazon.in - AUT - Navigated to : Help page
+2021-10-01 20:39:24,698 [main] INFO Amazon.in - AUT - Clicked button : Contact Us
+2021-10-01 20:39:25,060 [main] INFO Amazon.in - AUT - Switched to Contact Us tab
+2021-10-01 20:39:25,552 [main] INFO Amazon.in - AUT - Chat and Call Me options are displayed
+2021-10-01 20:39:30,057 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
+2021-10-01 20:39:35,566 [main] INFO Amazon.in - AUT - hidden	:Spring summer
+2021-10-01 20:39:35,567 [main] INFO Amazon.in - AUT - hidden	:Mobiles
+2021-10-01 20:39:35,567 [main] INFO Amazon.in - AUT - hidden	:Oppo
+2021-10-01 20:39:35,568 [main] INFO Amazon.in - AUT - visible	:Holi
+2021-10-01 20:39:35,568 [main] INFO Amazon.in - AUT - hidden	:Camera
+2021-10-01 20:39:35,568 [main] INFO Amazon.in - AUT - hidden	:Smart TVs
+2021-10-01 20:39:35,569 [main] INFO Amazon.in - AUT - hidden	:Super Sale

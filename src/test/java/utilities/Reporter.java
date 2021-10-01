@@ -5,9 +5,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
@@ -58,7 +55,6 @@ public class Reporter extends TestListenerAdapter {
 	}
 
 	public void onTestFailure(ITestResult tr) {
-		System.out.println("reporter : onTestFailure");
 
 		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 

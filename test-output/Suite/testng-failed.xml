@@ -7,15 +7,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_04_LoginBlankId">
+      <class name="testcases.TC_18_ContactUsFunctionality">
         <methods>
           <include name="setup"/>
+          <include name="contactUsFunctionality"/>
           <include name="beforeEachTest"/>
-          <include name="tearDown"/>
-          <include name="loginBlankId"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_04_LoginBlankId -->
+      </class> <!-- testcases.TC_18_ContactUsFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -31,13 +31,12 @@ public class TC_18_ContactUsFunctionality extends BaseTestClass {
 		driver.switchTo().window(tabs[1]);
 		log4jlogger.info("Switched to Contact Us tab");
 
-		Assert.assertTrue(helpPage.areCharAndCallDisplayed(),"Chat and Call Me options are missing");
+		Assert.assertTrue(helpPage.areCharAndCallDisplayed(), "Chat and Call Me options are missing");
 		log4jlogger.info("Chat and Call Me options are displayed");
 
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

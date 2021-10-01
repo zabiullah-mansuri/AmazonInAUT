@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HelpPage extends BasePage {
 
@@ -21,10 +23,10 @@ public class HelpPage extends BasePage {
 	@FindBy(xpath = "//div[@class='a-box self-service-rich-card']//ul")
 	List<WebElement> selfServicesCardsLines;
 
-	@FindBy(xpath = "//ul[@id='category-section']/li[12]/a")
+	@FindBy(xpath = "//ul[@id='category-section']//a[contains(text(),'Customer Service')]")
 	WebElement topicCustomerService;
 
-	@FindBy(xpath = "(//button[@id='a-autoid-0-announce'])[1]")
+	@FindBy(xpath = "//button[@id='a-autoid-0-announce' and contains(text(),'Contact Us')]/ancestor::span")
 	WebElement btnContactUs;
 
 	@FindBy(id = "a-autoid-0")
@@ -55,7 +57,8 @@ public class HelpPage extends BasePage {
 	}
 
 	public void cliclContactUs() {
-		Actions action = new Actions(driver);
+		action = new Actions(driver);
+		
 		action.moveToElement(topicCustomerService);
 		action.moveToElement(btnContactUs);
 		action.click().build().perform();
