@@ -7,7 +7,7 @@ import pages.HomePage;
 import pages.SignInPage;
 
 public class TC_02_LoginInvalidId extends BaseTestClass {
-	@Test(enabled = false, description  = "Verify : Login with invalid ID")
+	@Test(enabled = false, description = "Verify : Login with invalid ID")
 	public void loginInvalidId() {
 
 		HomePage homePage = new HomePage(driver);

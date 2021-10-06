@@ -8,7 +8,7 @@ import pages.SignInPage;
 
 public class TC_04_LoginBlankId extends BaseTestClass {
 
-	@Test(enabled = true, description = "Verify : Login with fields blank")
+	@Test(enabled = false, description = "Verify : Login with fields blank")
 	public void loginBlankId() {
 
 		HomePage homePage = new HomePage(driver);

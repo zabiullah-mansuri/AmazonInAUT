@@ -1,6 +1,5 @@
 package pages;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
 public class HomePage extends BasePage {
 
@@ -27,6 +26,9 @@ public class HomePage extends BasePage {
 
 	@FindBy(id = "nav-item-signout")
 	WebElement signOut;
+
+	@FindBy(id = "searchDropdownBox")
+	WebElement categoriesDropDown;
 
 	@FindBy(id = "twotabsearchtextbox")
 	WebElement txtSearch;
@@ -79,6 +81,21 @@ public class HomePage extends BasePage {
 		action.moveToElement(accountAndLists).moveToElement(signOut).click().build().perform();
 	}
 
+	public String getCurrentSearchCategory() {
+		Select categories = new Select(categoriesDropDown);
+		return categories.getFirstSelectedOption().getText();
+	}
+
+	public List<String> allSearchCategories() {
+		Select categories = new Select(categoriesDropDown);
+		return categories.getOptions().stream().map(item -> item.getText()).collect(Collectors.toList());
+	}
+
+	public void selectThisSearchCategory(String category) {
+		Select categories = new Select(categoriesDropDown);
+		categories.selectByVisibleText(category);
+	}
+
 	public String getTextOfSearchBox() {
 		return txtSearch.getAttribute("value");
 	}
@@ -99,11 +116,7 @@ public class HomePage extends BasePage {
 			e.printStackTrace();
 		}
 
-		List<String> suggestions = new ArrayList<String>();
-		for (WebElement suggestion : suggestionItems) {
-			suggestions.add(suggestion.getText());
-		}
-		return suggestions;
+		return suggestionItems.stream().map(item -> item.getText()).collect(Collectors.toList());
 	}
 
 	public void searchForThisProduct(String input) {

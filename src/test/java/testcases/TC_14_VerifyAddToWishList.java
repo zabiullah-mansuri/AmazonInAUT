@@ -10,7 +10,7 @@ import pages.SignInPage;
 import pages.WishListPage;
 
 public class TC_14_VerifyAddToWishList extends BaseTestClass {
-	@Test(enabled = true, description = "Verify : Add to Wish List")
+	@Test(enabled = false, description = "Verify : Add to Wish List")
 	public void verifyAddToWishList() {
 
 		SignInPage signInPage = new SignInPage(driver);

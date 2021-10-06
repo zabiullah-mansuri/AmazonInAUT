@@ -9,7 +9,7 @@ import pages.SignInPage;
 
 public class TC_01_LoginValid extends BaseTestClass {
 
-	@Test(enabled = true, description = "Verify : Login with valid credentials")
+	//@Test(description = "Verify : Login with valid credentials")
 	public void loginValid() {
 
 		HomePage homePage = new HomePage(driver);

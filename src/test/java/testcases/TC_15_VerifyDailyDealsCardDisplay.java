@@ -10,7 +10,7 @@ public class TC_15_VerifyDailyDealsCardDisplay extends BaseTestClass {
 	String string;
 	boolean flag;
 
-	@Test(enabled = true, description = "Verify : Daily deals cards are displaying on Home page")
+	@Test(enabled = false, description = "Verify : Daily deals cards are displaying on Home page")
 	public void VerifyDailyDealsCardDisplay() {
 
 		HomePage homePage = new HomePage(driver);

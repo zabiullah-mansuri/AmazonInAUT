@@ -23,7 +23,7 @@ public class TC_09_SearchSuggestions extends BaseTestClass {
 
 			if (areMostOfOutputsMatchingInput(homePage.getTextOfSearchBox(), suggestions)) {
 				Assert.assertTrue(true);
-				
+
 			} else {
 				log4jlogger.info("Search suggestions are irrelavant.");
 				Assert.assertTrue(false);

@@ -5,16 +5,16 @@
     <listener class-name="utilities.Reporter"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="chrome-headless"/>
     <classes>
-      <class name="testcases.TC_18_ContactUsFunctionality">
+      <class name="testcases.TC_19_CategoriesInSearchBox">
         <methods>
+          <include name="categoriesInSearchBox"/>
           <include name="setup"/>
-          <include name="contactUsFunctionality"/>
           <include name="beforeEachTest"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_18_ContactUsFunctionality -->
+      </class> <!-- testcases.TC_19_CategoriesInSearchBox -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

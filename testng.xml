@@ -25,6 +25,8 @@
 			<class name="testcases.TC_16_DealsPrevNextButtons" />
 			<class name="testcases.TC_17_CustomerServicePageDesiredOptions" />
 			<class name="testcases.TC_18_ContactUsFunctionality" />
+			<class name="testcases.TC_19_CategoriesInSearchBox" />
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

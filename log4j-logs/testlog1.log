@@ -1,33 +1,44 @@
-2021-10-01 20:38:23,982 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
-2021-10-01 20:38:31,589 [main] INFO Amazon.in - AUT - Clicked : Account & Lists
-2021-10-01 20:38:31,749 [main] INFO Amazon.in - AUT - Entered user id : 8733806144
-2021-10-01 20:38:32,830 [main] INFO Amazon.in - AUT - Entered password : QA@automation
-2021-10-01 20:38:32,959 [main] INFO Amazon.in - AUT - Clicked : Sign in button
-2021-10-01 20:38:36,921 [main] INFO Amazon.in - AUT - Login successfull.
-2021-10-01 20:38:38,405 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
-2021-10-01 20:38:45,476 [main] INFO Amazon.in - AUT - Clicked : Account & Lists
-2021-10-01 20:38:45,613 [main] INFO Amazon.in - AUT - Entered user id : <blank>
-2021-10-01 20:38:45,740 [main] INFO Amazon.in - AUT - Clicked : Continue button
-2021-10-01 20:38:45,801 [main] INFO Amazon.in - AUT - Email missing msg present on blank login.
-2021-10-01 20:38:47,193 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
-2021-10-01 20:38:52,161 [main] INFO Amazon.in - AUT - Signing in...
-2021-10-01 20:39:00,659 [main] INFO Amazon.in - AUT - Searched : motorola
-2021-10-01 20:39:01,469 [main] INFO Amazon.in - AUT - Clicked one result randomly
-2021-10-01 20:39:01,852 [main] INFO Amazon.in - AUT - Switched to Product's tab
-2021-10-01 20:39:06,761 [main] INFO Amazon.in - AUT - Click : Add to Wish List
-2021-10-01 20:39:07,864 [main] INFO Amazon.in - AUT - Msg present : Added to Wish List
-2021-10-01 20:39:09,434 [main] INFO Amazon.in - AUT - Opened : Wish List Page
-2021-10-01 20:39:11,242 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
-2021-10-01 20:39:14,547 [main] INFO Amazon.in - AUT - Signing in...
-2021-10-01 20:39:24,306 [main] INFO Amazon.in - AUT - Navigated to : Help page
-2021-10-01 20:39:24,698 [main] INFO Amazon.in - AUT - Clicked button : Contact Us
-2021-10-01 20:39:25,060 [main] INFO Amazon.in - AUT - Switched to Contact Us tab
-2021-10-01 20:39:25,552 [main] INFO Amazon.in - AUT - Chat and Call Me options are displayed
-2021-10-01 20:39:30,057 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
-2021-10-01 20:39:35,566 [main] INFO Amazon.in - AUT - hidden	:Spring summer
-2021-10-01 20:39:35,567 [main] INFO Amazon.in - AUT - hidden	:Mobiles
-2021-10-01 20:39:35,567 [main] INFO Amazon.in - AUT - hidden	:Oppo
-2021-10-01 20:39:35,568 [main] INFO Amazon.in - AUT - visible	:Holi
-2021-10-01 20:39:35,568 [main] INFO Amazon.in - AUT - hidden	:Camera
-2021-10-01 20:39:35,568 [main] INFO Amazon.in - AUT - hidden	:Smart TVs
-2021-10-01 20:39:35,569 [main] INFO Amazon.in - AUT - hidden	:Super Sale
+2021-10-06 21:03:52,016 [main] INFO Amazon.in - AUT - Browser : Google Chrome in headless mode
+2021-10-06 21:04:00,544 [main] INFO Amazon.in - AUT - Categories are :[All Categories, Deals, Alexa Skills, Amazon Devices, Amazon Fashion, Amazon Fresh, Amazon Pantry, Appliances, Apps & Games, Baby, Beauty, Books, Car & Motorbike, Clothing & Accessories, Collectibles, Computers & Accessories, Electronics, Furniture, Garden & Outdoors, Gift Cards, Grocery & Gourmet Foods, Health & Personal Care, Home & Kitchen, Industrial & Scientific, Jewellery, Kindle Store, Luggage & Bags, Luxury Beauty, Movies & TV Shows, Music, Musical Instruments, Office Products, Pet Supplies, Prime Video, Shoes & Handbags, Software, Sports, Fitness & Outdoors, Tools & Home Improvement, Toys & Games, Under ?500, Video Games, Watches]
+2021-10-06 21:04:00,549 [main] INFO Amazon.in - AUT - Now selecting : All Categories
+2021-10-06 21:04:01,561 [main] INFO Amazon.in - AUT - Now selecting : Deals
+2021-10-06 21:04:02,396 [main] INFO Amazon.in - AUT - Now selecting : Alexa Skills
+2021-10-06 21:04:03,141 [main] INFO Amazon.in - AUT - Now selecting : Amazon Devices
+2021-10-06 21:04:03,981 [main] INFO Amazon.in - AUT - Now selecting : Amazon Fashion
+2021-10-06 21:04:04,818 [main] INFO Amazon.in - AUT - Now selecting : Amazon Fresh
+2021-10-06 21:04:05,634 [main] INFO Amazon.in - AUT - Now selecting : Amazon Pantry
+2021-10-06 21:04:06,500 [main] INFO Amazon.in - AUT - Now selecting : Appliances
+2021-10-06 21:04:07,243 [main] INFO Amazon.in - AUT - Now selecting : Apps & Games
+2021-10-06 21:04:08,052 [main] INFO Amazon.in - AUT - Now selecting : Baby
+2021-10-06 21:04:08,858 [main] INFO Amazon.in - AUT - Now selecting : Beauty
+2021-10-06 21:04:09,752 [main] INFO Amazon.in - AUT - Now selecting : Books
+2021-10-06 21:04:10,605 [main] INFO Amazon.in - AUT - Now selecting : Car & Motorbike
+2021-10-06 21:04:11,511 [main] INFO Amazon.in - AUT - Now selecting : Clothing & Accessories
+2021-10-06 21:04:12,351 [main] INFO Amazon.in - AUT - Now selecting : Collectibles
+2021-10-06 21:04:13,190 [main] INFO Amazon.in - AUT - Now selecting : Computers & Accessories
+2021-10-06 21:04:14,094 [main] INFO Amazon.in - AUT - Now selecting : Electronics
+2021-10-06 21:04:14,989 [main] INFO Amazon.in - AUT - Now selecting : Furniture
+2021-10-06 21:04:15,923 [main] INFO Amazon.in - AUT - Now selecting : Garden & Outdoors
+2021-10-06 21:04:16,820 [main] INFO Amazon.in - AUT - Now selecting : Gift Cards
+2021-10-06 21:04:17,698 [main] INFO Amazon.in - AUT - Now selecting : Grocery & Gourmet Foods
+2021-10-06 21:04:18,608 [main] INFO Amazon.in - AUT - Now selecting : Health & Personal Care
+2021-10-06 21:04:19,473 [main] INFO Amazon.in - AUT - Now selecting : Home & Kitchen
+2021-10-06 21:04:20,326 [main] INFO Amazon.in - AUT - Now selecting : Industrial & Scientific
+2021-10-06 21:04:21,236 [main] INFO Amazon.in - AUT - Now selecting : Jewellery
+2021-10-06 21:04:22,206 [main] INFO Amazon.in - AUT - Now selecting : Kindle Store
+2021-10-06 21:04:23,189 [main] INFO Amazon.in - AUT - Now selecting : Luggage & Bags
+2021-10-06 21:04:24,424 [main] INFO Amazon.in - AUT - Now selecting : Luxury Beauty
+2021-10-06 21:04:25,335 [main] INFO Amazon.in - AUT - Now selecting : Movies & TV Shows
+2021-10-06 21:04:26,292 [main] INFO Amazon.in - AUT - Now selecting : Music
+2021-10-06 21:04:27,370 [main] INFO Amazon.in - AUT - Now selecting : Musical Instruments
+2021-10-06 21:04:28,312 [main] INFO Amazon.in - AUT - Now selecting : Office Products
+2021-10-06 21:04:29,325 [main] INFO Amazon.in - AUT - Now selecting : Pet Supplies
+2021-10-06 21:04:30,331 [main] INFO Amazon.in - AUT - Now selecting : Prime Video
+2021-10-06 21:04:31,351 [main] INFO Amazon.in - AUT - Now selecting : Shoes & Handbags
+2021-10-06 21:04:32,424 [main] INFO Amazon.in - AUT - Now selecting : Software
+2021-10-06 21:04:33,397 [main] INFO Amazon.in - AUT - Now selecting : Sports, Fitness & Outdoors
+2021-10-06 21:04:34,440 [main] INFO Amazon.in - AUT - Now selecting : Tools & Home Improvement
+2021-10-06 21:04:35,482 [main] INFO Amazon.in - AUT - Now selecting : Toys & Games
+2021-10-06 21:04:36,450 [main] INFO Amazon.in - AUT - Now selecting : Under ?500
+2021-10-06 21:04:37,431 [main] INFO Amazon.in - AUT - Now selecting : Video Games
+2021-10-06 21:04:38,651 [main] INFO Amazon.in - AUT - Now selecting : Watches
