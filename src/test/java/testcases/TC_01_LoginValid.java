@@ -1,15 +1,15 @@
 package testcases;
 
-import org.testng.annotations.Test;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;
 
 public class TC_01_LoginValid extends BaseTestClass {
 
-	//@Test(description = "Verify : Login with valid credentials")
+	@Test(enabled = false, description = "Verify : Login with valid credentials")
 	public void loginValid() {
 
 		HomePage homePage = new HomePage(driver);

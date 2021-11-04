@@ -5,8 +5,9 @@
 		<listener class-name="utilities.Reporter" />
 	</listeners>
 	<test thread-count="5" name="Test">
-		<parameter name="browser" value="chrome-headless" />
+		<parameter name="browser" value="chrome" />
 		<classes>
+			<class name="testcases.TC_00_LoginDDT" />
 			<class name="testcases.TC_01_LoginValid" />
 			<class name="testcases.TC_02_LoginInvalidId" />
 			<class name="testcases.TC_03_LoginInvalidPassword" />
@@ -26,7 +27,6 @@
 			<class name="testcases.TC_17_CustomerServicePageDesiredOptions" />
 			<class name="testcases.TC_18_ContactUsFunctionality" />
 			<class name="testcases.TC_19_CategoriesInSearchBox" />
-			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

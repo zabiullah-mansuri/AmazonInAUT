@@ -1,7 +1,7 @@
 package testcases;
 
-import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;

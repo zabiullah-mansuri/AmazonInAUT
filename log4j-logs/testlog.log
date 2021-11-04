@@ -1,44 +1,34 @@
-2021-10-06 21:03:52,016 - Amazon.in - AUT -INFO - Browser : Google Chrome in headless mode
-2021-10-06 21:04:00,544 - Amazon.in - AUT -INFO - Categories are :[All Categories, Deals, Alexa Skills, Amazon Devices, Amazon Fashion, Amazon Fresh, Amazon Pantry, Appliances, Apps & Games, Baby, Beauty, Books, Car & Motorbike, Clothing & Accessories, Collectibles, Computers & Accessories, Electronics, Furniture, Garden & Outdoors, Gift Cards, Grocery & Gourmet Foods, Health & Personal Care, Home & Kitchen, Industrial & Scientific, Jewellery, Kindle Store, Luggage & Bags, Luxury Beauty, Movies & TV Shows, Music, Musical Instruments, Office Products, Pet Supplies, Prime Video, Shoes & Handbags, Software, Sports, Fitness & Outdoors, Tools & Home Improvement, Toys & Games, Under ?500, Video Games, Watches]
-2021-10-06 21:04:00,549 - Amazon.in - AUT -INFO - Now selecting : All Categories
-2021-10-06 21:04:01,561 - Amazon.in - AUT -INFO - Now selecting : Deals
-2021-10-06 21:04:02,396 - Amazon.in - AUT -INFO - Now selecting : Alexa Skills
-2021-10-06 21:04:03,141 - Amazon.in - AUT -INFO - Now selecting : Amazon Devices
-2021-10-06 21:04:03,981 - Amazon.in - AUT -INFO - Now selecting : Amazon Fashion
-2021-10-06 21:04:04,818 - Amazon.in - AUT -INFO - Now selecting : Amazon Fresh
-2021-10-06 21:04:05,634 - Amazon.in - AUT -INFO - Now selecting : Amazon Pantry
-2021-10-06 21:04:06,500 - Amazon.in - AUT -INFO - Now selecting : Appliances
-2021-10-06 21:04:07,243 - Amazon.in - AUT -INFO - Now selecting : Apps & Games
-2021-10-06 21:04:08,052 - Amazon.in - AUT -INFO - Now selecting : Baby
-2021-10-06 21:04:08,858 - Amazon.in - AUT -INFO - Now selecting : Beauty
-2021-10-06 21:04:09,752 - Amazon.in - AUT -INFO - Now selecting : Books
-2021-10-06 21:04:10,605 - Amazon.in - AUT -INFO - Now selecting : Car & Motorbike
-2021-10-06 21:04:11,511 - Amazon.in - AUT -INFO - Now selecting : Clothing & Accessories
-2021-10-06 21:04:12,351 - Amazon.in - AUT -INFO - Now selecting : Collectibles
-2021-10-06 21:04:13,190 - Amazon.in - AUT -INFO - Now selecting : Computers & Accessories
-2021-10-06 21:04:14,094 - Amazon.in - AUT -INFO - Now selecting : Electronics
-2021-10-06 21:04:14,989 - Amazon.in - AUT -INFO - Now selecting : Furniture
-2021-10-06 21:04:15,923 - Amazon.in - AUT -INFO - Now selecting : Garden & Outdoors
-2021-10-06 21:04:16,820 - Amazon.in - AUT -INFO - Now selecting : Gift Cards
-2021-10-06 21:04:17,698 - Amazon.in - AUT -INFO - Now selecting : Grocery & Gourmet Foods
-2021-10-06 21:04:18,608 - Amazon.in - AUT -INFO - Now selecting : Health & Personal Care
-2021-10-06 21:04:19,473 - Amazon.in - AUT -INFO - Now selecting : Home & Kitchen
-2021-10-06 21:04:20,326 - Amazon.in - AUT -INFO - Now selecting : Industrial & Scientific
-2021-10-06 21:04:21,236 - Amazon.in - AUT -INFO - Now selecting : Jewellery
-2021-10-06 21:04:22,206 - Amazon.in - AUT -INFO - Now selecting : Kindle Store
-2021-10-06 21:04:23,189 - Amazon.in - AUT -INFO - Now selecting : Luggage & Bags
-2021-10-06 21:04:24,424 - Amazon.in - AUT -INFO - Now selecting : Luxury Beauty
-2021-10-06 21:04:25,335 - Amazon.in - AUT -INFO - Now selecting : Movies & TV Shows
-2021-10-06 21:04:26,292 - Amazon.in - AUT -INFO - Now selecting : Music
-2021-10-06 21:04:27,370 - Amazon.in - AUT -INFO - Now selecting : Musical Instruments
-2021-10-06 21:04:28,312 - Amazon.in - AUT -INFO - Now selecting : Office Products
-2021-10-06 21:04:29,325 - Amazon.in - AUT -INFO - Now selecting : Pet Supplies
-2021-10-06 21:04:30,331 - Amazon.in - AUT -INFO - Now selecting : Prime Video
-2021-10-06 21:04:31,351 - Amazon.in - AUT -INFO - Now selecting : Shoes & Handbags
-2021-10-06 21:04:32,424 - Amazon.in - AUT -INFO - Now selecting : Software
-2021-10-06 21:04:33,397 - Amazon.in - AUT -INFO - Now selecting : Sports, Fitness & Outdoors
-2021-10-06 21:04:34,440 - Amazon.in - AUT -INFO - Now selecting : Tools & Home Improvement
-2021-10-06 21:04:35,482 - Amazon.in - AUT -INFO - Now selecting : Toys & Games
-2021-10-06 21:04:36,450 - Amazon.in - AUT -INFO - Now selecting : Under ?500
-2021-10-06 21:04:37,431 - Amazon.in - AUT -INFO - Now selecting : Video Games
-2021-10-06 21:04:38,651 - Amazon.in - AUT -INFO - Now selecting : Watches
+2021-11-04 23:39:58,504 - Amazon.in - AUT -INFO - Number of records in LoginData.xlsx file. : 3
+2021-11-04 23:40:03,985 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-04 23:40:18,031 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-04 23:40:18,245 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-04 23:40:29,645 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-11-04 23:40:29,917 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-04 23:40:52,121 - Amazon.in - AUT -ERROR - Login failed.
+2021-11-04 23:40:55,736 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-04 23:41:03,530 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-04 23:41:03,681 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-04 23:41:15,432 - Amazon.in - AUT -INFO - Entered password : invalid
+2021-11-04 23:41:15,591 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-04 23:41:37,629 - Amazon.in - AUT -ERROR - Login failed.
+2021-11-04 23:41:41,281 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-04 23:41:48,332 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-04 23:41:48,500 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-04 23:41:49,576 - Amazon.in - AUT -INFO - Error msg present on invalid username.
+2021-11-04 23:42:20,077 - Amazon.in - AUT -INFO - Number of records in LoginData.xlsx file. : 3
+2021-11-04 23:42:22,915 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-04 23:42:30,373 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-04 23:42:30,527 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-04 23:42:41,570 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-11-04 23:42:41,730 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-04 23:43:01,779 - Amazon.in - AUT -ERROR - Login failed.
+2021-11-04 23:43:05,605 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-04 23:43:13,299 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-04 23:43:13,473 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-04 23:43:24,683 - Amazon.in - AUT -INFO - Entered password : invalid
+2021-11-04 23:43:24,980 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-04 23:43:46,977 - Amazon.in - AUT -ERROR - Login failed.
+2021-11-04 23:43:50,854 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-04 23:43:59,013 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-04 23:43:59,145 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-04 23:44:00,261 - Amazon.in - AUT -INFO - Error msg present on invalid username.

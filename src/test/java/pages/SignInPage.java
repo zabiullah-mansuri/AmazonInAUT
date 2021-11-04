@@ -20,16 +20,16 @@ public class SignInPage extends BasePage {
 	@FindBy(id = "signInSubmit")
 	WebElement btnSignIn;
 
-	@FindBy(xpath = "//*[@id=\'auth-error-message-box\']/div/div/ul/li/span")
+	@FindBy(xpath = "//*[@id='auth-error-message-box']/div/div/ul/li/span")
 	WebElement msgAuthError;
 
-	@FindBy(xpath = "//*[@id=\'auth-email-missing-alert\']/div/div")
+	@FindBy(xpath = "//*[@id='auth-email-missing-alert']/div/div")
 	WebElement msgEmailMissing;
 
 	@FindBy(id = "auth-fpp-link-bottom")
 	WebElement lnkForgotPassword;
 
-	@FindBy(xpath = "//*[@id=\'verification-code-form\']/div[4]/div[2]/span[2]")
+	@FindBy(xpath = "//*[@id='verification-code-form']/div[4]/div[2]/span[2]")
 	WebElement msgOtpSent;
 
 	@FindBy(xpath = "//*[@id='authportal-main-section']//input[@name='rememberMe']")

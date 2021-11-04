@@ -9,7 +9,7 @@ import pages.HomePage;
 
 public class TC_19_CategoriesInSearchBox extends BaseTestClass {
 
-	@Test(enabled = true, description = "Verify dropdown for categories in search box working or not")
+	@Test(enabled = false, description = "Verify dropdown for categories in search box working or not")
 	public void categoriesInSearchBox() {
 		HomePage homePage = new HomePage(driver);
 

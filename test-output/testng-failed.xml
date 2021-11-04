@@ -5,16 +5,16 @@
     <listener class-name="utilities.Reporter"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome-headless"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_19_CategoriesInSearchBox">
+      <class name="testcases.TC_00_LoginDDT">
         <methods>
-          <include name="categoriesInSearchBox"/>
           <include name="setup"/>
           <include name="beforeEachTest"/>
           <include name="afterEachTest"/>
+          <include name="loginDDT" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testcases.TC_19_CategoriesInSearchBox -->
+      </class> <!-- testcases.TC_00_LoginDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
