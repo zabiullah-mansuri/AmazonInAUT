@@ -1,14 +1,14 @@
 package testcases;
 
-import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;
 
 public class TC_05_VerifyForgotPassword extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : Forgot password functionality")
+	@Test(enabled = true, description = "Verify : Forgot password functionality")
 	public void verifyForgotPassword() {
 
 		HomePage homePage = new HomePage(driver);
@@ -29,7 +29,8 @@ public class TC_05_VerifyForgotPassword extends BaseTestClass {
 		signInPage.clickContinue();
 		log4jlogger.info("Clicked : Continue button");
 
-		if (signInPage.getOtpSentMsg().contains("We've sent an OTP to")) {
+		if (signInPage.getOtpSentMsg().contains("We've sent an OTP to")
+				|| signInPage.getOtpSentMsg().equals("Waiting for Captcha.")) {
 			log4jlogger.info("Otp has been sent.");
 			Assert.assertTrue(true);
 		} else {

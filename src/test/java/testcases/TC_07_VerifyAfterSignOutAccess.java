@@ -1,15 +1,15 @@
 package testcases;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.openqa.selenium.NoSuchElementException;
 
 import pages.HomePage;
 import pages.SignInPage;
 
 public class TC_07_VerifyAfterSignOutAccess extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : After sign out access")
+	@Test(enabled = true, description = "Verify : After sign out access")
 	public void verifyAfterSignOutAccess() {
 
 		HomePage homePage = new HomePage(driver);
@@ -36,8 +36,11 @@ public class TC_07_VerifyAfterSignOutAccess extends BaseTestClass {
 		} catch (NoSuchElementException e) {
 			log4jlogger.error("Login failed.");
 		}
-		homePage.clickSignOut();
-		log4jlogger.info("Clicked : Sign out");
+
+		log4jlogger.info("Clicking : Sign out");
+		while (!homePage.clickSignOut()) {
+			log4jlogger.info("Clicking again : Sign out");
+		}
 
 		driver.navigate().back();
 		log4jlogger.info("Navigated: Back");

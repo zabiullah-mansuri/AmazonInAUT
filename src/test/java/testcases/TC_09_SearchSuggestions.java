@@ -1,32 +1,49 @@
 package testcases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import pages.HomePage;
-import utilities.Reporter;
 
 public class TC_09_SearchSuggestions extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : Seach suggestions characters by characters")
-	public void verifySearchSuggestionsCharByChar() {
+	@Test(enabled = true, description = "Verify : Seach suggestions characters by characters")
+	public void verifySearchSuggestionsCharByChar() throws InterruptedException {
 
-		HomePage homePage = new HomePage(driver);
 		String searchkey = "samsung";
+		boolean tryAgain = false;
+		do {
+			try {
+				tryAgain = false;
+				searchSuggestionsCharByChar(searchkey);
+			} catch (Exception e) {
+				log4jlogger.info(e.getMessage());
 
+				afterEachTest(null);
+				beforeEachTest();
+
+				tryAgain = true;
+			}
+		} while (tryAgain);
+	}
+
+	public void searchSuggestionsCharByChar(String searchkey) throws Exception {
+		HomePage homePage = new HomePage(driver);
 		for (int i = 0; i < searchkey.length(); i++) {
-
 			List<String> suggestions = homePage.searchForThisKeyword(searchkey.charAt(i));
-			log4jlogger.info("Found : '" + homePage.getTextOfSearchBox() + "' in : " + suggestions.toString());
+			if (suggestions.size() > 0) {
 
-			if (areMostOfOutputsMatchingInput(homePage.getTextOfSearchBox(), suggestions)) {
-				Assert.assertTrue(true);
-
+				log4jlogger.info("Found : '" + homePage.getTextOfSearchBox() + "' in : " + suggestions.toString());
+				if (areMostOfOutputsMatchingInput(homePage.getTextOfSearchBox(), suggestions)) {
+					Assert.assertTrue(true);
+				} else {
+					log4jlogger.info("Search suggestions are irrelavant.");
+					Assert.assertTrue(false);
+				}
 			} else {
-				log4jlogger.info("Search suggestions are irrelavant.");
-				Assert.assertTrue(false);
+				throw new Exception("Suggestions list is empty...");
 			}
 		}
 	}

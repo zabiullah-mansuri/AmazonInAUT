@@ -1,34 +1,260 @@
-2021-11-04 23:39:58,504 - Amazon.in - AUT -INFO - Number of records in LoginData.xlsx file. : 3
-2021-11-04 23:40:03,985 - Amazon.in - AUT -INFO - Browser : Google Chrome
-2021-11-04 23:40:18,031 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-11-04 23:40:18,245 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-11-04 23:40:29,645 - Amazon.in - AUT -INFO - Entered password : QA@automation
-2021-11-04 23:40:29,917 - Amazon.in - AUT -INFO - Clicked : Sign in button
-2021-11-04 23:40:52,121 - Amazon.in - AUT -ERROR - Login failed.
-2021-11-04 23:40:55,736 - Amazon.in - AUT -INFO - Browser : Google Chrome
-2021-11-04 23:41:03,530 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-11-04 23:41:03,681 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-11-04 23:41:15,432 - Amazon.in - AUT -INFO - Entered password : invalid
-2021-11-04 23:41:15,591 - Amazon.in - AUT -INFO - Clicked : Sign in button
-2021-11-04 23:41:37,629 - Amazon.in - AUT -ERROR - Login failed.
-2021-11-04 23:41:41,281 - Amazon.in - AUT -INFO - Browser : Google Chrome
-2021-11-04 23:41:48,332 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-11-04 23:41:48,500 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-11-04 23:41:49,576 - Amazon.in - AUT -INFO - Error msg present on invalid username.
-2021-11-04 23:42:20,077 - Amazon.in - AUT -INFO - Number of records in LoginData.xlsx file. : 3
-2021-11-04 23:42:22,915 - Amazon.in - AUT -INFO - Browser : Google Chrome
-2021-11-04 23:42:30,373 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-11-04 23:42:30,527 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-11-04 23:42:41,570 - Amazon.in - AUT -INFO - Entered password : QA@automation
-2021-11-04 23:42:41,730 - Amazon.in - AUT -INFO - Clicked : Sign in button
-2021-11-04 23:43:01,779 - Amazon.in - AUT -ERROR - Login failed.
-2021-11-04 23:43:05,605 - Amazon.in - AUT -INFO - Browser : Google Chrome
-2021-11-04 23:43:13,299 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-11-04 23:43:13,473 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-11-04 23:43:24,683 - Amazon.in - AUT -INFO - Entered password : invalid
-2021-11-04 23:43:24,980 - Amazon.in - AUT -INFO - Clicked : Sign in button
-2021-11-04 23:43:46,977 - Amazon.in - AUT -ERROR - Login failed.
-2021-11-04 23:43:50,854 - Amazon.in - AUT -INFO - Browser : Google Chrome
-2021-11-04 23:43:59,013 - Amazon.in - AUT -INFO - Clicked : Account & Lists
-2021-11-04 23:43:59,145 - Amazon.in - AUT -INFO - Entered user id : 8733806144
-2021-11-04 23:44:00,261 - Amazon.in - AUT -INFO - Error msg present on invalid username.
+2021-11-07 14:12:08,125 - Amazon.in - AUT -INFO - Number of records in LoginData.xlsx file. : 3
+2021-11-07 14:12:11,142 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:12:18,483 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:12:18,766 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:12:20,388 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-11-07 14:12:20,515 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-07 14:12:23,928 - Amazon.in - AUT -INFO - Login successfull.
+2021-11-07 14:12:27,585 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:12:36,662 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:12:36,888 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:12:37,868 - Amazon.in - AUT -INFO - Entered password : invalid
+2021-11-07 14:12:37,991 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-07 14:12:43,099 - Amazon.in - AUT -INFO - Error msg present on invalid login.
+2021-11-07 14:12:46,519 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:12:54,167 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:12:54,329 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:13:00,245 - Amazon.in - AUT -INFO - Error msg present on invalid username.
+2021-11-07 14:13:04,801 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:13:11,888 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:13:12,670 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:13:14,191 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-11-07 14:13:14,451 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-07 14:13:18,358 - Amazon.in - AUT -INFO - Login successfull.
+2021-11-07 14:13:22,649 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:13:33,562 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:13:34,134 - Amazon.in - AUT -INFO - Entered user id : invalid
+2021-11-07 14:13:35,178 - Amazon.in - AUT -INFO - Clicked : Continue button
+2021-11-07 14:13:35,215 - Amazon.in - AUT -INFO - Error msg present on invalid login.
+2021-11-07 14:13:38,906 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:13:52,109 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:13:52,227 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:13:53,466 - Amazon.in - AUT -INFO - Entered password : invalid 
+2021-11-07 14:13:53,664 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-07 14:13:54,767 - Amazon.in - AUT -INFO - Error msg present on invalid login.
+2021-11-07 14:13:58,474 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:14:11,695 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:14:11,878 - Amazon.in - AUT -INFO - Entered user id : <blank>
+2021-11-07 14:14:12,021 - Amazon.in - AUT -INFO - Clicked : Continue button
+2021-11-07 14:14:12,103 - Amazon.in - AUT -INFO - Email missing msg present on blank login.
+2021-11-07 14:14:15,992 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:14:32,177 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:14:32,369 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:14:33,881 - Amazon.in - AUT -INFO - Clicked : Continue button
+2021-11-07 14:14:34,520 - Amazon.in - AUT -INFO - Clicked : Forgot Password link
+2021-11-07 14:14:36,061 - Amazon.in - AUT -INFO - Clicked : Continue button
+2021-11-07 14:14:36,100 - Amazon.in - AUT -INFO - Otp has been sent.
+2021-11-07 14:14:39,906 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:14:54,311 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:14:54,460 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:14:55,453 - Amazon.in - AUT -INFO - Clicked : Continue button
+2021-11-07 14:14:55,598 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-11-07 14:14:55,690 - Amazon.in - AUT -INFO - Ticked : Keep me signed in
+2021-11-07 14:14:55,819 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-07 14:15:01,870 - Amazon.in - AUT -INFO - Login retained.
+2021-11-07 14:15:05,485 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:15:14,054 - Amazon.in - AUT -INFO - Clicked : Account & Lists
+2021-11-07 14:15:14,239 - Amazon.in - AUT -INFO - Entered user id : 8733806144
+2021-11-07 14:15:15,346 - Amazon.in - AUT -INFO - Clicked : Continue button
+2021-11-07 14:15:15,444 - Amazon.in - AUT -INFO - Entered password : QA@automation
+2021-11-07 14:15:15,585 - Amazon.in - AUT -INFO - Clicked : Sign in button
+2021-11-07 14:15:18,731 - Amazon.in - AUT -INFO - Login successfull.
+2021-11-07 14:15:18,731 - Amazon.in - AUT -INFO - Clicking : Sign out
+2021-11-07 14:15:22,403 - Amazon.in - AUT -INFO - Navigated: Back
+2021-11-07 14:15:24,613 - Amazon.in - AUT -INFO - Refreshed page
+2021-11-07 14:15:25,331 - Amazon.in - AUT -INFO - No access after sign out
+2021-11-07 14:15:31,002 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:15:38,090 - Amazon.in - AUT -INFO - Found no water text.
+2021-11-07 14:15:41,893 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:15:50,616 - Amazon.in - AUT -INFO - Found : 's' in : [samsung, surf excel, soap, shampoo, surf excel front load washing liquid, sweets, serum, surf excel top load, sanitizer, steamer]
+2021-11-07 14:15:50,657 - Amazon.in - AUT -INFO - No. of matched items : 10
+2021-11-07 14:15:50,657 - Amazon.in - AUT -INFO - No. of unmatched items : 0
+2021-11-07 14:15:53,316 - Amazon.in - AUT -INFO - Found : 'sa' in : [samsung, samsung m12 4 64, salt, sanitizer, samsung m52 5g, samsung f22, santoor soaps, sanitary pads for women, samsung washing machine, samsung m32 4g]
+2021-11-07 14:15:53,346 - Amazon.in - AUT -INFO - No. of matched items : 10
+2021-11-07 14:15:53,346 - Amazon.in - AUT -INFO - No. of unmatched items : 0
+2021-11-07 14:15:55,964 - Amazon.in - AUT -INFO - Found : 'sam' in : [samsung, samsung m12 4 64, samsung m52 5g, samsung m32 4g, samsung f22, samsung galaxy m12 6gb 128gb, samsung washing machine, samsung m32 mobile phone, samsung galaxy m32 5g mobile, samsung galaxy m51]
+2021-11-07 14:15:55,985 - Amazon.in - AUT -INFO - No. of matched items : 10
+2021-11-07 14:15:55,985 - Amazon.in - AUT -INFO - No. of unmatched items : 0
+2021-11-07 14:15:58,585 - Amazon.in - AUT -INFO - Found : 'sams' in : [samsung, samsung m12 4 64, samsung m52 5g, samsung m32 4g, samsung galaxy m12 6gb 128gb, samsung washing machine, samsung f22, samsung m32 mobile phone, samsung galaxy m32 5g mobile, samsung galaxy m51]
+2021-11-07 14:15:58,604 - Amazon.in - AUT -INFO - No. of matched items : 10
+2021-11-07 14:15:58,604 - Amazon.in - AUT -INFO - No. of unmatched items : 0
+2021-11-07 14:16:01,192 - Amazon.in - AUT -INFO - Found : 'samsu' in : [samsung, samsung m12 4 64, samsung m52 5g, samsung m32 4g, samsung washing machine, samsung galaxy m12 6gb 128gb, samsung f22, samsung m32 mobile phone, samsung galaxy m32 5g mobile, samsung galaxy m51]
+2021-11-07 14:16:01,212 - Amazon.in - AUT -INFO - No. of matched items : 10
+2021-11-07 14:16:01,212 - Amazon.in - AUT -INFO - No. of unmatched items : 0
+2021-11-07 14:16:03,803 - Amazon.in - AUT -INFO - Found : 'samsun' in : [samsung, samsung m12 4 64, samsung m32 4g, samsung m52 5g, samsung washing machine, samsung galaxy m12 6gb 128gb, samsung f22, samsung m32 mobile phone, samsung galaxy m32 5g mobile, samsung galaxy m51]
+2021-11-07 14:16:03,824 - Amazon.in - AUT -INFO - No. of matched items : 10
+2021-11-07 14:16:03,824 - Amazon.in - AUT -INFO - No. of unmatched items : 0
+2021-11-07 14:16:06,416 - Amazon.in - AUT -INFO - Found : 'samsung' in : [samsung, samsung m12 4 64, samsung m32 4g, samsung m52 5g, samsung washing machine, samsung f22, samsung m32 mobile phone, samsung galaxy m12 6gb 128gb, samsung galaxy m51, samsung 5g mobile]
+2021-11-07 14:16:06,436 - Amazon.in - AUT -INFO - No. of matched items : 10
+2021-11-07 14:16:06,436 - Amazon.in - AUT -INFO - No. of unmatched items : 0
+2021-11-07 14:16:10,190 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:16:22,384 - Amazon.in - AUT -INFO - Search Results count for samsung : 20
+2021-11-07 14:16:22,384 - Amazon.in - AUT -INFO - Result #1 : Samsung Galaxy M32 5G (Slate Black, 6GB RAM, 128GB Storage)
+2021-11-07 14:16:22,384 - Amazon.in - AUT -INFO - Result #2 : Samsung Galaxy M52 5G (Blazing Black, 6GB RAM, 128GB Storage) Latest Snapdragon 778G 5G | sAMOLED 120Hz Display
+2021-11-07 14:16:22,385 - Amazon.in - AUT -INFO - Result #3 : Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)
+2021-11-07 14:16:22,385 - Amazon.in - AUT -INFO - Result #4 : Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate
+2021-11-07 14:16:22,385 - Amazon.in - AUT -INFO - Result #5 : Samsung Galaxy M31 (Ocean Blue, 8GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+2021-11-07 14:16:22,385 - Amazon.in - AUT -INFO - Result #6 : Samsung Galaxy M21 2021 Edition (Arctic Blue, 4GB RAM, 64GB Storage) | FHD+ sAMOLED | 6 Months Free Screen Replacement for Prime (SM-M215GLBDINS)
+2021-11-07 14:16:22,386 - Amazon.in - AUT -INFO - Result #7 : Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)
+2021-11-07 14:16:22,386 - Amazon.in - AUT -INFO - Result #8 : Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+2021-11-07 14:16:22,386 - Amazon.in - AUT -INFO - Result #9 : Samsung Galaxy M52 5G (Blazing Black, 6GB RAM, 128GB Storage) Latest Snapdragon 778G 5G | sAMOLED 120Hz Display
+2021-11-07 14:16:22,386 - Amazon.in - AUT -INFO - Result #10 : Samsung Galaxy M31 (Space Black, 8GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+2021-11-07 14:16:22,387 - Amazon.in - AUT -INFO - Result #11 : OPPO A74 5G (Fluid Black,6GB RAM,128GB Storage) - 5G Android Smartphone | 5000 mAh Battery | 18W Fast Charge | 90Hz LCD Display
+2021-11-07 14:16:22,387 - Amazon.in - AUT -INFO - Result #12 : I KALL K260 Smartphone (2GB, 16GB) (Purple)
+2021-11-07 14:16:22,387 - Amazon.in - AUT -INFO - Result #13 : Samsung Galaxy M21 2021 Edition (Arctic Blue, 6GB RAM, 128GB Storage) | FHD+ sAMOLED | 6 Months Free Screen Replacement for Prime (SM-M215GLBHINS)
+2021-11-07 14:16:22,387 - Amazon.in - AUT -INFO - Result #14 : Samsung Galaxy M21 2021 Edition (Charcoal Black, 4GB RAM, 64GB Storage) | FHD+ sAMOLED | 6 Months Free Screen Replacement for Prime (SM-M215GZKDINS)
+2021-11-07 14:16:22,387 - Amazon.in - AUT -INFO - Result #15 : Samsung Galaxy M32 (Black, 6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+2021-11-07 14:16:22,388 - Amazon.in - AUT -INFO - Result #16 : Samsung Galaxy M32 (Black, 4GB RAM, 64GB Storage) 6 Months Free Screen Replacement for Prime
+2021-11-07 14:16:22,388 - Amazon.in - AUT -INFO - Result #17 : Samsung Galaxy M32 (Light Blue, 6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+2021-11-07 14:16:22,388 - Amazon.in - AUT -INFO - Result #18 : Samsung Galaxy M12 (Black,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+2021-11-07 14:16:22,389 - Amazon.in - AUT -INFO - Result #19 : Samsung Galaxy M32 5G (Slate Black, 8GB RAM, 128GB Storage)
+2021-11-07 14:16:22,389 - Amazon.in - AUT -INFO - Result #20 : Samsung Galaxy A52s 5G (Mint, 8GB RAM, 128GB Storage)
+2021-11-07 14:16:22,389 - Amazon.in - AUT -INFO - No. of matched items : 18
+2021-11-07 14:16:22,389 - Amazon.in - AUT -INFO - No. of unmatched items : 2
+2021-11-07 14:16:22,389 - Amazon.in - AUT -INFO - Search results are relavant.
+2021-11-07 14:16:26,305 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:16:36,574 - Amazon.in - AUT -INFO - Searched : samsung
+2021-11-07 14:16:38,393 - Amazon.in - AUT -INFO - Clicked one result randomly
+2021-11-07 14:16:38,403 - Amazon.in - AUT -INFO - Opened in new tab
+2021-11-07 14:16:43,296 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:16:56,709 - Amazon.in - AUT -INFO - Searched : samsung
+2021-11-07 14:16:58,169 - Amazon.in - AUT -INFO - Clicked one result randomly
+2021-11-07 14:16:58,248 - Amazon.in - AUT -INFO - Switched to Product's tab
+2021-11-07 14:17:08,141 - Amazon.in - AUT -INFO - Count of Cart items : Before Adding : 0
+2021-11-07 14:17:08,926 - Amazon.in - AUT -INFO - Clicked : Add to cart
+2021-11-07 14:17:12,609 - Amazon.in - AUT -INFO - Msg present : Added to Cart
+2021-11-07 14:17:21,421 - Amazon.in - AUT -INFO - Count of Cart items : After Adding : 1
+2021-11-07 14:17:26,846 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:17:39,813 - Amazon.in - AUT -INFO - Searched : samsung
+2021-11-07 14:17:40,687 - Amazon.in - AUT -INFO - Clicked one result randomly
+2021-11-07 14:17:40,698 - Amazon.in - AUT -INFO - Switched to Product's tab
+2021-11-07 14:17:48,277 - Amazon.in - AUT -INFO - Count of Cart items : Before Add : 0
+2021-11-07 14:17:49,358 - Amazon.in - AUT -INFO - Clicked : Add to cart
+2021-11-07 14:17:57,284 - Amazon.in - AUT -INFO - Count of Cart items : After Add : 1
+2021-11-07 14:17:59,645 - Amazon.in - AUT -INFO - Opened : Shopping Cart
+2021-11-07 14:18:00,150 - Amazon.in - AUT -INFO - Item has been deleted from cart
+2021-11-07 14:18:00,247 - Amazon.in - AUT -INFO - Count of Cart items : After Delete : 0
+2021-11-07 14:18:03,904 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:18:09,055 - Amazon.in - AUT -INFO - Signing in...
+2021-11-07 14:18:19,963 - Amazon.in - AUT -INFO - Searched : samsung
+2021-11-07 14:18:21,837 - Amazon.in - AUT -INFO - Clicked one result randomly
+2021-11-07 14:18:21,861 - Amazon.in - AUT -INFO - Switched to Product's tab
+2021-11-07 14:18:30,985 - Amazon.in - AUT -INFO - Click : Add to Wish List
+2021-11-07 14:18:32,289 - Amazon.in - AUT -INFO - Msg present : Added to Wish List
+2021-11-07 14:18:34,315 - Amazon.in - AUT -INFO - Opened : Wish List Page
+2021-11-07 14:18:38,649 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:18:44,302 - Amazon.in - AUT -INFO - hidden	:Acc Fest
+2021-11-07 14:18:44,302 - Amazon.in - AUT -INFO - hidden	:Super Sale
+2021-11-07 14:18:44,302 - Amazon.in - AUT -INFO - visible	:Join Prime
+2021-11-07 14:18:44,303 - Amazon.in - AUT -INFO - hidden	:Mobiles
+2021-11-07 14:18:44,303 - Amazon.in - AUT -INFO - hidden	:Recharge or Pay bills
+2021-11-07 14:18:44,303 - Amazon.in - AUT -INFO - hidden	:BreatheSafe
+2021-11-07 14:18:48,155 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:18:53,311 - Amazon.in - AUT -INFO - Previous button on Carousel : Visible
+2021-11-07 14:18:53,348 - Amazon.in - AUT -INFO - Next button on Carousel : Visible
+2021-11-07 14:18:53,444 - Amazon.in - AUT -INFO - Names of items in Carousel :[Acc Fest, One Plus Pre Pre Tease, Acc Fest, Join Prime, Recharge or Pay bills, Join prime now, BreatheSafe]
+2021-11-07 14:18:53,691 - Amazon.in - AUT -INFO - Clicked : Next button on Carousel
+2021-11-07 14:18:55,383 - Amazon.in - AUT -INFO - Now visible : Recharge or Pay bills
+2021-11-07 14:18:55,507 - Amazon.in - AUT -INFO - Clicked : Next button on Carousel
+2021-11-07 14:18:57,104 - Amazon.in - AUT -INFO - Now visible : Join prime now
+2021-11-07 14:18:57,216 - Amazon.in - AUT -INFO - Clicked : Next button on Carousel
+2021-11-07 14:18:58,788 - Amazon.in - AUT -INFO - Now visible : BreatheSafe
+2021-11-07 14:18:58,880 - Amazon.in - AUT -INFO - Clicked : Next button on Carousel
+2021-11-07 14:19:00,476 - Amazon.in - AUT -INFO - Now visible : Acc Fest
+2021-11-07 14:19:00,664 - Amazon.in - AUT -INFO - Clicked : Next button on Carousel
+2021-11-07 14:19:02,234 - Amazon.in - AUT -INFO - Now visible : One Plus Pre Pre Tease
+2021-11-07 14:19:02,397 - Amazon.in - AUT -INFO - Clicked : Next button on Carousel
+2021-11-07 14:19:03,980 - Amazon.in - AUT -INFO - Now visible : Acc Fest
+2021-11-07 14:19:04,090 - Amazon.in - AUT -INFO - Clicked : Next button on Carousel
+2021-11-07 14:19:05,660 - Amazon.in - AUT -INFO - Now visible : Join Prime
+2021-11-07 14:19:05,791 - Amazon.in - AUT -INFO - Clicked : Previous button on Carousel
+2021-11-07 14:19:07,385 - Amazon.in - AUT -INFO - Now visible : Acc Fest
+2021-11-07 14:19:07,503 - Amazon.in - AUT -INFO - Clicked : Previous button on Carousel
+2021-11-07 14:19:09,098 - Amazon.in - AUT -INFO - Now visible : One Plus Pre Pre Tease
+2021-11-07 14:19:09,204 - Amazon.in - AUT -INFO - Clicked : Previous button on Carousel
+2021-11-07 14:19:10,792 - Amazon.in - AUT -INFO - Now visible : Acc Fest
+2021-11-07 14:19:10,899 - Amazon.in - AUT -INFO - Clicked : Previous button on Carousel
+2021-11-07 14:19:12,485 - Amazon.in - AUT -INFO - Now visible : BreatheSafe
+2021-11-07 14:19:12,607 - Amazon.in - AUT -INFO - Clicked : Previous button on Carousel
+2021-11-07 14:19:14,203 - Amazon.in - AUT -INFO - Now visible : Join prime now
+2021-11-07 14:19:14,301 - Amazon.in - AUT -INFO - Clicked : Previous button on Carousel
+2021-11-07 14:19:15,883 - Amazon.in - AUT -INFO - Now visible : Recharge or Pay bills
+2021-11-07 14:19:15,974 - Amazon.in - AUT -INFO - Clicked : Previous button on Carousel
+2021-11-07 14:19:17,565 - Amazon.in - AUT -INFO - Now visible : Join Prime
+2021-11-07 14:19:21,125 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:19:28,960 - Amazon.in - AUT -INFO - Navigated to : Help page
+2021-11-07 14:19:30,343 - Amazon.in - AUT -INFO - Self Service cards are visible.
+2021-11-07 14:19:30,343 - Amazon.in - AUT -INFO - Options available on Help page are :
+2021-11-07 14:19:31,008 - Amazon.in - AUT -INFO - Your Orders
+2021-11-07 14:19:31,009 - Amazon.in - AUT -INFO -         Track packages
+2021-11-07 14:19:31,009 - Amazon.in - AUT -INFO -         Edit or cancel orders
+2021-11-07 14:19:31,009 - Amazon.in - AUT -INFO - Returns and Refunds
+2021-11-07 14:19:31,010 - Amazon.in - AUT -INFO -         Return or exchange items
+2021-11-07 14:19:31,010 - Amazon.in - AUT -INFO -         Print return mailing labels
+2021-11-07 14:19:31,010 - Amazon.in - AUT -INFO - Manage Addresses
+2021-11-07 14:19:31,010 - Amazon.in - AUT -INFO -         Update your addresses
+2021-11-07 14:19:31,011 - Amazon.in - AUT -INFO -         Add address, landmark details
+2021-11-07 14:19:31,011 - Amazon.in - AUT -INFO - Manage Prime
+2021-11-07 14:19:31,011 - Amazon.in - AUT -INFO -         View your benefits
+2021-11-07 14:19:31,011 - Amazon.in - AUT -INFO -         Membership details
+2021-11-07 14:19:31,011 - Amazon.in - AUT -INFO - Payment Settings
+2021-11-07 14:19:31,012 - Amazon.in - AUT -INFO -         Add or edit payment methods
+2021-11-07 14:19:31,012 - Amazon.in - AUT -INFO -         Change expired debit or credit card
+2021-11-07 14:19:31,012 - Amazon.in - AUT -INFO - Account Settings
+2021-11-07 14:19:31,013 - Amazon.in - AUT -INFO -         Change your email or password
+2021-11-07 14:19:31,013 - Amazon.in - AUT -INFO -         Update login information
+2021-11-07 14:19:31,013 - Amazon.in - AUT -INFO - Amazon and COVID-19
+2021-11-07 14:19:31,013 - Amazon.in - AUT -INFO -         Impacts on orders and deliveries
+2021-11-07 14:19:31,013 - Amazon.in - AUT -INFO - Digital Services and Device Support
+2021-11-07 14:19:31,014 - Amazon.in - AUT -INFO -         Find device help and support
+2021-11-07 14:19:31,014 - Amazon.in - AUT -INFO -         Troubleshoot device issues
+2021-11-07 14:19:34,756 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:19:39,485 - Amazon.in - AUT -INFO - Signing in...
+2021-11-07 14:19:48,599 - Amazon.in - AUT -INFO - Navigated to : Help page
+2021-11-07 14:19:50,129 - Amazon.in - AUT -INFO - Clicked button : Contact Us
+2021-11-07 14:19:50,145 - Amazon.in - AUT -INFO - Switched to Contact Us tab
+2021-11-07 14:19:51,096 - Amazon.in - AUT -INFO - Chat and Call Me options are displayed
+2021-11-07 14:19:57,646 - Amazon.in - AUT -INFO - Browser : Google Chrome
+2021-11-07 14:20:04,801 - Amazon.in - AUT -INFO - Categories are :[All Categories, Deals, Alexa Skills, Amazon Devices, Amazon Fashion, Amazon Fresh, Amazon Pantry, Appliances, Apps & Games, Baby, Beauty, Books, Car & Motorbike, Clothing & Accessories, Collectibles, Computers & Accessories, Electronics, Furniture, Garden & Outdoors, Gift Cards, Grocery & Gourmet Foods, Health & Personal Care, Home & Kitchen, Industrial & Scientific, Jewellery, Kindle Store, Luggage & Bags, Luxury Beauty, Movies & TV Shows, Music, Musical Instruments, Office Products, Pet Supplies, Prime Video, Shoes & Handbags, Software, Sports, Fitness & Outdoors, Tools & Home Improvement, Toys & Games, Under ?500, Video Games, Watches]
+2021-11-07 14:20:04,803 - Amazon.in - AUT -INFO - Now selecting : All Categories
+2021-11-07 14:20:05,082 - Amazon.in - AUT -INFO - Now selecting : Deals
+2021-11-07 14:20:05,845 - Amazon.in - AUT -INFO - Now selecting : Alexa Skills
+2021-11-07 14:20:06,232 - Amazon.in - AUT -INFO - Now selecting : Amazon Devices
+2021-11-07 14:20:06,645 - Amazon.in - AUT -INFO - Now selecting : Amazon Fashion
+2021-11-07 14:20:06,982 - Amazon.in - AUT -INFO - Now selecting : Amazon Fresh
+2021-11-07 14:20:07,342 - Amazon.in - AUT -INFO - Now selecting : Amazon Pantry
+2021-11-07 14:20:07,695 - Amazon.in - AUT -INFO - Now selecting : Appliances
+2021-11-07 14:20:08,049 - Amazon.in - AUT -INFO - Now selecting : Apps & Games
+2021-11-07 14:20:08,417 - Amazon.in - AUT -INFO - Now selecting : Baby
+2021-11-07 14:20:08,809 - Amazon.in - AUT -INFO - Now selecting : Beauty
+2021-11-07 14:20:09,233 - Amazon.in - AUT -INFO - Now selecting : Books
+2021-11-07 14:20:09,624 - Amazon.in - AUT -INFO - Now selecting : Car & Motorbike
+2021-11-07 14:20:10,020 - Amazon.in - AUT -INFO - Now selecting : Clothing & Accessories
+2021-11-07 14:20:10,428 - Amazon.in - AUT -INFO - Now selecting : Collectibles
+2021-11-07 14:20:10,976 - Amazon.in - AUT -INFO - Now selecting : Computers & Accessories
+2021-11-07 14:20:11,381 - Amazon.in - AUT -INFO - Now selecting : Electronics
+2021-11-07 14:20:11,793 - Amazon.in - AUT -INFO - Now selecting : Furniture
+2021-11-07 14:20:12,250 - Amazon.in - AUT -INFO - Now selecting : Garden & Outdoors
+2021-11-07 14:20:12,693 - Amazon.in - AUT -INFO - Now selecting : Gift Cards
+2021-11-07 14:20:13,125 - Amazon.in - AUT -INFO - Now selecting : Grocery & Gourmet Foods
+2021-11-07 14:20:13,548 - Amazon.in - AUT -INFO - Now selecting : Health & Personal Care
+2021-11-07 14:20:14,012 - Amazon.in - AUT -INFO - Now selecting : Home & Kitchen
+2021-11-07 14:20:14,483 - Amazon.in - AUT -INFO - Now selecting : Industrial & Scientific
+2021-11-07 14:20:14,928 - Amazon.in - AUT -INFO - Now selecting : Jewellery
+2021-11-07 14:20:15,429 - Amazon.in - AUT -INFO - Now selecting : Kindle Store
+2021-11-07 14:20:15,988 - Amazon.in - AUT -INFO - Now selecting : Luggage & Bags
+2021-11-07 14:20:16,588 - Amazon.in - AUT -INFO - Now selecting : Luxury Beauty
+2021-11-07 14:20:17,103 - Amazon.in - AUT -INFO - Now selecting : Movies & TV Shows
+2021-11-07 14:20:17,608 - Amazon.in - AUT -INFO - Now selecting : Music
+2021-11-07 14:20:18,154 - Amazon.in - AUT -INFO - Now selecting : Musical Instruments
+2021-11-07 14:20:18,677 - Amazon.in - AUT -INFO - Now selecting : Office Products
+2021-11-07 14:20:19,177 - Amazon.in - AUT -INFO - Now selecting : Pet Supplies
+2021-11-07 14:20:19,715 - Amazon.in - AUT -INFO - Now selecting : Prime Video
+2021-11-07 14:20:20,287 - Amazon.in - AUT -INFO - Now selecting : Shoes & Handbags
+2021-11-07 14:20:20,886 - Amazon.in - AUT -INFO - Now selecting : Software
+2021-11-07 14:20:21,559 - Amazon.in - AUT -INFO - Now selecting : Sports, Fitness & Outdoors
+2021-11-07 14:20:22,112 - Amazon.in - AUT -INFO - Now selecting : Tools & Home Improvement
+2021-11-07 14:20:22,644 - Amazon.in - AUT -INFO - Now selecting : Toys & Games
+2021-11-07 14:20:23,191 - Amazon.in - AUT -INFO - Now selecting : Under ?500
+2021-11-07 14:20:23,776 - Amazon.in - AUT -INFO - Now selecting : Video Games
+2021-11-07 14:20:24,392 - Amazon.in - AUT -INFO - Now selecting : Watches

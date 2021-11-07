@@ -1,15 +1,15 @@
 package testcases;
 
-import org.testng.annotations.Test;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;
 
 public class TC_06_VerifyKeepMeSignedIn extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : 'Keep me signed in' functionality")
+	@Test(enabled = true, description = "Verify : 'Keep me signed in' functionality")
 	public void verifyKeepMeSignedIn() {
 
 		HomePage homePage = new HomePage(driver);

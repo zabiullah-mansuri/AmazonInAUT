@@ -7,7 +7,7 @@ import pages.HelpPage;
 import pages.HomePage;
 
 public class TC_17_CustomerServicePageDesiredOptions extends BaseTestClass {
-	@Test(enabled = false, description = "Verify : Customer Service page has desired options")
+	@Test(enabled = true, description = "Verify : Customer Service page has desired options")
 	public void customerServicePageDesiredOptions() {
 
 		HomePage homePage = new HomePage(driver);

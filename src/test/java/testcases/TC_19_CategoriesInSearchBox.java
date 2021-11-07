@@ -9,7 +9,7 @@ import pages.HomePage;
 
 public class TC_19_CategoriesInSearchBox extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify dropdown for categories in search box working or not")
+	@Test(enabled = true, description = "Verify dropdown for categories in search box working or not")
 	public void categoriesInSearchBox() {
 		HomePage homePage = new HomePage(driver);
 
@@ -19,7 +19,7 @@ public class TC_19_CategoriesInSearchBox extends BaseTestClass {
 			log4jlogger.info("Now selecting : " + category);
 			homePage.selectThisSearchCategory(category);
 			try {
-				Thread.sleep(500);
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

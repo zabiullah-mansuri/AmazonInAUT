@@ -1,14 +1,14 @@
 package testcases;
 
-import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;
 
 public class TC_04_LoginBlankId extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : Login with fields blank")
+	@Test(enabled = true, description = "Verify : Login with fields blank")
 	public void loginBlankId() {
 
 		HomePage homePage = new HomePage(driver);

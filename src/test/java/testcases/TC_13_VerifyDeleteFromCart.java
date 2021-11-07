@@ -7,18 +7,17 @@ import pages.HomePage;
 import pages.ProductPage;
 import pages.SearchResultsPage;
 import pages.ShoppingCartPage;
-import utilities.Reporter;
 
 public class TC_13_VerifyDeleteFromCart extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : Delete from cart functionality")
+	@Test(enabled = true, description = "Verify : Delete from cart functionality")
 	public void verifyDeleteFromCart() {
 
 		HomePage homePage = new HomePage(driver);
 		SearchResultsPage searchResultsPage = new SearchResultsPage(driver);
 		ProductPage productPage = new ProductPage(driver);
 		ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
-		String searchKey = "iPhone";
+		String searchKey = "samsung";
 
 		homePage.searchForThisProduct(searchKey);
 		log4jlogger.info("Searched : " + searchKey);

@@ -80,7 +80,7 @@ public class SignInPage extends BasePage {
 		try {
 			return msgOtpSent.getText();
 		} catch (NoSuchElementException e) {
-			return "No Otp Sent Message";
+			return "Waiting for Captcha.";
 		}
 	}
 

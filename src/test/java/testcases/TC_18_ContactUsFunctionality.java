@@ -8,7 +8,7 @@ import pages.HomePage;
 import pages.SignInPage;
 
 public class TC_18_ContactUsFunctionality extends BaseTestClass {
-	@Test(enabled = false, description = "Verify : All contact us options working")
+	@Test(enabled = true, description = "Verify : All contact us options working")
 	public void contactUsFunctionality() {
 		HomePage homePage = new HomePage(driver);
 		SignInPage signInPage = new SignInPage(driver);

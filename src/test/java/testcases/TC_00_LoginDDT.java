@@ -24,30 +24,19 @@ public class TC_00_LoginDDT extends BaseTestClass {
 		signInPage.enterUserId(username);
 		log4jlogger.info("Entered user id : " + userId);
 		signInPage.clickContinue();
+
 		try {
+			signInPage.enterPassword(password);
+			log4jlogger.info("Entered password : " + password);
+			signInPage.clickSignIn();
+			log4jlogger.info("Clicked : Sign in button");
+		} catch (NoSuchElementException e) {
 			if (signInPage.getAuthErrorMsg().contains("We cannot find an account with that email address")) {
 				log4jlogger.info("Error msg present on invalid username.");
-				Assert.assertTrue(true);
 				return;
 			}
-		} catch (NoSuchElementException e) {
-
 		}
 
-		signInPage.enterPassword(password);
-		log4jlogger.info("Entered password : " + password);
-
-		signInPage.clickSignIn();
-		log4jlogger.info("Clicked : Sign in button");
-		try {
-			if (signInPage.getAuthErrorMsg().contains("Your password is incorrect")) {
-				log4jlogger.info("Error msg present on invalid login.");
-				Assert.assertTrue(true);
-				return;
-			}
-		} catch (NoSuchElementException e) {
-
-		}
 		try {
 			if (homePage.getSignedInUserName().contains(name)) {
 				log4jlogger.info("Login successfull.");
@@ -55,7 +44,11 @@ public class TC_00_LoginDDT extends BaseTestClass {
 				return;
 			}
 		} catch (NoSuchElementException e) {
-			log4jlogger.error("Login failed.");
+			if (signInPage.getAuthErrorMsg().contains("Your password is incorrect")) {
+				log4jlogger.info("Error msg present on invalid login.");
+				Assert.assertTrue(true);
+				return;
+			}
 		}
 	}
 
@@ -76,7 +69,7 @@ public class TC_00_LoginDDT extends BaseTestClass {
 
 	@DataProvider(name = "TempLoginData")
 	public String[][] getTempLoginData() {
-		String data[][] = { { "invalid", "invalid" } };
+		String data[][] = { { "8733806144", "QA@automation" } };
 		return data;
 	}
 }

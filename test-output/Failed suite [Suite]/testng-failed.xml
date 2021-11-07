@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.Reporter"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcases.TC_13_VerifyDeleteFromCart">
+        <methods>
+          <include name="setup"/>
+          <include name="beforeEachTest"/>
+          <include name="afterEachTest"/>
+          <include name="verifyDeleteFromCart"/>
+        </methods>
+      </class> <!-- testcases.TC_13_VerifyDeleteFromCart -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

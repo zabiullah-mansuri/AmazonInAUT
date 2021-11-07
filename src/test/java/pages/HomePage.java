@@ -1,10 +1,12 @@
 package pages;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -12,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage {
 
@@ -33,10 +36,10 @@ public class HomePage extends BasePage {
 	@FindBy(id = "twotabsearchtextbox")
 	WebElement txtSearch;
 
-	@FindBy(id = "suggestions")
+	@FindBy(id = "nav-flyout-searchAjax")
 	WebElement suggestionsBox;
 
-	@FindBy(xpath = "//div[@id='suggestions']/div[@class='s-suggestion']")
+	@FindBy(xpath = "//div[@id='suggestions']//div[@class='s-suggestion' and @data-alias='aps']")
 	List<WebElement> suggestionItems;
 
 	@FindBy(id = "nav-cart")
@@ -68,6 +71,10 @@ public class HomePage extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	public void refresh() {
+		driver.navigate().refresh();
+	}
+
 	public void clickOnAccountAndListsThenSignIn() {
 		accountAndLists.click();
 	}
@@ -76,9 +83,15 @@ public class HomePage extends BasePage {
 		return helloName.getText();
 	}
 
-	public void clickSignOut() {
-		Actions action = new Actions(driver);
-		action.moveToElement(accountAndLists).moveToElement(signOut).click().build().perform();
+	public boolean clickSignOut() {
+
+		try {
+			Actions actions = new Actions(driver);
+			actions.moveToElement(accountAndLists).moveToElement(signOut).click().build().perform();
+			return true;
+		} catch (ElementNotInteractableException e) {
+			return false;
+		}
 	}
 
 	public String getCurrentSearchCategory() {
@@ -104,18 +117,17 @@ public class HomePage extends BasePage {
 		return txtSearch.getAttribute("placeholder");
 	}
 
-	public List<String> searchForThisKeyword(char input) {
+	public List<String> searchForThisKeyword(char input) throws InterruptedException, TimeoutException {
 
 		txtSearch.sendKeys(Character.toString(input));
 
-		wait.until(ExpectedConditions.visibilityOf(suggestionsBox));
-
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		if (txtSearch.getAttribute("value").length() == 1) {
+			wait = new WebDriverWait(driver, 7);
+			System.out.println("waiting for suggestions box...");
+			wait.until(ExpectedConditions.visibilityOf(suggestionsBox));
+		} else {
+			Thread.sleep(2300);
 		}
-
 		return suggestionItems.stream().map(item -> item.getText()).collect(Collectors.toList());
 	}
 
@@ -138,7 +150,7 @@ public class HomePage extends BasePage {
 
 	public Map<String, String> getCarouselItemNamesAndVisibility() {
 
-		Map<String, String> carouselItemNamesAndVisibility = new HashMap<String, String>();
+		Map<String, String> carouselItemNamesAndVisibility = new LinkedHashMap<String, String>();
 
 		carouselItemImages.forEach(item -> {
 			carouselItemNamesAndVisibility.put(item.getAttribute("alt"), item.getCssValue("visibility"));
@@ -178,6 +190,8 @@ public class HomePage extends BasePage {
 
 	public void clickHMenuCustomerService() {
 		clickHMenu();
+		wait = new WebDriverWait(driver, 15);
+		wait.until(ExpectedConditions.elementToBeClickable(hMenuCustomerService));
 		hMenuCustomerService.click();
 	}
 }

@@ -7,14 +7,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC_00_LoginDDT">
+      <class name="testcases.TC_07_VerifyAfterSignOutAccess">
         <methods>
           <include name="setup"/>
           <include name="beforeEachTest"/>
+          <include name="verifyAfterSignOutAccess"/>
           <include name="afterEachTest"/>
-          <include name="loginDDT" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testcases.TC_00_LoginDDT -->
+      </class> <!-- testcases.TC_07_VerifyAfterSignOutAccess -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

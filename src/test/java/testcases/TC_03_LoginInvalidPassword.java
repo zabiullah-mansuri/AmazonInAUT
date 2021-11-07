@@ -8,7 +8,7 @@ import pages.SignInPage;
 
 public class TC_03_LoginInvalidPassword extends BaseTestClass {
 
-	@Test(enabled = false, description = "Verify : Login with invalid password")
+	@Test(enabled = true, description = "Verify : Login with invalid password")
 	public void loginInvalidPassword() {
 
 		HomePage homePage = new HomePage(driver);

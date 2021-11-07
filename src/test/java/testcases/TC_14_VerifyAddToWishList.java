@@ -10,7 +10,7 @@ import pages.SignInPage;
 import pages.WishListPage;
 
 public class TC_14_VerifyAddToWishList extends BaseTestClass {
-	@Test(enabled = false, description = "Verify : Add to Wish List")
+	@Test(enabled = true, description = "Verify : Add to Wish List")
 	public void verifyAddToWishList() {
 
 		SignInPage signInPage = new SignInPage(driver);
@@ -19,7 +19,7 @@ public class TC_14_VerifyAddToWishList extends BaseTestClass {
 		ProductPage productPage = new ProductPage(driver);
 		WishListPage wishListPage = new WishListPage(driver);
 
-		String searchKey = "motorola";
+		String searchKey = "samsung";
 
 		log4jlogger.info("Signing in...");
 		homePage.clickOnAccountAndListsThenSignIn();
