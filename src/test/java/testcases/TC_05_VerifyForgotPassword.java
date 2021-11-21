@@ -15,26 +15,26 @@ public class TC_05_VerifyForgotPassword extends BaseTestClass {
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
-		log4jlogger.info("Clicked : Account & Lists");
+		log4jLogger.info("Clicked : Account & Lists");
 
 		signInPage.enterUserId(userId);
-		log4jlogger.info("Entered user id : " + userId);
+		log4jLogger.info("Entered user id : " + userId);
 
 		signInPage.clickContinue();
-		log4jlogger.info("Clicked : Continue button");
+		log4jLogger.info("Clicked : Continue button");
 
 		signInPage.clickForgotPasswordLink();
-		log4jlogger.info("Clicked : Forgot Password link");
+		log4jLogger.info("Clicked : Forgot Password link");
 
 		signInPage.clickContinue();
-		log4jlogger.info("Clicked : Continue button");
+		log4jLogger.info("Clicked : Continue button");
 
 		if (signInPage.getOtpSentMsg().contains("We've sent an OTP to")
 				|| signInPage.getOtpSentMsg().equals("Waiting for Captcha.")) {
-			log4jlogger.info("Otp has been sent.");
+			log4jLogger.info("Otp has been sent.");
 			Assert.assertTrue(true);
 		} else {
-			log4jlogger.info("Otp sent msg absent.");
+			log4jLogger.error("Otp sent msg absent.");
 			Assert.assertTrue(false);
 		}
 	}

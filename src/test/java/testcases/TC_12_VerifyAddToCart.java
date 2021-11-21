@@ -17,32 +17,32 @@ public class TC_12_VerifyAddToCart extends BaseTestClass {
 		String searchKey = "samsung";
 
 		homePage.searchForThisProduct(searchKey);
-		log4jlogger.info("Searched : " + searchKey);
+		log4jLogger.info("Searched : " + searchKey);
 
 		searchResultsPage.clickOnOneResultRandomly();
-		log4jlogger.info("Clicked one result randomly");
+		log4jLogger.info("Clicked one result randomly");
 
 		String[] tabs = driver.getWindowHandles().toArray(new String[2]);
 		driver.switchTo().window(tabs[1]);
-		log4jlogger.info("Switched to Product's tab");
+		log4jLogger.info("Switched to Product's tab");
 
 		int beforeAdding = homePage.getItemsInCartCount();
-		log4jlogger.info("Count of Cart items : Before Adding : " + beforeAdding);
+		log4jLogger.info("Count of Cart items : Before Adding : " + beforeAdding);
 
 		productPage.clickAddToCart();
-		log4jlogger.info("Clicked : Add to cart");
+		log4jLogger.info("Clicked : Add to cart");
 
 		if (productPage.isAddedToCartMsgDisplayed()) {
-			log4jlogger.info("Msg present : Added to Cart");
+			log4jLogger.info("Msg present : Added to Cart");
 			Assert.assertTrue(true);
 		} else {
-			log4jlogger.warn("Msg absent : Added to Cart");
+			log4jLogger.error("Msg absent : Added to Cart");
 			Assert.assertTrue(false);
 		}
 
 		driver.navigate().refresh();
 
 		int afterAdding = homePage.getItemsInCartCount();
-		log4jlogger.info("Count of Cart items : After Adding : " + afterAdding);
+		log4jLogger.info("Count of Cart items : After Adding : " + afterAdding);
 	}
 }

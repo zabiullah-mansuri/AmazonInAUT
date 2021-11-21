@@ -16,43 +16,43 @@ public class TC_07_VerifyAfterSignOutAccess extends BaseTestClass {
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
-		log4jlogger.info("Clicked : Account & Lists");
+		log4jLogger.info("Clicked : Account & Lists");
 
 		signInPage.enterUserId(userId);
-		log4jlogger.info("Entered user id : " + userId);
+		log4jLogger.info("Entered user id : " + userId);
 
 		signInPage.clickContinue();
-		log4jlogger.info("Clicked : Continue button");
+		log4jLogger.info("Clicked : Continue button");
 
 		signInPage.enterPassword(password);
-		log4jlogger.info("Entered password : " + password);
+		log4jLogger.info("Entered password : " + password);
 
 		signInPage.clickSignIn();
-		log4jlogger.info("Clicked : Sign in button");
+		log4jLogger.info("Clicked : Sign in button");
 
 		try {
 			homePage.getSignedInUserName().contains(name);
-			log4jlogger.info("Login successfull.");
+			log4jLogger.info("Login successfull.");
 		} catch (NoSuchElementException e) {
-			log4jlogger.error("Login failed.");
+			log4jLogger.error("Login failed.");
 		}
 
-		log4jlogger.info("Clicking : Sign out");
+		log4jLogger.info("Clicking : Sign out");
 		while (!homePage.clickSignOut()) {
-			log4jlogger.info("Clicking again : Sign out");
+			log4jLogger.info("Clicking again : Sign out");
 		}
 
 		driver.navigate().back();
-		log4jlogger.info("Navigated: Back");
+		log4jLogger.info("Navigated: Back");
 
 		driver.navigate().refresh();
-		log4jlogger.info("Refreshed page");
+		log4jLogger.info("Refreshed page");
 
 		if (homePage.getSignedInUserName().contains(name)) {
-			log4jlogger.error("Login still retained.");
+			log4jLogger.error("Login still retained.");
 			Assert.assertTrue(false);
 		} else {
-			log4jlogger.info("No access after sign out");
+			log4jLogger.info("No access after sign out");
 			Assert.assertTrue(true);
 		}
 	}

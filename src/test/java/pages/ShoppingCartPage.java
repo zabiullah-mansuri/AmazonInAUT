@@ -1,8 +1,9 @@
 package pages;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,13 +23,9 @@ public class ShoppingCartPage extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public List<String> getCartItemNames() {
-		
-		System.out.println("No. of items in cart : " + itemNames.size());
-		
-		List<String> names = new ArrayList<String>();
-		itemNames.forEach(item -> names.add(item.getText()));
-		return names;
+	public List<String> getCartItemNames(Logger logger) {
+		logger.info("No. of items in cart : " + itemNames.size());
+		return itemNames.stream().map(item -> item.getText()).collect(Collectors.toList());
 	}
 
 	public void deleteItemAtIndex(int index) {

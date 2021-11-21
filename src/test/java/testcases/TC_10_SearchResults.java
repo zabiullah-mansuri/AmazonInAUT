@@ -18,19 +18,19 @@ public class TC_10_SearchResults extends BaseTestClass {
 
 		homePage.searchForThisProduct(searchKey);
 		List<String> results = searchResultsPage.getAllResults();
-		log4jlogger.info("Search Results count for " + searchKey + " : " + results.size());
+		log4jLogger.info("Search Results count for " + searchKey + " : " + results.size());
 
 		int i = 1;
 		for (String result : results) {
-			log4jlogger.info("Result #" + i + " : " + result);
+			log4jLogger.info("Result #" + i + " : " + result);
 			i++;
 		}
 
 		if (areMostOfOutputsMatchingInput(searchKey, results)) {
-			log4jlogger.info("Search results are relavant.");
+			log4jLogger.info("Search results are relavant.");
 			Assert.assertTrue(true);
 		} else {
-			log4jlogger.info("Search results are irrelavant.");
+			log4jLogger.error("Search results are irrelavant.");
 			Assert.assertTrue(false);
 		}
 	}

@@ -1,22 +1,18 @@
 package testcases;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -27,7 +23,7 @@ import utilities.ReadConfig;
 
 public class BaseTestClass {
 
-	static WebDriver driver;
+	WebDriver driver;
 	String browser;
 	String appUrl;
 	String name;
@@ -36,7 +32,8 @@ public class BaseTestClass {
 	String wrongUserId;
 	String wrongPassword;
 	ReadConfig readConfig;
-	static Logger log4jlogger;
+	Logger log4jLogger;
+	ITestContext context;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -50,42 +47,45 @@ public class BaseTestClass {
 		wrongUserId = readConfig.getWrongUserId();
 		wrongPassword = readConfig.getWrongPassword();
 
-		log4jlogger = Logger.getLogger("Amazon.in - AUT");
+		log4jLogger = Logger.getLogger("Amazon.in - AUT");
 		PropertyConfigurator.configure("log4j.properties");
 	}
 
 	@BeforeMethod
-	public void beforeEachTest() {
+	public void beforeEachTest(ITestContext context) {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 			driver = new ChromeDriver();
-			log4jlogger.info("Browser : Google Chrome");
+			log4jLogger.info("Browser : Google Chrome");
 		} else if (browser.equals("chrome-headless")) {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 			driver = new ChromeDriver(options);
-			log4jlogger.info("Browser : Google Chrome in headless mode");
+			log4jLogger.info("Browser : Google Chrome in headless mode");
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", readConfig.getFireFoxDriverPath());
 			driver = new FirefoxDriver();
-			log4jlogger.info("Browser : Mozilla Firefox");
+			log4jLogger.info("Browser : Mozilla Firefox");
 		} else if (browser.equals("ie")) {
 			System.setProperty("webdriver.ie.driver", readConfig.getIEDriverPath());
 			driver = new InternetExplorerDriver();
-			log4jlogger.info("Browser : Internet Explorer");
+			log4jLogger.info("Browser : Internet Explorer");
 		} else if (browser.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", readConfig.getEdgeDriverPath());
 			driver = new EdgeDriver();
-			log4jlogger.info("Browser : Microsoft Edge");
+			log4jLogger.info("Browser : Microsoft Edge");
 		}
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get(appUrl);
 		driver.manage().window().maximize();
+		driver.get(appUrl);
+		context.setAttribute("driver", driver);
+		context.setAttribute("log4jLogger", log4jLogger);
+		this.context = context;
 	}
 
 	@AfterMethod
-	public void afterEachTest(ITestResult tr) {
+	public void afterEachTest(ITestResult result) {
 		driver.quit();
 	}
 
@@ -98,20 +98,8 @@ public class BaseTestClass {
 				unmatchedCount++;
 			}
 		}
-		log4jlogger.info("No. of matched items : " + matchedCount);
-		log4jlogger.info("No. of unmatched items : " + unmatchedCount);
-		return matchedCount > unmatchedCount;
-	}
-
-	public static void captureScreenshot(String testName) {
-		try {
-			File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			File target = new File("./screenshots/" + testName + ".png");
-			FileUtils.copyFile(source, target);
-		} catch (ClassCastException e) {
-			log4jlogger.info("Couldn't take screenshot in HTML Unit Browser.");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		log4jLogger.info("No. of matched items : " + matchedCount);
+		log4jLogger.info("No. of unmatched items : " + unmatchedCount);
+		return (0.75 * matchedCount) > unmatchedCount;
 	}
 }

@@ -1,36 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="19" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-07T08:42:06Z" name="Suite" finished-at="2021-11-07T08:50:26Z" duration-ms="499523">
+  <suite started-at="2021-11-21T09:09:55Z" name="Suite" finished-at="2021-11-21T09:16:13Z" duration-ms="378385">
     <groups>
     </groups>
-    <test started-at="2021-11-07T08:42:06Z" name="Test" finished-at="2021-11-07T08:50:26Z" duration-ms="499523">
+    <test started-at="2021-11-21T09:09:55Z" name="Test" finished-at="2021-11-21T09:16:13Z" duration-ms="378385">
       <class name="testcases.TC_02_LoginInvalidId">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_02_LoginInvalidId@6ee4d9ab]" started-at="2021-11-07T08:43:20Z" name="setup" finished-at="2021-11-07T08:43:20Z" duration-ms="35" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_02_LoginInvalidId@1fb19a0]" started-at="2021-11-21T09:10:55Z" name="setup" finished-at="2021-11-21T09:10:55Z" duration-ms="35" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_02_LoginInvalidId@6ee4d9ab]" started-at="2021-11-07T08:43:20Z" name="beforeEachTest" finished-at="2021-11-07T08:43:30Z" duration-ms="9560" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginInvalidId()[pri:0, instance:testcases.TC_02_LoginInvalidId@6ee4d9ab]" started-at="2021-11-07T08:43:30Z" name="loginInvalidId" description="Verify : Login with invalid ID" finished-at="2021-11-07T08:43:35Z" duration-ms="5096" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginInvalidId -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_02_LoginInvalidId@6ee4d9ab]" started-at="2021-11-07T08:43:35Z" name="afterEachTest" finished-at="2021-11-07T08:43:36Z" duration-ms="1334" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_02_LoginInvalidId@1fb19a0]" started-at="2021-11-21T09:10:55Z" name="beforeEachTest" finished-at="2021-11-21T09:11:01Z" duration-ms="6360" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginInvalidId status=SUCCESS method=TC_02_LoginInvalidId.loginInvalidId()[pri:0, instance:testcases.TC_02_LoginInvalidId@6ee4d9ab] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="loginInvalidId()[pri:0, instance:testcases.TC_02_LoginInvalidId@1fb19a0]" started-at="2021-11-21T09:11:01Z" name="loginInvalidId" description="Verify : Login with invalid ID" finished-at="2021-11-21T09:11:04Z" duration-ms="2261" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at testcases.TC_02_LoginInvalidId.loginInvalidId(TC_02_LoginInvalidId.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInvalidId -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_02_LoginInvalidId@1fb19a0]" started-at="2021-11-21T09:11:04Z" name="afterEachTest" finished-at="2021-11-21T09:11:05Z" duration-ms="867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInvalidId status=FAILURE method=TC_02_LoginInvalidId.loginInvalidId()[pri:0, instance:testcases.TC_02_LoginInvalidId@1fb19a0] output={null}]]]>
               </value>
             </param>
           </params>
@@ -39,30 +85,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_02_LoginInvalidId -->
       <class name="testcases.TC_09_SearchSuggestions">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_09_SearchSuggestions@332729ad]" started-at="2021-11-07T08:45:39Z" name="setup" finished-at="2021-11-07T08:45:39Z" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_09_SearchSuggestions@302f7971]" started-at="2021-11-21T09:12:32Z" name="setup" finished-at="2021-11-21T09:12:33Z" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_09_SearchSuggestions@332729ad]" started-at="2021-11-07T08:45:39Z" name="beforeEachTest" finished-at="2021-11-07T08:45:47Z" duration-ms="8356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifySearchSuggestionsCharByChar()[pri:0, instance:testcases.TC_09_SearchSuggestions@332729ad]" started-at="2021-11-07T08:45:47Z" name="verifySearchSuggestionsCharByChar" description="Verify : Seach suggestions characters by characters" finished-at="2021-11-07T08:46:06Z" duration-ms="18685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchSuggestionsCharByChar -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_09_SearchSuggestions@332729ad]" started-at="2021-11-07T08:46:06Z" name="afterEachTest" finished-at="2021-11-07T08:46:07Z" duration-ms="1450" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_09_SearchSuggestions@302f7971]" started-at="2021-11-21T09:12:33Z" name="beforeEachTest" finished-at="2021-11-21T09:12:38Z" duration-ms="5728" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchSuggestionsCharByChar status=SUCCESS method=TC_09_SearchSuggestions.verifySearchSuggestionsCharByChar()[pri:0, instance:testcases.TC_09_SearchSuggestions@332729ad] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifySearchSuggestionsCharByChar()[pri:0, instance:testcases.TC_09_SearchSuggestions@302f7971]" started-at="2021-11-21T09:12:38Z" name="verifySearchSuggestionsCharByChar" description="Verify : Seach suggestions characters by characters" finished-at="2021-11-21T09:12:55Z" duration-ms="16665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchSuggestionsCharByChar -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_09_SearchSuggestions@302f7971]" started-at="2021-11-21T09:12:55Z" name="afterEachTest" finished-at="2021-11-21T09:12:56Z" duration-ms="982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchSuggestionsCharByChar status=SUCCESS method=TC_09_SearchSuggestions.verifySearchSuggestionsCharByChar()[pri:0, instance:testcases.TC_09_SearchSuggestions@302f7971] output={null}]]]>
               </value>
             </param>
           </params>
@@ -71,30 +124,103 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_09_SearchSuggestions -->
       <class name="testcases.TC_17_CustomerServicePageDesiredOptions">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@6853425f]" started-at="2021-11-07T08:49:19Z" name="setup" finished-at="2021-11-07T08:49:19Z" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@53251a66]" started-at="2021-11-21T09:15:16Z" name="setup" finished-at="2021-11-21T09:15:16Z" duration-ms="25" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@6853425f]" started-at="2021-11-07T08:49:19Z" name="beforeEachTest" finished-at="2021-11-07T08:49:26Z" duration-ms="7118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="customerServicePageDesiredOptions()[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@6853425f]" started-at="2021-11-07T08:49:26Z" name="customerServicePageDesiredOptions" description="Verify : Customer Service page has desired options" finished-at="2021-11-07T08:49:31Z" duration-ms="4852" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerServicePageDesiredOptions -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@6853425f]" started-at="2021-11-07T08:49:31Z" name="afterEachTest" finished-at="2021-11-07T08:49:32Z" duration-ms="1289" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@53251a66]" started-at="2021-11-21T09:15:16Z" name="beforeEachTest" finished-at="2021-11-21T09:15:22Z" duration-ms="5995" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=customerServicePageDesiredOptions status=SUCCESS method=TC_17_CustomerServicePageDesiredOptions.customerServicePageDesiredOptions()[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@6853425f] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="customerServicePageDesiredOptions()[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@53251a66]" started-at="2021-11-21T09:15:22Z" name="customerServicePageDesiredOptions" description="Verify : Customer Service page has desired options" finished-at="2021-11-21T09:15:25Z" duration-ms="2205" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (-29, 562)
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIIN1L405097', ip: '192.168.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\mansozx\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f60fbf135ba45713125c4cd03a9c14bf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-29, 562)
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIIN1L405097', ip: '192.168.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\mansozx\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f60fbf135ba45713125c4cd03a9c14bf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at pages.HomePage.clickHMenuCustomerService(HomePage.java:195)
+at testcases.TC_17_CustomerServicePageDesiredOptions.customerServicePageDesiredOptions(TC_17_CustomerServicePageDesiredOptions.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerServicePageDesiredOptions -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@53251a66]" started-at="2021-11-21T09:15:25Z" name="afterEachTest" finished-at="2021-11-21T09:15:26Z" duration-ms="808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customerServicePageDesiredOptions status=FAILURE method=TC_17_CustomerServicePageDesiredOptions.customerServicePageDesiredOptions()[pri:0, instance:testcases.TC_17_CustomerServicePageDesiredOptions@53251a66] output={null}]]]>
               </value>
             </param>
           </params>
@@ -103,30 +229,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_17_CustomerServicePageDesiredOptions -->
       <class name="testcases.TC_10_SearchResults">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_10_SearchResults@75d2da2d]" started-at="2021-11-07T08:46:07Z" name="setup" finished-at="2021-11-07T08:46:07Z" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_10_SearchResults@332729ad]" started-at="2021-11-21T09:12:56Z" name="setup" finished-at="2021-11-21T09:12:56Z" duration-ms="25" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_10_SearchResults@75d2da2d]" started-at="2021-11-07T08:46:07Z" name="beforeEachTest" finished-at="2021-11-07T08:46:16Z" duration-ms="8304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifySearchResults()[pri:0, instance:testcases.TC_10_SearchResults@75d2da2d]" started-at="2021-11-07T08:46:16Z" name="verifySearchResults" description="Verify : search results are matching or not" finished-at="2021-11-07T08:46:22Z" duration-ms="6172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchResults -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_10_SearchResults@75d2da2d]" started-at="2021-11-07T08:46:22Z" name="afterEachTest" finished-at="2021-11-07T08:46:23Z" duration-ms="1455" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_10_SearchResults@332729ad]" started-at="2021-11-21T09:12:56Z" name="beforeEachTest" finished-at="2021-11-21T09:13:02Z" duration-ms="6035" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchResults status=SUCCESS method=TC_10_SearchResults.verifySearchResults()[pri:0, instance:testcases.TC_10_SearchResults@75d2da2d] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifySearchResults()[pri:0, instance:testcases.TC_10_SearchResults@332729ad]" started-at="2021-11-21T09:13:02Z" name="verifySearchResults" description="Verify : search results are matching or not" finished-at="2021-11-21T09:13:06Z" duration-ms="4158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchResults -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_10_SearchResults@332729ad]" started-at="2021-11-21T09:13:06Z" name="afterEachTest" finished-at="2021-11-21T09:13:07Z" duration-ms="861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchResults status=SUCCESS method=TC_10_SearchResults.verifySearchResults()[pri:0, instance:testcases.TC_10_SearchResults@332729ad] output={null}]]]>
               </value>
             </param>
           </params>
@@ -135,30 +268,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_10_SearchResults -->
       <class name="testcases.TC_03_LoginInvalidPassword">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_03_LoginInvalidPassword@5a5338df]" started-at="2021-11-07T08:43:36Z" name="setup" finished-at="2021-11-07T08:43:36Z" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_03_LoginInvalidPassword@6ee4d9ab]" started-at="2021-11-21T09:11:05Z" name="setup" finished-at="2021-11-21T09:11:05Z" duration-ms="28" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_03_LoginInvalidPassword@5a5338df]" started-at="2021-11-07T08:43:36Z" name="beforeEachTest" finished-at="2021-11-07T08:43:48Z" duration-ms="12389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginInvalidPassword()[pri:0, instance:testcases.TC_03_LoginInvalidPassword@5a5338df]" started-at="2021-11-07T08:43:48Z" name="loginInvalidPassword" description="Verify : Login with invalid password" finished-at="2021-11-07T08:43:54Z" duration-ms="5803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginInvalidPassword -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_03_LoginInvalidPassword@5a5338df]" started-at="2021-11-07T08:43:54Z" name="afterEachTest" finished-at="2021-11-07T08:43:56Z" duration-ms="1473" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_03_LoginInvalidPassword@6ee4d9ab]" started-at="2021-11-21T09:11:05Z" name="beforeEachTest" finished-at="2021-11-21T09:11:11Z" duration-ms="6000" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginInvalidPassword status=SUCCESS method=TC_03_LoginInvalidPassword.loginInvalidPassword()[pri:0, instance:testcases.TC_03_LoginInvalidPassword@5a5338df] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="loginInvalidPassword()[pri:0, instance:testcases.TC_03_LoginInvalidPassword@6ee4d9ab]" started-at="2021-11-21T09:11:11Z" name="loginInvalidPassword" description="Verify : Login with invalid password" finished-at="2021-11-21T09:11:15Z" duration-ms="4069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInvalidPassword -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_03_LoginInvalidPassword@6ee4d9ab]" started-at="2021-11-21T09:11:15Z" name="afterEachTest" finished-at="2021-11-21T09:11:16Z" duration-ms="944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginInvalidPassword status=SUCCESS method=TC_03_LoginInvalidPassword.loginInvalidPassword()[pri:0, instance:testcases.TC_03_LoginInvalidPassword@6ee4d9ab] output={null}]]]>
               </value>
             </param>
           </params>
@@ -167,30 +307,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_03_LoginInvalidPassword -->
       <class name="testcases.TC_15_VerifyDailyDealsCardDisplay">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@63eef88a]" started-at="2021-11-07T08:48:36Z" name="setup" finished-at="2021-11-07T08:48:36Z" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@6057aebb]" started-at="2021-11-21T09:14:38Z" name="setup" finished-at="2021-11-21T09:14:38Z" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@63eef88a]" started-at="2021-11-07T08:48:36Z" name="beforeEachTest" finished-at="2021-11-07T08:48:43Z" duration-ms="7321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="VerifyDailyDealsCardDisplay()[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@63eef88a]" started-at="2021-11-07T08:48:43Z" name="VerifyDailyDealsCardDisplay" description="Verify : Daily deals cards are displaying on Home page" finished-at="2021-11-07T08:48:44Z" duration-ms="476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDailyDealsCardDisplay -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@63eef88a]" started-at="2021-11-07T08:48:44Z" name="afterEachTest" finished-at="2021-11-07T08:48:45Z" duration-ms="1485" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@6057aebb]" started-at="2021-11-21T09:14:38Z" name="beforeEachTest" finished-at="2021-11-21T09:14:44Z" duration-ms="5649" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyDailyDealsCardDisplay status=SUCCESS method=TC_15_VerifyDailyDealsCardDisplay.VerifyDailyDealsCardDisplay()[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@63eef88a] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="VerifyDailyDealsCardDisplay()[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@6057aebb]" started-at="2021-11-21T09:14:44Z" name="VerifyDailyDealsCardDisplay" description="Verify : Daily deals cards are displaying on Home page" finished-at="2021-11-21T09:14:44Z" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDailyDealsCardDisplay -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@6057aebb]" started-at="2021-11-21T09:14:44Z" name="afterEachTest" finished-at="2021-11-21T09:14:45Z" duration-ms="948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyDailyDealsCardDisplay status=SUCCESS method=TC_15_VerifyDailyDealsCardDisplay.VerifyDailyDealsCardDisplay()[pri:0, instance:testcases.TC_15_VerifyDailyDealsCardDisplay@6057aebb] output={null}]]]>
               </value>
             </param>
           </params>
@@ -199,30 +346,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_15_VerifyDailyDealsCardDisplay -->
       <class name="testcases.TC_11_ResultsClickOpensInNewTab">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@4278284b]" started-at="2021-11-07T08:46:23Z" name="setup" finished-at="2021-11-07T08:46:23Z" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@75d2da2d]" started-at="2021-11-21T09:13:07Z" name="setup" finished-at="2021-11-21T09:13:07Z" duration-ms="32" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@4278284b]" started-at="2021-11-07T08:46:23Z" name="beforeEachTest" finished-at="2021-11-07T08:46:31Z" duration-ms="7860" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="resultsClickOpensInNewTab()[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@4278284b]" started-at="2021-11-07T08:46:31Z" name="resultsClickOpensInNewTab" description="Verify : clicking on result opens in new tab" finished-at="2021-11-07T08:46:38Z" duration-ms="6665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resultsClickOpensInNewTab -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@4278284b]" started-at="2021-11-07T08:46:38Z" name="afterEachTest" finished-at="2021-11-07T08:46:40Z" duration-ms="1601" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@75d2da2d]" started-at="2021-11-21T09:13:07Z" name="beforeEachTest" finished-at="2021-11-21T09:13:12Z" duration-ms="5461" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=resultsClickOpensInNewTab status=SUCCESS method=TC_11_ResultsClickOpensInNewTab.resultsClickOpensInNewTab()[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@4278284b] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="resultsClickOpensInNewTab()[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@75d2da2d]" started-at="2021-11-21T09:13:12Z" name="resultsClickOpensInNewTab" description="Verify : clicking on result opens in new tab" finished-at="2021-11-21T09:13:16Z" duration-ms="3665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultsClickOpensInNewTab -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@75d2da2d]" started-at="2021-11-21T09:13:16Z" name="afterEachTest" finished-at="2021-11-21T09:13:17Z" duration-ms="884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resultsClickOpensInNewTab status=SUCCESS method=TC_11_ResultsClickOpensInNewTab.resultsClickOpensInNewTab()[pri:0, instance:testcases.TC_11_ResultsClickOpensInNewTab@75d2da2d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -231,30 +385,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_11_ResultsClickOpensInNewTab -->
       <class name="testcases.TC_08_WaterTextOfSearchBox">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@302f7971]" started-at="2021-11-07T08:45:27Z" name="setup" finished-at="2021-11-07T08:45:27Z" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@13d4992d]" started-at="2021-11-21T09:12:25Z" name="setup" finished-at="2021-11-21T09:12:25Z" duration-ms="25" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@302f7971]" started-at="2021-11-07T08:45:27Z" name="beforeEachTest" finished-at="2021-11-07T08:45:37Z" duration-ms="9874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="waterTextOfSearchBox()[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@302f7971]" started-at="2021-11-07T08:45:37Z" name="waterTextOfSearchBox" description="Verify : Water text in Search box" finished-at="2021-11-07T08:45:38Z" duration-ms="271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waterTextOfSearchBox -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@302f7971]" started-at="2021-11-07T08:45:38Z" name="afterEachTest" finished-at="2021-11-07T08:45:39Z" duration-ms="1274" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@13d4992d]" started-at="2021-11-21T09:12:25Z" name="beforeEachTest" finished-at="2021-11-21T09:12:32Z" duration-ms="6194" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=waterTextOfSearchBox status=SUCCESS method=TC_08_WaterTextOfSearchBox.waterTextOfSearchBox()[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@302f7971] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="waterTextOfSearchBox()[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@13d4992d]" started-at="2021-11-21T09:12:32Z" name="waterTextOfSearchBox" description="Verify : Water text in Search box" finished-at="2021-11-21T09:12:32Z" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waterTextOfSearchBox -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@13d4992d]" started-at="2021-11-21T09:12:32Z" name="afterEachTest" finished-at="2021-11-21T09:12:32Z" duration-ms="916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=waterTextOfSearchBox status=SUCCESS method=TC_08_WaterTextOfSearchBox.waterTextOfSearchBox()[pri:0, instance:testcases.TC_08_WaterTextOfSearchBox@13d4992d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -263,30 +424,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_08_WaterTextOfSearchBox -->
       <class name="testcases.TC_19_CategoriesInSearchBox">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@21129f1f]" started-at="2021-11-07T08:49:55Z" name="setup" finished-at="2021-11-07T08:49:55Z" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@352c1b98]" started-at="2021-11-21T09:15:46Z" name="setup" finished-at="2021-11-21T09:15:46Z" duration-ms="35" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@21129f1f]" started-at="2021-11-07T08:49:55Z" name="beforeEachTest" finished-at="2021-11-07T08:50:03Z" duration-ms="7832" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="categoriesInSearchBox()[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@21129f1f]" started-at="2021-11-07T08:50:03Z" name="categoriesInSearchBox" description="Verify dropdown for categories in search box working or not" finished-at="2021-11-07T08:50:24Z" duration-ms="21493" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- categoriesInSearchBox -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@21129f1f]" started-at="2021-11-07T08:50:24Z" name="afterEachTest" finished-at="2021-11-07T08:50:26Z" duration-ms="1218" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@352c1b98]" started-at="2021-11-21T09:15:46Z" name="beforeEachTest" finished-at="2021-11-21T09:15:52Z" duration-ms="6737" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=categoriesInSearchBox status=SUCCESS method=TC_19_CategoriesInSearchBox.categoriesInSearchBox()[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@21129f1f] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="categoriesInSearchBox()[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@352c1b98]" started-at="2021-11-21T09:15:52Z" name="categoriesInSearchBox" description="Verify dropdown for categories in search box working or not" finished-at="2021-11-21T09:16:12Z" duration-ms="19962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoriesInSearchBox -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@352c1b98]" started-at="2021-11-21T09:16:12Z" name="afterEachTest" finished-at="2021-11-21T09:16:13Z" duration-ms="875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=categoriesInSearchBox status=SUCCESS method=TC_19_CategoriesInSearchBox.categoriesInSearchBox()[pri:0, instance:testcases.TC_19_CategoriesInSearchBox@352c1b98] output={null}]]]>
               </value>
             </param>
           </params>
@@ -294,23 +462,69 @@
           </reporter-output>
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_19_CategoriesInSearchBox -->
-      <class name="testcases.TC_00_LoginDDT">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:07Z" name="setup" finished-at="2021-11-07T08:42:07Z" duration-ms="99" status="PASS">
+      <class name="testcases.TC_18_ContactUsFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_18_ContactUsFunctionality@6853425f]" started-at="2021-11-21T09:15:26Z" name="setup" finished-at="2021-11-21T09:15:26Z" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:08Z" name="beforeEachTest" finished-at="2021-11-07T08:42:15Z" duration-ms="7453" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_18_ContactUsFunctionality@6853425f]" started-at="2021-11-21T09:15:26Z" name="beforeEachTest" finished-at="2021-11-21T09:15:32Z" duration-ms="6142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:15Z" name="loginDDT" description="Data Driven Testing for Login" data-provider="LoginData" finished-at="2021-11-07T08:42:23Z" duration-ms="7995" status="PASS">
+        <test-method signature="contactUsFunctionality()[pri:0, instance:testcases.TC_18_ContactUsFunctionality@6853425f]" started-at="2021-11-21T09:15:32Z" name="contactUsFunctionality" description="Verify : All contact us options working" finished-at="2021-11-21T09:15:44Z" duration-ms="12135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUsFunctionality -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_18_ContactUsFunctionality@6853425f]" started-at="2021-11-21T09:15:44Z" name="afterEachTest" finished-at="2021-11-21T09:15:46Z" duration-ms="1517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=contactUsFunctionality status=SUCCESS method=TC_18_ContactUsFunctionality.contactUsFunctionality()[pri:0, instance:testcases.TC_18_ContactUsFunctionality@6853425f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+      </class> <!-- testcases.TC_18_ContactUsFunctionality -->
+      <class name="testcases.TC_00_LoginDDT">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:09:55Z" name="setup" finished-at="2021-11-21T09:09:55Z" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome-headless]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:09:57Z" name="beforeEachTest" finished-at="2021-11-21T09:10:04Z" duration-ms="7368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:04Z" name="loginDDT" description="Data Driven Testing for Login" data-provider="LoginData" finished-at="2021-11-21T09:10:10Z" duration-ms="5940" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -326,22 +540,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:23Z" name="afterEachTest" finished-at="2021-11-07T08:42:25Z" duration-ms="1604" status="PASS">
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:10Z" name="afterEachTest" finished-at="2021-11-21T09:10:11Z" duration-ms="996" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24] output={null}]]]>
+                <![CDATA[[TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:25Z" name="beforeEachTest" finished-at="2021-11-07T08:42:33Z" duration-ms="8365" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:11Z" name="beforeEachTest" finished-at="2021-11-21T09:10:17Z" duration-ms="6308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:33Z" name="loginDDT" description="Data Driven Testing for Login" data-provider="LoginData" finished-at="2021-11-07T08:42:43Z" duration-ms="9186" status="PASS">
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:17Z" name="loginDDT" description="Data Driven Testing for Login" data-provider="LoginData" finished-at="2021-11-21T09:10:26Z" duration-ms="9184" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -357,22 +578,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:43Z" name="afterEachTest" finished-at="2021-11-07T08:42:44Z" duration-ms="1427" status="PASS">
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:26Z" name="afterEachTest" finished-at="2021-11-21T09:10:27Z" duration-ms="872" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24] output={null}]]]>
+                <![CDATA[[TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:44Z" name="beforeEachTest" finished-at="2021-11-07T08:42:52Z" duration-ms="7807" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:27Z" name="beforeEachTest" finished-at="2021-11-21T09:10:33Z" duration-ms="6182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:42:52Z" name="loginDDT" description="Data Driven Testing for Login" data-provider="LoginData" finished-at="2021-11-07T08:43:00Z" duration-ms="7910" status="PASS">
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:33Z" name="loginDDT" description="Data Driven Testing for Login" data-provider="LoginData" finished-at="2021-11-21T09:10:41Z" duration-ms="7281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,11 +616,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24]" started-at="2021-11-07T08:43:00Z" name="afterEachTest" finished-at="2021-11-07T08:43:01Z" duration-ms="1494" status="PASS">
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7]" started-at="2021-11-21T09:10:41Z" name="afterEachTest" finished-at="2021-11-21T09:10:42Z" duration-ms="980" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@732d0d24] output={null}]]]>
+                <![CDATA[[TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginDDT@5e3d57c7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -400,63 +628,38 @@
           </reporter-output>
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_00_LoginDDT -->
-      <class name="testcases.TC_18_ContactUsFunctionality">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_18_ContactUsFunctionality@352c1b98]" started-at="2021-11-07T08:49:32Z" name="setup" finished-at="2021-11-07T08:49:32Z" duration-ms="35" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_18_ContactUsFunctionality@352c1b98]" started-at="2021-11-07T08:49:32Z" name="beforeEachTest" finished-at="2021-11-07T08:49:39Z" duration-ms="7144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="contactUsFunctionality()[pri:0, instance:testcases.TC_18_ContactUsFunctionality@352c1b98]" started-at="2021-11-07T08:49:39Z" name="contactUsFunctionality" description="Verify : All contact us options working" finished-at="2021-11-07T08:49:54Z" duration-ms="14624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactUsFunctionality -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_18_ContactUsFunctionality@352c1b98]" started-at="2021-11-07T08:49:54Z" name="afterEachTest" finished-at="2021-11-07T08:49:55Z" duration-ms="1515" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=contactUsFunctionality status=SUCCESS method=TC_18_ContactUsFunctionality.contactUsFunctionality()[pri:0, instance:testcases.TC_18_ContactUsFunctionality@352c1b98] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachTest -->
-      </class> <!-- testcases.TC_18_ContactUsFunctionality -->
       <class name="testcases.TC_07_VerifyAfterSignOutAccess">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@13d4992d]" started-at="2021-11-07T08:45:03Z" name="setup" finished-at="2021-11-07T08:45:03Z" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@5082d622]" started-at="2021-11-21T09:12:09Z" name="setup" finished-at="2021-11-21T09:12:09Z" duration-ms="38" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@13d4992d]" started-at="2021-11-07T08:45:03Z" name="beforeEachTest" finished-at="2021-11-07T08:45:11Z" duration-ms="7962" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@5082d622]" started-at="2021-11-21T09:12:09Z" name="beforeEachTest" finished-at="2021-11-21T09:12:15Z" duration-ms="6264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyAfterSignOutAccess()[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@13d4992d]" started-at="2021-11-07T08:45:11Z" name="verifyAfterSignOutAccess" description="Verify : After sign out access" finished-at="2021-11-07T08:45:25Z" duration-ms="13966" status="PASS">
+        <test-method signature="verifyAfterSignOutAccess()[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@5082d622]" started-at="2021-11-21T09:12:15Z" name="verifyAfterSignOutAccess" description="Verify : After sign out access" finished-at="2021-11-21T09:12:24Z" duration-ms="9348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAfterSignOutAccess -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@13d4992d]" started-at="2021-11-07T08:45:25Z" name="afterEachTest" finished-at="2021-11-07T08:45:27Z" duration-ms="2402" status="PASS">
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@5082d622]" started-at="2021-11-21T09:12:24Z" name="afterEachTest" finished-at="2021-11-21T09:12:25Z" duration-ms="1070" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAfterSignOutAccess status=SUCCESS method=TC_07_VerifyAfterSignOutAccess.verifyAfterSignOutAccess()[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@13d4992d] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAfterSignOutAccess status=SUCCESS method=TC_07_VerifyAfterSignOutAccess.verifyAfterSignOutAccess()[pri:0, instance:testcases.TC_07_VerifyAfterSignOutAccess@5082d622] output={null}]]]>
               </value>
             </param>
           </params>
@@ -465,30 +668,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_07_VerifyAfterSignOutAccess -->
       <class name="testcases.TC_16_DealsPrevNextButtons">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@53251a66]" started-at="2021-11-07T08:48:45Z" name="setup" finished-at="2021-11-07T08:48:45Z" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@63eef88a]" started-at="2021-11-21T09:14:45Z" name="setup" finished-at="2021-11-21T09:14:45Z" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@53251a66]" started-at="2021-11-07T08:48:45Z" name="beforeEachTest" finished-at="2021-11-07T08:48:52Z" duration-ms="7115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="dealsPrevNextButtonsWorking()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@53251a66]" started-at="2021-11-07T08:48:52Z" name="dealsPrevNextButtonsWorking" description="Verify : Carousel&#039;s PREVIOUS and NEXT buttons functionality" finished-at="2021-11-07T08:49:17Z" duration-ms="24630" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dealsPrevNextButtonsWorking -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@53251a66]" started-at="2021-11-07T08:49:17Z" name="afterEachTest" finished-at="2021-11-07T08:49:19Z" duration-ms="1447" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@63eef88a]" started-at="2021-11-21T09:14:45Z" name="beforeEachTest" finished-at="2021-11-21T09:14:51Z" duration-ms="6134" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dealsPrevNextButtonsWorking status=SUCCESS method=TC_16_DealsPrevNextButtons.dealsPrevNextButtonsWorking()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@53251a66] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="dealsPrevNextButtonsWorking()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@63eef88a]" started-at="2021-11-21T09:14:51Z" name="dealsPrevNextButtonsWorking" description="Verify : Carousel&#039;s PREVIOUS and NEXT buttons functionality" finished-at="2021-11-21T09:15:16Z" duration-ms="24269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dealsPrevNextButtonsWorking -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@63eef88a]" started-at="2021-11-21T09:15:16Z" name="afterEachTest" finished-at="2021-11-21T09:15:16Z" duration-ms="877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dealsPrevNextButtonsWorking status=SUCCESS method=TC_16_DealsPrevNextButtons.dealsPrevNextButtonsWorking()[pri:0, instance:testcases.TC_16_DealsPrevNextButtons@63eef88a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -497,30 +707,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_16_DealsPrevNextButtons -->
       <class name="testcases.TC_06_VerifyKeepMeSignedIn">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@5082d622]" started-at="2021-11-07T08:44:37Z" name="setup" finished-at="2021-11-07T08:44:37Z" duration-ms="39" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@18e36d14]" started-at="2021-11-21T09:11:51Z" name="setup" finished-at="2021-11-21T09:11:51Z" duration-ms="33" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@5082d622]" started-at="2021-11-07T08:44:37Z" name="beforeEachTest" finished-at="2021-11-07T08:44:51Z" duration-ms="14324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyKeepMeSignedIn()[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@5082d622]" started-at="2021-11-07T08:44:51Z" name="verifyKeepMeSignedIn" description="Verify : &#039;Keep me signed in&#039; functionality" finished-at="2021-11-07T08:45:01Z" duration-ms="9898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyKeepMeSignedIn -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@5082d622]" started-at="2021-11-07T08:45:01Z" name="afterEachTest" finished-at="2021-11-07T08:45:03Z" duration-ms="1500" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@18e36d14]" started-at="2021-11-21T09:11:51Z" name="beforeEachTest" finished-at="2021-11-21T09:11:58Z" duration-ms="6692" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyKeepMeSignedIn status=SUCCESS method=TC_06_VerifyKeepMeSignedIn.verifyKeepMeSignedIn()[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@5082d622] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifyKeepMeSignedIn()[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@18e36d14]" started-at="2021-11-21T09:11:58Z" name="verifyKeepMeSignedIn" description="Verify : &#039;Keep me signed in&#039; functionality" finished-at="2021-11-21T09:12:08Z" duration-ms="9617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyKeepMeSignedIn -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@18e36d14]" started-at="2021-11-21T09:12:08Z" name="afterEachTest" finished-at="2021-11-21T09:12:09Z" duration-ms="974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyKeepMeSignedIn status=SUCCESS method=TC_06_VerifyKeepMeSignedIn.verifyKeepMeSignedIn()[pri:0, instance:testcases.TC_06_VerifyKeepMeSignedIn@18e36d14] output={null}]]]>
               </value>
             </param>
           </params>
@@ -529,30 +746,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_06_VerifyKeepMeSignedIn -->
       <class name="testcases.TC_12_VerifyAddToCart">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_12_VerifyAddToCart@9573584]" started-at="2021-11-07T08:46:40Z" name="setup" finished-at="2021-11-07T08:46:40Z" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_12_VerifyAddToCart@4278284b]" started-at="2021-11-21T09:13:17Z" name="setup" finished-at="2021-11-21T09:13:17Z" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_12_VerifyAddToCart@9573584]" started-at="2021-11-07T08:46:40Z" name="beforeEachTest" finished-at="2021-11-07T08:46:50Z" duration-ms="10456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:testcases.TC_12_VerifyAddToCart@9573584]" started-at="2021-11-07T08:46:50Z" name="verifyAddToCart" description="Verify : Add to cart functionality" finished-at="2021-11-07T08:47:21Z" duration-ms="30924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_12_VerifyAddToCart@9573584]" started-at="2021-11-07T08:47:21Z" name="afterEachTest" finished-at="2021-11-07T08:47:23Z" duration-ms="1705" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_12_VerifyAddToCart@4278284b]" started-at="2021-11-21T09:13:17Z" name="beforeEachTest" finished-at="2021-11-21T09:13:23Z" duration-ms="6067" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddToCart status=SUCCESS method=TC_12_VerifyAddToCart.verifyAddToCart()[pri:0, instance:testcases.TC_12_VerifyAddToCart@9573584] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifyAddToCart()[pri:0, instance:testcases.TC_12_VerifyAddToCart@4278284b]" started-at="2021-11-21T09:13:23Z" name="verifyAddToCart" description="Verify : Add to cart functionality" finished-at="2021-11-21T09:13:42Z" duration-ms="19088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCart -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_12_VerifyAddToCart@4278284b]" started-at="2021-11-21T09:13:42Z" name="afterEachTest" finished-at="2021-11-21T09:13:43Z" duration-ms="1137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddToCart status=SUCCESS method=TC_12_VerifyAddToCart.verifyAddToCart()[pri:0, instance:testcases.TC_12_VerifyAddToCart@4278284b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -561,30 +785,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_12_VerifyAddToCart -->
       <class name="testcases.TC_14_VerifyAddToWishList">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_14_VerifyAddToWishList@6057aebb]" started-at="2021-11-07T08:48:01Z" name="setup" finished-at="2021-11-07T08:48:01Z" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_14_VerifyAddToWishList@3370f42]" started-at="2021-11-21T09:14:12Z" name="setup" finished-at="2021-11-21T09:14:12Z" duration-ms="26" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_14_VerifyAddToWishList@6057aebb]" started-at="2021-11-07T08:48:01Z" name="beforeEachTest" finished-at="2021-11-07T08:48:09Z" duration-ms="7344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyAddToWishList()[pri:0, instance:testcases.TC_14_VerifyAddToWishList@6057aebb]" started-at="2021-11-07T08:48:09Z" name="verifyAddToWishList" description="Verify : Add to Wish List" finished-at="2021-11-07T08:48:34Z" duration-ms="25639" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToWishList -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_14_VerifyAddToWishList@6057aebb]" started-at="2021-11-07T08:48:34Z" name="afterEachTest" finished-at="2021-11-07T08:48:36Z" duration-ms="1807" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_14_VerifyAddToWishList@3370f42]" started-at="2021-11-21T09:14:12Z" name="beforeEachTest" finished-at="2021-11-21T09:14:18Z" duration-ms="5957" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddToWishList status=SUCCESS method=TC_14_VerifyAddToWishList.verifyAddToWishList()[pri:0, instance:testcases.TC_14_VerifyAddToWishList@6057aebb] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifyAddToWishList()[pri:0, instance:testcases.TC_14_VerifyAddToWishList@3370f42]" started-at="2021-11-21T09:14:18Z" name="verifyAddToWishList" description="Verify : Add to Wish List" finished-at="2021-11-21T09:14:37Z" duration-ms="18400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToWishList -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_14_VerifyAddToWishList@3370f42]" started-at="2021-11-21T09:14:37Z" name="afterEachTest" finished-at="2021-11-21T09:14:38Z" duration-ms="1321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddToWishList status=SUCCESS method=TC_14_VerifyAddToWishList.verifyAddToWishList()[pri:0, instance:testcases.TC_14_VerifyAddToWishList@3370f42] output={null}]]]>
               </value>
             </param>
           </params>
@@ -593,30 +824,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_14_VerifyAddToWishList -->
       <class name="testcases.TC_04_LoginBlankId">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_04_LoginBlankId@418c5a9c]" started-at="2021-11-07T08:43:56Z" name="setup" finished-at="2021-11-07T08:43:56Z" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_04_LoginBlankId@5a5338df]" started-at="2021-11-21T09:11:16Z" name="setup" finished-at="2021-11-21T09:11:16Z" duration-ms="26" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_04_LoginBlankId@418c5a9c]" started-at="2021-11-07T08:43:56Z" name="beforeEachTest" finished-at="2021-11-07T08:44:08Z" duration-ms="12607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginBlankId()[pri:0, instance:testcases.TC_04_LoginBlankId@418c5a9c]" started-at="2021-11-07T08:44:08Z" name="loginBlankId" description="Verify : Login with fields blank" finished-at="2021-11-07T08:44:12Z" duration-ms="3229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginBlankId -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_04_LoginBlankId@418c5a9c]" started-at="2021-11-07T08:44:12Z" name="afterEachTest" finished-at="2021-11-07T08:44:13Z" duration-ms="1418" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_04_LoginBlankId@5a5338df]" started-at="2021-11-21T09:11:16Z" name="beforeEachTest" finished-at="2021-11-21T09:11:22Z" duration-ms="6129" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginBlankId status=SUCCESS method=TC_04_LoginBlankId.loginBlankId()[pri:0, instance:testcases.TC_04_LoginBlankId@418c5a9c] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="loginBlankId()[pri:0, instance:testcases.TC_04_LoginBlankId@5a5338df]" started-at="2021-11-21T09:11:22Z" name="loginBlankId" description="Verify : Login with fields blank" finished-at="2021-11-21T09:11:24Z" duration-ms="1709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBlankId -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_04_LoginBlankId@5a5338df]" started-at="2021-11-21T09:11:24Z" name="afterEachTest" finished-at="2021-11-21T09:11:24Z" duration-ms="892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginBlankId status=SUCCESS method=TC_04_LoginBlankId.loginBlankId()[pri:0, instance:testcases.TC_04_LoginBlankId@5a5338df] output={null}]]]>
               </value>
             </param>
           </params>
@@ -625,30 +863,76 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_04_LoginBlankId -->
       <class name="testcases.TC_01_LoginValid">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_01_LoginValid@1fb19a0]" started-at="2021-11-07T08:43:01Z" name="setup" finished-at="2021-11-07T08:43:01Z" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_01_LoginValid@732d0d24]" started-at="2021-11-21T09:10:42Z" name="setup" finished-at="2021-11-21T09:10:42Z" duration-ms="31" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_01_LoginValid@1fb19a0]" started-at="2021-11-07T08:43:01Z" name="beforeEachTest" finished-at="2021-11-07T08:43:09Z" duration-ms="8123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="loginValid()[pri:0, instance:testcases.TC_01_LoginValid@1fb19a0]" started-at="2021-11-07T08:43:09Z" name="loginValid" description="Verify : Login with valid credentials" finished-at="2021-11-07T08:43:18Z" duration-ms="8456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginValid -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_01_LoginValid@1fb19a0]" started-at="2021-11-07T08:43:18Z" name="afterEachTest" finished-at="2021-11-07T08:43:20Z" duration-ms="2164" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_01_LoginValid@732d0d24]" started-at="2021-11-21T09:10:42Z" name="beforeEachTest" finished-at="2021-11-21T09:10:48Z" duration-ms="6261" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginValid status=SUCCESS method=TC_01_LoginValid.loginValid()[pri:0, instance:testcases.TC_01_LoginValid@1fb19a0] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="loginValid()[pri:0, instance:testcases.TC_01_LoginValid@732d0d24]" started-at="2021-11-21T09:10:48Z" name="loginValid" description="Verify : Login with valid credentials" finished-at="2021-11-21T09:10:54Z" duration-ms="5782" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at testcases.TC_01_LoginValid.loginValid(TC_01_LoginValid.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValid -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_01_LoginValid@732d0d24]" started-at="2021-11-21T09:10:54Z" name="afterEachTest" finished-at="2021-11-21T09:10:55Z" duration-ms="927" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginValid status=FAILURE method=TC_01_LoginValid.loginValid()[pri:0, instance:testcases.TC_01_LoginValid@732d0d24] output={null}]]]>
               </value>
             </param>
           </params>
@@ -657,30 +941,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_01_LoginValid -->
       <class name="testcases.TC_13_VerifyDeleteFromCart">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@3370f42]" started-at="2021-11-07T08:47:23Z" name="setup" finished-at="2021-11-07T08:47:23Z" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@9573584]" started-at="2021-11-21T09:13:43Z" name="setup" finished-at="2021-11-21T09:13:43Z" duration-ms="38" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@3370f42]" started-at="2021-11-07T08:47:23Z" name="beforeEachTest" finished-at="2021-11-07T08:47:34Z" duration-ms="11593" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyDeleteFromCart()[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@3370f42]" started-at="2021-11-07T08:47:34Z" name="verifyDeleteFromCart" description="Verify : Delete from cart functionality" finished-at="2021-11-07T08:48:00Z" duration-ms="25413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteFromCart -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@3370f42]" started-at="2021-11-07T08:48:00Z" name="afterEachTest" finished-at="2021-11-07T08:48:01Z" duration-ms="1409" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@9573584]" started-at="2021-11-21T09:13:43Z" name="beforeEachTest" finished-at="2021-11-21T09:13:49Z" duration-ms="5761" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDeleteFromCart status=SUCCESS method=TC_13_VerifyDeleteFromCart.verifyDeleteFromCart()[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@3370f42] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifyDeleteFromCart()[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@9573584]" started-at="2021-11-21T09:13:49Z" name="verifyDeleteFromCart" description="Verify : Delete from cart functionality" finished-at="2021-11-21T09:14:11Z" duration-ms="21981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteFromCart -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@9573584]" started-at="2021-11-21T09:14:11Z" name="afterEachTest" finished-at="2021-11-21T09:14:12Z" duration-ms="1109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteFromCart status=SUCCESS method=TC_13_VerifyDeleteFromCart.verifyDeleteFromCart()[pri:0, instance:testcases.TC_13_VerifyDeleteFromCart@9573584] output={null}]]]>
               </value>
             </param>
           </params>
@@ -689,30 +980,37 @@
         </test-method> <!-- afterEachTest -->
       </class> <!-- testcases.TC_13_VerifyDeleteFromCart -->
       <class name="testcases.TC_05_VerifyForgotPassword">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_05_VerifyForgotPassword@18e36d14]" started-at="2021-11-07T08:44:13Z" name="setup" finished-at="2021-11-07T08:44:13Z" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC_05_VerifyForgotPassword@418c5a9c]" started-at="2021-11-21T09:11:24Z" name="setup" finished-at="2021-11-21T09:11:25Z" duration-ms="26" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:testcases.TC_05_VerifyForgotPassword@18e36d14]" started-at="2021-11-07T08:44:13Z" name="beforeEachTest" finished-at="2021-11-07T08:44:29Z" duration-ms="16431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method signature="verifyForgotPassword()[pri:0, instance:testcases.TC_05_VerifyForgotPassword@18e36d14]" started-at="2021-11-07T08:44:29Z" name="verifyForgotPassword" description="Verify : Forgot password functionality" finished-at="2021-11-07T08:44:36Z" duration-ms="6121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPassword -->
-        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_05_VerifyForgotPassword@18e36d14]" started-at="2021-11-07T08:44:36Z" name="afterEachTest" finished-at="2021-11-07T08:44:37Z" duration-ms="1507" status="PASS">
+        <test-method is-config="true" signature="beforeEachTest(org.testng.ITestContext)[pri:0, instance:testcases.TC_05_VerifyForgotPassword@418c5a9c]" started-at="2021-11-21T09:11:25Z" name="beforeEachTest" finished-at="2021-11-21T09:11:30Z" duration-ms="5852" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyForgotPassword status=SUCCESS method=TC_05_VerifyForgotPassword.verifyForgotPassword()[pri:0, instance:testcases.TC_05_VerifyForgotPassword@18e36d14] output={null}]]]>
+                <![CDATA[org.testng.TestRunner@1aee0f49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="verifyForgotPassword()[pri:0, instance:testcases.TC_05_VerifyForgotPassword@418c5a9c]" started-at="2021-11-21T09:11:30Z" name="verifyForgotPassword" description="Verify : Forgot password functionality" finished-at="2021-11-21T09:11:50Z" duration-ms="19936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPassword -->
+        <test-method is-config="true" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:testcases.TC_05_VerifyForgotPassword@418c5a9c]" started-at="2021-11-21T09:11:50Z" name="afterEachTest" finished-at="2021-11-21T09:11:51Z" duration-ms="970" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyForgotPassword status=SUCCESS method=TC_05_VerifyForgotPassword.verifyForgotPassword()[pri:0, instance:testcases.TC_05_VerifyForgotPassword@418c5a9c] output={null}]]]>
               </value>
             </param>
           </params>

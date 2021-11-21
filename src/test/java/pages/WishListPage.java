@@ -3,6 +3,7 @@ package pages;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,9 +22,9 @@ public class WishListPage extends BasePage {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
-	
-	public List<String> getWishListItemNames() {
-		System.out.println("No. of items in Wish List : " + itemNames.size());
+
+	public List<String> getWishListItemNames(Logger logger) {
+		logger.info("No. of items in Wish List : " + itemNames.size());
 		List<String> names = new ArrayList<String>();
 		itemNames.forEach(item -> names.add(item.getText()));
 		return names;

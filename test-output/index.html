@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods,   22 passed</span>
+                    <span class="method-stats">22 methods, 3 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_17_CustomerServicePageDesiredOptions" class="method navigator-link" hash-for-method="customerServicePageDesiredOptions">customerServicePageDesiredOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_02_LoginInvalidId" class="method navigator-link" hash-for-method="loginInvalidId">loginInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_01_LoginValid" class="method navigator-link" hash-for-method="loginValid">loginValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,11 +137,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.TC_18_ContactUsFunctionality" class="method navigator-link" hash-for-method="contactUsFunctionality">contactUsFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC_17_CustomerServicePageDesiredOptions" class="method navigator-link" hash-for-method="customerServicePageDesiredOptions">customerServicePageDesiredOptions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,17 +166,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC_02_LoginInvalidId" class="method navigator-link" hash-for-method="loginInvalidId">loginInvalidId</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.TC_03_LoginInvalidPassword" class="method navigator-link" hash-for-method="loginInvalidPassword">loginInvalidPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC_01_LoginValid" class="method navigator-link" hash-for-method="loginValid">loginValid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -222,6 +231,86 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC_17_CustomerServicePageDesiredOptions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerServicePageDesiredOptions">
+                  </a> <!-- customerServicePageDesiredOptions -->
+                  <span class="method-name">customerServicePageDesiredOptions</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-29, 562)
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANIIN1L405097&apos;, ip: &apos;192.168.80.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\mansozx\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f60fbf135ba45713125c4cd03a9c14bf
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at pages.HomePage.clickHMenuCustomerService(HomePage.java:195)
+	at testcases.TC_17_CustomerServicePageDesiredOptions.customerServicePageDesiredOptions(TC_17_CustomerServicePageDesiredOptions.java:16)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify : Customer Service page has desired options)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC_01_LoginValid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginValid">
+                  </a> <!-- loginValid -->
+                  <span class="method-name">loginValid</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testcases.TC_01_LoginValid.loginValid(TC_01_LoginValid.java:37)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify : Login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC_02_LoginInvalidId</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInvalidId">
+                  </a> <!-- loginInvalidId -->
+                  <span class="method-name">loginInvalidId</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testcases.TC_02_LoginInvalidId.loginInvalidId(TC_02_LoginInvalidId.java:33)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify : Login with invalid ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,23 +324,6 @@
                   <span class="method-name">verifySearchSuggestionsCharByChar</span>
                   <em>
 (Verify : Seach suggestions characters by characters)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.TC_14_VerifyAddToWishList</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddToWishList">
-                  </a> <!-- verifyAddToWishList -->
-                  <span class="method-name">verifyAddToWishList</span>
-                  <em>
-(Verify : Add to Wish List)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,16 +348,16 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC_17_CustomerServicePageDesiredOptions</span>
+              <span class="class-name">testcases.TC_14_VerifyAddToWishList</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="customerServicePageDesiredOptions">
-                  </a> <!-- customerServicePageDesiredOptions -->
-                  <span class="method-name">customerServicePageDesiredOptions</span>
+                  <a name="verifyAddToWishList">
+                  </a> <!-- verifyAddToWishList -->
+                  <span class="method-name">verifyAddToWishList</span>
                   <em>
-(Verify : Customer Service page has desired options)                  </em>
+(Verify : Add to Wish List)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -378,23 +450,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC_15_VerifyDailyDealsCardDisplay</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyDailyDealsCardDisplay">
-                  </a> <!-- VerifyDailyDealsCardDisplay -->
-                  <span class="method-name">VerifyDailyDealsCardDisplay</span>
-                  <em>
-(Verify : Daily deals cards are displaying on Home page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testcases.TC_16_DealsPrevNextButtons</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -412,6 +467,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">testcases.TC_15_VerifyDailyDealsCardDisplay</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDailyDealsCardDisplay">
+                  </a> <!-- VerifyDailyDealsCardDisplay -->
+                  <span class="method-name">VerifyDailyDealsCardDisplay</span>
+                  <em>
+(Verify : Daily deals cards are displaying on Home page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testcases.TC_19_CategoriesInSearchBox</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -422,23 +494,6 @@
                   <span class="method-name">categoriesInSearchBox</span>
                   <em>
 (Verify dropdown for categories in search box working or not)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.TC_01_LoginValid</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginValid">
-                  </a> <!-- loginValid -->
-                  <span class="method-name">loginValid</span>
-                  <em>
-(Verify : Login with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -514,23 +569,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC_02_LoginInvalidId</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginInvalidId">
-                  </a> <!-- loginInvalidId -->
-                  <span class="method-name">loginInvalidId</span>
-                  <em>
-(Verify : Login with invalid ID)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testcases.TC_11_ResultsClickOpensInNewTab</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -597,7 +635,7 @@
     &lt;listener class-name=&quot;utilities.Reporter&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome-headless&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.TC_00_LoginDDT&quot;/&gt;
       &lt;class name=&quot;testcases.TC_01_LoginValid&quot;/&gt;
@@ -660,98 +698,98 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(22);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAddToCart')
-data.setCell(0, 2, 'testcases.TC_12_VerifyAddToCart')
-data.setCell(0, 3, 30924);
+data.setCell(0, 1, 'dealsPrevNextButtonsWorking')
+data.setCell(0, 2, 'testcases.TC_16_DealsPrevNextButtons')
+data.setCell(0, 3, 24269);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddToWishList')
-data.setCell(1, 2, 'testcases.TC_14_VerifyAddToWishList')
-data.setCell(1, 3, 25639);
+data.setCell(1, 1, 'verifyDeleteFromCart')
+data.setCell(1, 2, 'testcases.TC_13_VerifyDeleteFromCart')
+data.setCell(1, 3, 21981);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyDeleteFromCart')
-data.setCell(2, 2, 'testcases.TC_13_VerifyDeleteFromCart')
-data.setCell(2, 3, 25413);
+data.setCell(2, 1, 'categoriesInSearchBox')
+data.setCell(2, 2, 'testcases.TC_19_CategoriesInSearchBox')
+data.setCell(2, 3, 19962);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'dealsPrevNextButtonsWorking')
-data.setCell(3, 2, 'testcases.TC_16_DealsPrevNextButtons')
-data.setCell(3, 3, 24630);
+data.setCell(3, 1, 'verifyForgotPassword')
+data.setCell(3, 2, 'testcases.TC_05_VerifyForgotPassword')
+data.setCell(3, 3, 19936);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'categoriesInSearchBox')
-data.setCell(4, 2, 'testcases.TC_19_CategoriesInSearchBox')
-data.setCell(4, 3, 21493);
+data.setCell(4, 1, 'verifyAddToCart')
+data.setCell(4, 2, 'testcases.TC_12_VerifyAddToCart')
+data.setCell(4, 3, 19088);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifySearchSuggestionsCharByChar')
-data.setCell(5, 2, 'testcases.TC_09_SearchSuggestions')
-data.setCell(5, 3, 18685);
+data.setCell(5, 1, 'verifyAddToWishList')
+data.setCell(5, 2, 'testcases.TC_14_VerifyAddToWishList')
+data.setCell(5, 3, 18400);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'contactUsFunctionality')
-data.setCell(6, 2, 'testcases.TC_18_ContactUsFunctionality')
-data.setCell(6, 3, 14624);
+data.setCell(6, 1, 'verifySearchSuggestionsCharByChar')
+data.setCell(6, 2, 'testcases.TC_09_SearchSuggestions')
+data.setCell(6, 3, 16665);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyAfterSignOutAccess')
-data.setCell(7, 2, 'testcases.TC_07_VerifyAfterSignOutAccess')
-data.setCell(7, 3, 13966);
+data.setCell(7, 1, 'contactUsFunctionality')
+data.setCell(7, 2, 'testcases.TC_18_ContactUsFunctionality')
+data.setCell(7, 3, 12135);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifyKeepMeSignedIn')
 data.setCell(8, 2, 'testcases.TC_06_VerifyKeepMeSignedIn')
-data.setCell(8, 3, 9898);
+data.setCell(8, 3, 9617);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginDDT')
-data.setCell(9, 2, 'testcases.TC_00_LoginDDT')
-data.setCell(9, 3, 9186);
+data.setCell(9, 1, 'verifyAfterSignOutAccess')
+data.setCell(9, 2, 'testcases.TC_07_VerifyAfterSignOutAccess')
+data.setCell(9, 3, 9348);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'loginValid')
-data.setCell(10, 2, 'testcases.TC_01_LoginValid')
-data.setCell(10, 3, 8456);
+data.setCell(10, 1, 'loginDDT')
+data.setCell(10, 2, 'testcases.TC_00_LoginDDT')
+data.setCell(10, 3, 9184);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'loginDDT')
 data.setCell(11, 2, 'testcases.TC_00_LoginDDT')
-data.setCell(11, 3, 7995);
+data.setCell(11, 3, 7281);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'loginDDT')
 data.setCell(12, 2, 'testcases.TC_00_LoginDDT')
-data.setCell(12, 3, 7910);
+data.setCell(12, 3, 5940);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'resultsClickOpensInNewTab')
-data.setCell(13, 2, 'testcases.TC_11_ResultsClickOpensInNewTab')
-data.setCell(13, 3, 6665);
+data.setCell(13, 1, 'loginValid')
+data.setCell(13, 2, 'testcases.TC_01_LoginValid')
+data.setCell(13, 3, 5782);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'verifySearchResults')
 data.setCell(14, 2, 'testcases.TC_10_SearchResults')
-data.setCell(14, 3, 6172);
+data.setCell(14, 3, 4158);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyForgotPassword')
-data.setCell(15, 2, 'testcases.TC_05_VerifyForgotPassword')
-data.setCell(15, 3, 6121);
+data.setCell(15, 1, 'loginInvalidPassword')
+data.setCell(15, 2, 'testcases.TC_03_LoginInvalidPassword')
+data.setCell(15, 3, 4069);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'loginInvalidPassword')
-data.setCell(16, 2, 'testcases.TC_03_LoginInvalidPassword')
-data.setCell(16, 3, 5803);
+data.setCell(16, 1, 'resultsClickOpensInNewTab')
+data.setCell(16, 2, 'testcases.TC_11_ResultsClickOpensInNewTab')
+data.setCell(16, 3, 3665);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'loginInvalidId')
 data.setCell(17, 2, 'testcases.TC_02_LoginInvalidId')
-data.setCell(17, 3, 5096);
+data.setCell(17, 3, 2261);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'customerServicePageDesiredOptions')
 data.setCell(18, 2, 'testcases.TC_17_CustomerServicePageDesiredOptions')
-data.setCell(18, 3, 4852);
+data.setCell(18, 3, 2205);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'loginBlankId')
 data.setCell(19, 2, 'testcases.TC_04_LoginBlankId')
-data.setCell(19, 3, 3229);
+data.setCell(19, 3, 1709);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'VerifyDailyDealsCardDisplay')
 data.setCell(20, 2, 'testcases.TC_15_VerifyDailyDealsCardDisplay')
-data.setCell(20, 3, 476);
+data.setCell(20, 3, 556);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'waterTextOfSearchBox')
 data.setCell(21, 2, 'testcases.TC_08_WaterTextOfSearchBox')
-data.setCell(21, 3, 271);
+data.setCell(21, 3, 40);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -779,405 +817,411 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_00_LoginDDT</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
+                <span class="method-name">setup(chrome-headless)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">1364 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">1358 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginDDT(8733806144, QA@automation)</span>
-                <span class="method-start">8817 ms</span>
+                <span class="method-start">8727 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang....)</span>
-                <span class="method-start">16826 ms</span>
+                <span class="method-start">14682 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">18430 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">15678 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginDDT(8733806144, invalid)</span>
-                <span class="method-start">26795 ms</span>
+                <span class="method-start">21986 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang....)</span>
-                <span class="method-start">35983 ms</span>
+                <span class="method-start">31171 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">37410 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">32044 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginDDT(invalid, invalid)</span>
-                <span class="method-start">45217 ms</span>
+                <span class="method-start">38226 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=loginDDT status=SUCCESS method=TC_00_LoginDDT.loginDDT(java.lang.String, java.lang....)</span>
-                <span class="method-start">53129 ms</span>
+                <span class="method-start">45509 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_01_LoginValid</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">54625 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">46491 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">54660 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">46522 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginValid</span>
-                <span class="method-start">62783 ms</span>
+                <span class="method-start">52783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTest([TestResult name=loginValid status=SUCCESS method=TC_01_LoginValid.loginValid()[pri:0, instance:test...)</span>
-                <span class="method-start">71241 ms</span>
+                <span class="method-name">afterEachTest([TestResult name=loginValid status=FAILURE method=TC_01_LoginValid.loginValid()[pri:0, instance:test...)</span>
+                <span class="method-start">58932 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_02_LoginInvalidId</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">73406 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">59860 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">73441 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">59895 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginInvalidId</span>
-                <span class="method-start">83001 ms</span>
+                <span class="method-start">66256 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTest([TestResult name=loginInvalidId status=SUCCESS method=TC_02_LoginInvalidId.loginInvalidId()[pri:0, i...)</span>
-                <span class="method-start">88098 ms</span>
+                <span class="method-name">afterEachTest([TestResult name=loginInvalidId status=FAILURE method=TC_02_LoginInvalidId.loginInvalidId()[pri:0, i...)</span>
+                <span class="method-start">68616 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_03_LoginInvalidPassword</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">89432 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">69483 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">89457 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">69511 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginInvalidPassword</span>
-                <span class="method-start">101846 ms</span>
+                <span class="method-start">75511 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=loginInvalidPassword status=SUCCESS method=TC_03_LoginInvalidPassword.loginInvalidP...)</span>
-                <span class="method-start">107650 ms</span>
+                <span class="method-start">79583 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_04_LoginBlankId</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">109123 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">80527 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">109148 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">80553 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginBlankId</span>
-                <span class="method-start">121755 ms</span>
+                <span class="method-start">86682 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=loginBlankId status=SUCCESS method=TC_04_LoginBlankId.loginBlankId()[pri:0, instanc...)</span>
-                <span class="method-start">124985 ms</span>
+                <span class="method-start">88393 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_05_VerifyForgotPassword</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">126404 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">89285 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">126430 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">89312 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgotPassword</span>
-                <span class="method-start">142861 ms</span>
+                <span class="method-start">95164 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifyForgotPassword status=SUCCESS method=TC_05_VerifyForgotPassword.verifyForgotP...)</span>
-                <span class="method-start">148983 ms</span>
+                <span class="method-start">115101 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_06_VerifyKeepMeSignedIn</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">150490 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">116071 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">150529 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">116104 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyKeepMeSignedIn</span>
-                <span class="method-start">164853 ms</span>
+                <span class="method-start">122796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifyKeepMeSignedIn status=SUCCESS method=TC_06_VerifyKeepMeSignedIn.verifyKeepMeS...)</span>
-                <span class="method-start">174753 ms</span>
+                <span class="method-start">132414 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_07_VerifyAfterSignOutAccess</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">176253 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">133388 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">176285 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">133426 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAfterSignOutAccess</span>
-                <span class="method-start">184247 ms</span>
+                <span class="method-start">139690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifyAfterSignOutAccess status=SUCCESS method=TC_07_VerifyAfterSignOutAccess.verif...)</span>
-                <span class="method-start">198214 ms</span>
+                <span class="method-start">149040 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_08_WaterTextOfSearchBox</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">200616 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">150110 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">200827 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">150136 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">waterTextOfSearchBox</span>
-                <span class="method-start">210701 ms</span>
+                <span class="method-start">156330 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=waterTextOfSearchBox status=SUCCESS method=TC_08_WaterTextOfSearchBox.waterTextOfSe...)</span>
-                <span class="method-start">210973 ms</span>
+                <span class="method-start">156372 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_09_SearchSuggestions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">212247 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">157288 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">212276 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">157316 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchSuggestionsCharByChar</span>
-                <span class="method-start">220632 ms</span>
+                <span class="method-start">163044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifySearchSuggestionsCharByChar status=SUCCESS method=TC_09_SearchSuggestions.ver...)</span>
-                <span class="method-start">239318 ms</span>
+                <span class="method-start">179711 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_10_SearchResults</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">240768 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">180693 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">240795 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">180719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchResults</span>
-                <span class="method-start">249099 ms</span>
+                <span class="method-start">186754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifySearchResults status=SUCCESS method=TC_10_SearchResults.verifySearchResults()...)</span>
-                <span class="method-start">255271 ms</span>
+                <span class="method-start">190913 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_11_ResultsClickOpensInNewTab</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">256726 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">191774 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">256759 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">191807 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">resultsClickOpensInNewTab</span>
-                <span class="method-start">264619 ms</span>
+                <span class="method-start">197268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=resultsClickOpensInNewTab status=SUCCESS method=TC_11_ResultsClickOpensInNewTab.res...)</span>
-                <span class="method-start">271286 ms</span>
+                <span class="method-start">200934 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_12_VerifyAddToCart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">272887 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">201818 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">272921 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">201845 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddToCart</span>
-                <span class="method-start">283378 ms</span>
+                <span class="method-start">207912 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifyAddToCart status=SUCCESS method=TC_12_VerifyAddToCart.verifyAddToCart()[pri:0...)</span>
-                <span class="method-start">314304 ms</span>
+                <span class="method-start">227007 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_13_VerifyDeleteFromCart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">316010 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">228145 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">316122 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">228183 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDeleteFromCart</span>
-                <span class="method-start">327715 ms</span>
+                <span class="method-start">233944 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifyDeleteFromCart status=SUCCESS method=TC_13_VerifyDeleteFromCart.verifyDeleteF...)</span>
-                <span class="method-start">353129 ms</span>
+                <span class="method-start">255925 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_14_VerifyAddToWishList</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">354538 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">257034 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">354565 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">257061 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddToWishList</span>
-                <span class="method-start">361910 ms</span>
+                <span class="method-start">263018 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=verifyAddToWishList status=SUCCESS method=TC_14_VerifyAddToWishList.verifyAddToWish...)</span>
-                <span class="method-start">387550 ms</span>
+                <span class="method-start">281420 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_15_VerifyDailyDealsCardDisplay</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">389357 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">282742 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">389387 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">282771 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyDailyDealsCardDisplay</span>
-                <span class="method-start">396708 ms</span>
+                <span class="method-start">288420 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=VerifyDailyDealsCardDisplay status=SUCCESS method=TC_15_VerifyDailyDealsCardDisplay...)</span>
-                <span class="method-start">397185 ms</span>
+                <span class="method-start">288977 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_16_DealsPrevNextButtons</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">398670 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">289925 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">398701 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">289952 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dealsPrevNextButtonsWorking</span>
-                <span class="method-start">405816 ms</span>
+                <span class="method-start">296086 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=dealsPrevNextButtonsWorking status=SUCCESS method=TC_16_DealsPrevNextButtons.dealsP...)</span>
-                <span class="method-start">430447 ms</span>
+                <span class="method-start">320357 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_17_CustomerServicePageDesiredOptions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">431894 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">321234 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">431925 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">321259 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">customerServicePageDesiredOptions</span>
-                <span class="method-start">439043 ms</span>
+                <span class="method-start">327254 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTest([TestResult name=customerServicePageDesiredOptions status=SUCCESS method=TC_17_CustomerServicePageDe...)</span>
-                <span class="method-start">443896 ms</span>
+                <span class="method-name">afterEachTest([TestResult name=customerServicePageDesiredOptions status=FAILURE method=TC_17_CustomerServicePageDe...)</span>
+                <span class="method-start">329681 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_18_ContactUsFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">445185 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">330490 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">445220 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">330517 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">contactUsFunctionality</span>
-                <span class="method-start">452364 ms</span>
+                <span class="method-start">336659 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=contactUsFunctionality status=SUCCESS method=TC_18_ContactUsFunctionality.contactUs...)</span>
-                <span class="method-start">466989 ms</span>
+                <span class="method-start">348795 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_19_CategoriesInSearchBox</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">468504 ms</span>
+                <span class="method-name">setup(chrome-headless)</span>
+                <span class="method-start">350312 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeEachTest</span>
-                <span class="method-start">468535 ms</span>
+                <span class="method-name">beforeEachTest(org.testng.TestRunner@1aee0f49)</span>
+                <span class="method-start">350348 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">categoriesInSearchBox</span>
-                <span class="method-start">476367 ms</span>
+                <span class="method-start">357085 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=categoriesInSearchBox status=SUCCESS method=TC_19_CategoriesInSearchBox.categoriesI...)</span>
-                <span class="method-start">497861 ms</span>
+                <span class="method-start">377048 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

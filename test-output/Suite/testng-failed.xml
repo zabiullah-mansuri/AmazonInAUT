@@ -5,16 +5,32 @@
     <listener class-name="utilities.Reporter"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="chrome-headless"/>
     <classes>
-      <class name="testcases.TC_07_VerifyAfterSignOutAccess">
+      <class name="testcases.TC_17_CustomerServicePageDesiredOptions">
         <methods>
           <include name="setup"/>
           <include name="beforeEachTest"/>
-          <include name="verifyAfterSignOutAccess"/>
+          <include name="afterEachTest"/>
+          <include name="customerServicePageDesiredOptions"/>
+        </methods>
+      </class> <!-- testcases.TC_17_CustomerServicePageDesiredOptions -->
+      <class name="testcases.TC_01_LoginValid">
+        <methods>
+          <include name="setup"/>
+          <include name="loginValid"/>
+          <include name="beforeEachTest"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- testcases.TC_07_VerifyAfterSignOutAccess -->
+      </class> <!-- testcases.TC_01_LoginValid -->
+      <class name="testcases.TC_02_LoginInvalidId">
+        <methods>
+          <include name="setup"/>
+          <include name="beforeEachTest"/>
+          <include name="afterEachTest"/>
+          <include name="loginInvalidId"/>
+        </methods>
+      </class> <!-- testcases.TC_02_LoginInvalidId -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

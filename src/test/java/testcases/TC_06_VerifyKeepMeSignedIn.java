@@ -16,32 +16,32 @@ public class TC_06_VerifyKeepMeSignedIn extends BaseTestClass {
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
-		log4jlogger.info("Clicked : Account & Lists");
+		log4jLogger.info("Clicked : Account & Lists");
 
 		signInPage.enterUserId(userId);
-		log4jlogger.info("Entered user id : " + userId);
+		log4jLogger.info("Entered user id : " + userId);
 
 		signInPage.clickContinue();
-		log4jlogger.info("Clicked : Continue button");
+		log4jLogger.info("Clicked : Continue button");
 
 		signInPage.enterPassword(password);
-		log4jlogger.info("Entered password : " + password);
+		log4jLogger.info("Entered password : " + password);
 
 		signInPage.clickKeepMeSignedIn();
-		log4jlogger.info("Ticked : Keep me signed in");
+		log4jLogger.info("Ticked : Keep me signed in");
 
 		signInPage.clickSignIn();
-		log4jlogger.info("Clicked : Sign in button");
+		log4jLogger.info("Clicked : Sign in button");
 
 		driver.get("https://www.google.com/");
 		driver.get(appUrl);
 
 		try {
 			homePage.getSignedInUserName().contains(name);
-			log4jlogger.info("Login retained.");
+			log4jLogger.info("Login retained.");
 			Assert.assertTrue(true);
 		} catch (NoSuchElementException e) {
-			log4jlogger.error("Login lost.");
+			log4jLogger.error("Login lost.");
 			Assert.assertTrue(false);
 		}
 	}

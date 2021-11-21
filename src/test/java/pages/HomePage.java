@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -117,13 +118,13 @@ public class HomePage extends BasePage {
 		return txtSearch.getAttribute("placeholder");
 	}
 
-	public List<String> searchForThisKeyword(char input) throws InterruptedException, TimeoutException {
+	public List<String> searchForThisKeyword(Logger logger, char input) throws InterruptedException, TimeoutException {
 
 		txtSearch.sendKeys(Character.toString(input));
 
 		if (txtSearch.getAttribute("value").length() == 1) {
-			wait = new WebDriverWait(driver, 7);
-			System.out.println("waiting for suggestions box...");
+			wait = new WebDriverWait(driver, 5);
+			logger.info("waiting for suggestions box...");
 			wait.until(ExpectedConditions.visibilityOf(suggestionsBox));
 		} else {
 			Thread.sleep(2300);

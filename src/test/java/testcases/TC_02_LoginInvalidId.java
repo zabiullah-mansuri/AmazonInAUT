@@ -1,5 +1,6 @@
 package testcases;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,20 +15,26 @@ public class TC_02_LoginInvalidId extends BaseTestClass {
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
-		log4jlogger.info("Clicked : Account & Lists");
+		log4jLogger.info("Clicked : Account & Lists");
 
 		signInPage.enterUserId(wrongUserId);
-		log4jlogger.info("Entered user id : " + wrongUserId);
+		log4jLogger.info("Entered user id : " + wrongUserId);
 
 		signInPage.clickContinue();
-		log4jlogger.info("Clicked : Continue button");
+		log4jLogger.info("Clicked : Continue button");
 
-		if (signInPage.getAuthErrorMsg().contains("We cannot find an account with that email address")) {
-			log4jlogger.info("Error msg present on invalid login.");
-			Assert.assertTrue(true);
-		} else {
-			log4jlogger.info("Error msg not present on invalid login.");
+		try {
+			if (signInPage.getAuthErrorMsg().contains("We cannot find an account with that email address")) {
+				log4jLogger.info("Error msg present on invalid login.");
+				Assert.assertTrue(true);
+			} else {
+				log4jLogger.error("Error msg not present on invalid login.");
+				Assert.assertTrue(false);
+			}
+		} catch (NoSuchElementException e) {
+			log4jLogger.error(e.getMessage());
 			Assert.assertTrue(false);
+
 		}
 	}
 }

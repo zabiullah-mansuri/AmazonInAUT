@@ -14,15 +14,17 @@ public class TC_19_CategoriesInSearchBox extends BaseTestClass {
 		HomePage homePage = new HomePage(driver);
 
 		List<String> allSearchCategories = homePage.allSearchCategories();
-		log4jlogger.info("Categories are :" + allSearchCategories);
+		log4jLogger.info("Categories are :" + allSearchCategories);
 		allSearchCategories.forEach(category -> {
-			log4jlogger.info("Now selecting : " + category);
+			log4jLogger.info("Now selecting : " + category);
 			homePage.selectThisSearchCategory(category);
+
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
+
 			Assert.assertEquals(category, homePage.getCurrentSearchCategory());
 		});
 	}

@@ -1,5 +1,6 @@
 package testcases;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,24 +16,30 @@ public class TC_03_LoginInvalidPassword extends BaseTestClass {
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
-		log4jlogger.info("Clicked : Account & Lists");
+		log4jLogger.info("Clicked : Account & Lists");
 
 		signInPage.enterUserId(userId);
-		log4jlogger.info("Entered user id : " + userId);
+		log4jLogger.info("Entered user id : " + userId);
 
 		signInPage.clickContinue();
 		signInPage.enterPassword(wrongPassword);
-		log4jlogger.info("Entered password : " + wrongPassword);
+		log4jLogger.info("Entered password : " + wrongPassword);
 
 		signInPage.clickSignIn();
-		log4jlogger.info("Clicked : Sign in button");
+		log4jLogger.info("Clicked : Sign in button");
 
-		if (signInPage.getAuthErrorMsg().contains("Your password is incorrect")) {
-			log4jlogger.info("Error msg present on invalid login.");
-			Assert.assertTrue(true);
-		} else {
-			log4jlogger.info("Error msg not present on invalid login.");
+		try {
+			if (signInPage.getAuthErrorMsg().contains("Your password is incorrect")) {
+				log4jLogger.info("Error msg present on invalid login.");
+				Assert.assertTrue(true);
+			} else {
+				log4jLogger.error("Error msg not present on invalid login.");
+				Assert.assertTrue(false);
+			}
+		} catch (NoSuchElementException e) {
+			log4jLogger.error(e.getMessage());
 			Assert.assertTrue(false);
+
 		}
 	}
 }

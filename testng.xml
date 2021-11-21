@@ -16,7 +16,10 @@
 			<class name="testcases.TC_06_VerifyKeepMeSignedIn" />
 			<class name="testcases.TC_07_VerifyAfterSignOutAccess" />
 			<class name="testcases.TC_08_WaterTextOfSearchBox" />
+
+
 			<class name="testcases.TC_09_SearchSuggestions" />
+
 			<class name="testcases.TC_10_SearchResults" />
 			<class name="testcases.TC_11_ResultsClickOpensInNewTab" />
 			<class name="testcases.TC_12_VerifyAddToCart" />
@@ -27,6 +30,7 @@
 			<class name="testcases.TC_17_CustomerServicePageDesiredOptions" />
 			<class name="testcases.TC_18_ContactUsFunctionality" />
 			<class name="testcases.TC_19_CategoriesInSearchBox" />
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

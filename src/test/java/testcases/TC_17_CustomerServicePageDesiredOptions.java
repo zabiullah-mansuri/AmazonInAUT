@@ -14,16 +14,16 @@ public class TC_17_CustomerServicePageDesiredOptions extends BaseTestClass {
 		HelpPage helpPage = new HelpPage(driver);
 
 		homePage.clickHMenuCustomerService();
-		log4jlogger.info("Navigated to : Help page");
+		log4jLogger.info("Navigated to : Help page");
 
 		Assert.assertTrue(helpPage.areSelfServicesCardsDisplayed(), "Self Service cards are not visible");
-		log4jlogger.info("Self Service cards are visible.");
+		log4jLogger.info("Self Service cards are visible.");
 
-		log4jlogger.info("Options available on Help page are :");
+		log4jLogger.info("Options available on Help page are :");
 		helpPage.getSelfServiceOptions().forEach(card -> {
-			log4jlogger.info(card.get(0));
+			log4jLogger.info(card.get(0));
 			for (int i = 1; i < card.size(); i++) {
-				log4jlogger.info("        " + card.get(i));
+				log4jLogger.info("        " + card.get(i));
 			}
 		});
 	}

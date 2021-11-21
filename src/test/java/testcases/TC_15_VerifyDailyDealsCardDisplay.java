@@ -18,7 +18,7 @@ public class TC_15_VerifyDailyDealsCardDisplay extends BaseTestClass {
 		flag = false;
 		homePage.getCarouselItemNamesAndVisibility().forEach((name, visibility) -> {
 
-			log4jlogger.info(visibility + "\t:" + name);
+			log4jLogger.info(visibility + "\t:" + name);
 
 			if (visibility.equals("visible")) {
 				string = name;

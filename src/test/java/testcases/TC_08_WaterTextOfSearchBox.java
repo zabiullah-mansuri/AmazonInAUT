@@ -12,7 +12,7 @@ public class TC_08_WaterTextOfSearchBox extends BaseTestClass {
 		HomePage homePage = new HomePage(driver);
 
 		if (homePage.getPlaceholderOfSearchBox().isEmpty()) {
-			log4jlogger.info("Found no water text.");
+			log4jLogger.info("Found no water text.");
 			Assert.assertTrue(true);
 		}
 	}

@@ -57,19 +57,11 @@ public class SignInPage extends BasePage {
 	}
 
 	public String getAuthErrorMsg() {
-		try {
-			return msgAuthError.getText();
-		} catch (NoSuchElementException e) {
-			return "No Auth Error Message";
-		}
+		return msgAuthError.getText();
 	}
 
 	public String getEmailMissingMsg() {
-		try {
-			return msgEmailMissing.getText();
-		} catch (NoSuchElementException e) {
-			return "No Email Missing Error Message";
-		}
+		return msgEmailMissing.getText();
 	}
 
 	public void clickForgotPasswordLink() {

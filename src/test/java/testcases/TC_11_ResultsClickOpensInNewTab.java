@@ -17,20 +17,20 @@ public class TC_11_ResultsClickOpensInNewTab extends BaseTestClass {
 		String searchKey = "samsung";
 
 		homePage.searchForThisProduct(searchKey);
-		log4jlogger.info("Searched : " + searchKey);
+		log4jLogger.info("Searched : " + searchKey);
 
 		Set<String> handlesBefore = driver.getWindowHandles();
 
 		searchResultsPage.clickOnOneResultRandomly();
-		log4jlogger.info("Clicked one result randomly");
+		log4jLogger.info("Clicked one result randomly");
 
 		Set<String> handlesAfter = driver.getWindowHandles();
 
 		if (handlesAfter.size() > handlesBefore.size()) {
-			log4jlogger.info("Opened in new tab");
+			log4jLogger.info("Opened in new tab");
 			Assert.assertTrue(true);
 		} else {
-			log4jlogger.warn("Didn't open in new tab");
+			log4jLogger.error("Didn't open in new tab");
 			Assert.assertTrue(false);
 		}
 	}

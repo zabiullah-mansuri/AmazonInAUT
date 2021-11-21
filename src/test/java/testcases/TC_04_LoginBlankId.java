@@ -1,5 +1,6 @@
 package testcases;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,19 +16,24 @@ public class TC_04_LoginBlankId extends BaseTestClass {
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
-		log4jlogger.info("Clicked : Account & Lists");
+		log4jLogger.info("Clicked : Account & Lists");
 
 		signInPage.enterUserId("");
-		log4jlogger.info("Entered user id : " + "<blank>");
+		log4jLogger.info("Entered user id : " + "<blank>");
 
 		signInPage.clickContinue();
-		log4jlogger.info("Clicked : Continue button");
+		log4jLogger.info("Clicked : Continue button");
 
-		if (signInPage.getEmailMissingMsg().contains("Enter your email or mobile phone number")) {
-			log4jlogger.info("Email missing msg present on blank login.");
-			Assert.assertTrue(true);
-		} else {
-			log4jlogger.info("Email missing msg absent on blank login.");
+		try {
+			if (signInPage.getEmailMissingMsg().contains("Enter your email or mobile phone number")) {
+				log4jLogger.info("Email missing msg present on blank login.");
+				Assert.assertTrue(true);
+			} else {
+				log4jLogger.error("Email missing msg absent on blank login.");
+				Assert.assertTrue(false);
+			}
+		} catch (NoSuchElementException e) {
+			log4jLogger.error(e.getMessage());
 			Assert.assertTrue(false);
 		}
 	}

@@ -21,7 +21,7 @@ public class TC_14_VerifyAddToWishList extends BaseTestClass {
 
 		String searchKey = "samsung";
 
-		log4jlogger.info("Signing in...");
+		log4jLogger.info("Signing in...");
 		homePage.clickOnAccountAndListsThenSignIn();
 		signInPage.enterUserId(userId);
 		signInPage.clickContinue();
@@ -29,29 +29,29 @@ public class TC_14_VerifyAddToWishList extends BaseTestClass {
 		signInPage.clickSignIn();
 
 		homePage.searchForThisProduct(searchKey);
-		log4jlogger.info("Searched : " + searchKey);
+		log4jLogger.info("Searched : " + searchKey);
 
 		searchResultsPage.clickOnOneResultRandomly();
-		log4jlogger.info("Clicked one result randomly");
+		log4jLogger.info("Clicked one result randomly");
 
 		String[] tabs = driver.getWindowHandles().toArray(new String[2]);
 		driver.switchTo().window(tabs[1]);
-		log4jlogger.info("Switched to Product's tab");
+		log4jLogger.info("Switched to Product's tab");
 
 		productPage.clickAddToWishList();
-		log4jlogger.info("Click : Add to Wish List");
+		log4jLogger.info("Click : Add to Wish List");
 
 		if (productPage.isAddedToWishListMsgDisplayed()) {
-			log4jlogger.info("Msg present : Added to Wish List");
+			log4jLogger.info("Msg present : Added to Wish List");
 			Assert.assertTrue(true);
 		} else {
-			log4jlogger.warn("Msg absent : Added to Wish List");
+			log4jLogger.error("Msg absent : Added to Wish List");
 			Assert.assertTrue(false);
 		}
 
 		homePage.goToWishList();
-		log4jlogger.info("Opened : Wish List Page");
-		wishListPage.getWishListItemNames().forEach(item -> System.out.println(item));
+		log4jLogger.info("Opened : Wish List Page");
+		wishListPage.getWishListItemNames(log4jLogger).forEach(item -> log4jLogger.info(item));
 
 	}
 }

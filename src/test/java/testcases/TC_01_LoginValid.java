@@ -16,24 +16,28 @@ public class TC_01_LoginValid extends BaseTestClass {
 		SignInPage signInPage = new SignInPage(driver);
 
 		homePage.clickOnAccountAndListsThenSignIn();
-		log4jlogger.info("Clicked : Account & Lists");
+		log4jLogger.info("Clicked : Account & Lists");
 
 		signInPage.enterUserId(userId);
-		log4jlogger.info("Entered user id : " + userId);
+		log4jLogger.info("Entered user id : " + userId);
 
 		signInPage.clickContinue();
 		signInPage.enterPassword(password);
-		log4jlogger.info("Entered password : " + password);
+		log4jLogger.info("Entered password : " + password);
 
 		signInPage.clickSignIn();
-		log4jlogger.info("Clicked : Sign in button");
+		log4jLogger.info("Clicked : Sign in button");
 
 		try {
-			homePage.getSignedInUserName().contains(name);
-			log4jlogger.info("Login successfull.");
-			Assert.assertTrue(true);
+			if (homePage.getSignedInUserName().contains(name)) {
+				log4jLogger.info("Login successfull.");
+				Assert.assertTrue(true);
+			} else {
+				log4jLogger.error("Login failed.");
+				Assert.assertTrue(false);
+			}
 		} catch (NoSuchElementException e) {
-			log4jlogger.error("Login failed.");
+			log4jLogger.error("Login failed.");
 			Assert.assertTrue(false);
 		}
 	}
