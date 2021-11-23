@@ -71,6 +71,7 @@ public class Reporter extends TestListenerAdapter {
 			source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			target = new File(screenshotPath);
 			FileUtils.copyFile(source, target);
+			log4jLogger.info("Screenshot has been captured and saved to folder.");
 		} catch (ClassCastException e) {
 			log4jLogger.error("Couldn't take screenshot in HTML Unit Browser.");
 		} catch (IOException e) {
@@ -85,6 +86,8 @@ public class Reporter extends TestListenerAdapter {
 			} catch (IOException e) {
 				log4jLogger.error(e.getMessage());
 			}
+		} else {
+			log4jLogger.error("Couldn't find screenshot for attachment.");
 		}
 
 	}

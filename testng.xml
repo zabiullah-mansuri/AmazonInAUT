@@ -7,6 +7,7 @@
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
+
 			<class name="testcases.TC_00_LoginDDT" />
 			<class name="testcases.TC_01_LoginValid" />
 			<class name="testcases.TC_02_LoginInvalidId" />
@@ -16,10 +17,7 @@
 			<class name="testcases.TC_06_VerifyKeepMeSignedIn" />
 			<class name="testcases.TC_07_VerifyAfterSignOutAccess" />
 			<class name="testcases.TC_08_WaterTextOfSearchBox" />
-
-
 			<class name="testcases.TC_09_SearchSuggestions" />
-
 			<class name="testcases.TC_10_SearchResults" />
 			<class name="testcases.TC_11_ResultsClickOpensInNewTab" />
 			<class name="testcases.TC_12_VerifyAddToCart" />

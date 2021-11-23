@@ -53,6 +53,12 @@ public class BaseTestClass {
 
 	@BeforeMethod
 	public void beforeEachTest(ITestContext context) {
+		this.context = context;
+		context.setAttribute("log4jLogger", log4jLogger);
+		initializeDriver();
+	}
+
+	void initializeDriver() {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readConfig.getChromeDriverPath());
 			driver = new ChromeDriver();
@@ -80,8 +86,6 @@ public class BaseTestClass {
 		driver.manage().window().maximize();
 		driver.get(appUrl);
 		context.setAttribute("driver", driver);
-		context.setAttribute("log4jLogger", log4jLogger);
-		this.context = context;
 	}
 
 	@AfterMethod

@@ -10,18 +10,23 @@ import pages.HomePage;
 public class TC_09_SearchSuggestions extends BaseTestClass {
 
 	@Test(enabled = true, description = "Verify : Seach suggestions characters by characters")
-	public void verifySearchSuggestionsCharByChar() throws InterruptedException {
+	public void verifySearchSuggestionsCharByChar() {
 
 		String searchkey = "samsung";
-		boolean tryAgain = false;
+		boolean tryAgain;
+		int attempt = 1;
 		do {
 			try {
 				tryAgain = false;
 				searchSuggestionsCharByChar(searchkey);
 			} catch (Exception e) {
 				log4jLogger.error(e.getMessage());
-				afterEachTest(null);
-				beforeEachTest(context);
+				attempt++;
+				if (attempt > 2) {
+					Assert.assertTrue(false);
+				}
+				driver.quit();
+				initializeDriver();
 				tryAgain = true;
 			}
 		} while (tryAgain);
